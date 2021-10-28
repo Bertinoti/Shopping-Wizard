@@ -28,8 +28,39 @@
 }
 /* footer */
 
-
-
+/* carrusel */
+.carrusel{
+    width: 90%;
+    max-width: 120em;
+    background-color: lightblue;
+}
+.carrusel .grande{
+    width: 200%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrusel .img{
+    width: calc(100%/2);
+    background-color: lime;
+}
+.carrusel .puntos{
+    width: 100%;
+    background-color: red;
+    padding: 1em;
+    display: flex;
+    flex-flow: wrap nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+    margin: 1em;
+} 
 
 /* Starting Document */
 
@@ -47,11 +78,15 @@ nav{
     justify-content: center;
 }
 
+<<<<<<< HEAD
 =======
 #homepage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+=======
+
+>>>>>>> 83d8b25816de085ca9a57496254c41ed8093a1e6
 
 >>>>>>> c9f7f081b90f3926446d4cbce61119165a9d7efb
 #nav-bar {
