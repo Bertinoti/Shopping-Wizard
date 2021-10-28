@@ -4,3 +4,59 @@
     font-size: 22px;
     margin: 10px;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#homepage {
+    width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    /* background: #000000; */
+}
+
+nav {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: background-color .5s linear;
+    padding: 3px 6px;
+
+}
+
+nav a:active,
+nav a:hover {
+    background: #1b9bff;
+    border-radius: 25px;
+}
+
+nav a:visited {
+    color: black;
+}
+
+
+
+
+
