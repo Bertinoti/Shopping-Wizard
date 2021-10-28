@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+/*Aside bar*/
+.user-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 0px 10px; 
+}
+
+form{
+    display:flex;
+    flex-flow: column;
+    flex: 100%;
+    align-items: center;
+    gap: .6em .3em;
+}
+
+aside{
+    display: flex;
+    flex-flow: column ; 
+    flex: 80%;
+}
+
+input{
+    text-align: center;
+}
+
+aside > p{
+    text-align: center;
+}
+
+#button-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#button-div button{
+    margin-top: 50px;
+    width: 20%;
+    background-color:#88e6e9;
+    border-radius: 7px;
+}
+
+.aside-bar img{
+    width: 75%;
+    margin: 1em auto 2em auto;
+}
