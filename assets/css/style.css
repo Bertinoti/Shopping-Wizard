@@ -62,51 +62,28 @@
     margin: 1em;
 } 
 
-/* Starting Document */
 
 
-<<<<<<< HEAD
 
 
 /* Navigation Bar */
 
 nav{ 
-    position: relative;
-    height: 80px;
-    width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-<<<<<<< HEAD
-=======
-#homepage {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-=======
-
->>>>>>> 83d8b25816de085ca9a57496254c41ed8093a1e6
-
->>>>>>> c9f7f081b90f3926446d4cbce61119165a9d7efb
-#nav-bar {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-
-    flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 2em;
+    height: 4em;
 }
 
 nav ul {
-    float: center;
-    margin-left: 1em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    list-style-type: none;
 }
 
 nav a:link {
@@ -127,25 +104,32 @@ nav a:hover {
 
 nav a:visited {
     color: black;
-}
+}  */
 
 
 .main-image{
-    margin: 0 5px;
-
+    display: flex;
 }
 
 #logo-img{
-    height: 50px;
-    width: 50px;
-    }
+    height: 90%;
+    width: 20%;
+    padding-left: 1em;
+}
 
 
+.button-add{
+    width: 100%;
+    background-color: rgb(81, 255, 0);
+    padding: 1em;
+    display: flex;
+    flex-flow: wrap nowrap;
+    justify-content: center;
+    text-align: center;
+}
 
-
-
-
-
-
-
-    
+button {
+cursor: pointer;
+height: 40px;
+width: 60%;
+}
