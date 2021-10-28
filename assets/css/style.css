@@ -18,6 +18,13 @@
     cursor:pointer;
 }
 /* footer */
+
+
+
+
+
+/* Starting Document */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,8 +39,8 @@
 
 #nav-bar {
     display: grid;
-    grid-template-columns: 5fr;
-    grid-template-rows: 5fr;
+    grid-template-columns: 1fr 1fr ;
+
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 2em;
@@ -81,6 +88,12 @@ nav a:visited {
 
 
 }
+
+.logo-img{
+    height: 50px;
+    width: 50px;
+    }
+
 
 
 
