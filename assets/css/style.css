@@ -5,23 +5,24 @@
 }
 
 #homepage {
-    width: 100vw;
-    min-height: 100vh;
-    margin: auto;
-    /* background: #000000; */
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
 
-nav {
-    position: relative;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 5fr;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 2em;
 }
 
 nav ul {
-    float: right;
-    margin-right: 30px;
+    float: center;
+    margin-left: 1em;
 }
 
 nav ul li {
@@ -48,6 +49,18 @@ nav a:hover {
 
 nav a:visited {
     color: black;
+}
+
+.logo-img{
+
+}
+
+
+
+.main-image{
+    margin: 0 5px;
+
+
 }
 
 
