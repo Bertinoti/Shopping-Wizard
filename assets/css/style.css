@@ -34,6 +34,7 @@
 /* Starting Document */
 
 
+<<<<<<< HEAD
 
 
 /* Navigation Bar */
@@ -46,6 +47,13 @@ nav{
     justify-content: center;
 }
 
+=======
+#homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+>>>>>>> c9f7f081b90f3926446d4cbce61119165a9d7efb
 #nav-bar {
     display: grid;
     grid-template-columns: 1fr 1fr ;
