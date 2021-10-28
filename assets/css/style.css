@@ -19,8 +19,39 @@
 }
 /* footer */
 
-
-
+/* carrusel */
+.carrusel{
+    width: 90%;
+    max-width: 120em;
+    background-color: lightblue;
+}
+.carrusel .grande{
+    width: 200%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrusel .img{
+    width: calc(100%/2);
+    background-color: lime;
+}
+.carrusel .puntos{
+    width: 100%;
+    background-color: red;
+    padding: 1em;
+    display: flex;
+    flex-flow: wrap nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+    margin: 1em;
+} 
 
 
 /* Starting Document */
@@ -32,10 +63,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#homepage {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+
 
 #nav-bar {
     display: grid;
