@@ -63,3 +63,10 @@ aside > p{
     width: 100%;
 
 }
+#gift-area{
+    display: flex;
+    flex: 100%;
+    flex-flow: column;
+    margin-top: 1 em;
+}
+
