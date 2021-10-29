@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/javascript/data.js" defer></script>
         <script src="assets/javascript/dom.js" defer></script>
         <script src="assets/javascript/events.js" defer></script>
@@ -81,6 +83,8 @@
                     </div>
             </footer>
         </section>
+
+        <!-- User page ---------------- -->
         <section id="user-page">
             <div class="user-container">
                 <aside class="aside-bar">
@@ -97,10 +101,12 @@
                 <button class="buttons" id="clear-all-user">Clear All</button>
                 <button class="buttons" id="btn-next-user"> Next </button>
             </div>
+
+            <!-- Adress page --------------------->
             <section id="addressPage">
                 <div class="user-container">
                     <aside class="aside-bar">
-                        <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
+                        <img src="assets/img/progress-bar2-4.png" alt="progress-bar1-4">
                     </aside>
                     <form>
                         <input type='text' id="firstName" placeholder="first name" required>
@@ -117,14 +123,14 @@
                             <option value="Grecia">Grecia</option>
                         </select>
                         <div class="boxPhone">
-                        <select id="prefixPhone">
-                            <option value="Andorra">AND</option>
-                            <option value="España">ESP</option>
-                            <option value="Francia">FRA</option>
-                            <option value="Alemania">DEU</option>
-                            <option value="Grecia">GRC</option>
-                        </select>
-                        <input type="number" id="phone"  max="9" required>
+                            <select id="prefixPhone">
+                                <option value="Andorra">AND</option>
+                                <option value="España">ESP</option>
+                                <option value="Francia">FRA</option>
+                                <option value="Alemania">DEU</option>
+                                <option value="Grecia">GRC</option>
+                            </select>
+                            <input type="number" id="phone" max="9" required>
                         </div>
                         <div>
                             <input type="checkbox" name="regularAddress" id="regularAddress">
@@ -133,15 +139,17 @@
                         <input type="checkbox">
                     </form>
                 </div>
-            <div class="button-div">
-                <button id="clear-all-address" class="buttons">Clear All</button>
-                <button id="btn-next-address" class="buttons">Next</button>
-            </div>
-        </section>
+                <div class="button-div">
+                    <button id="clear-all-address" class="buttons">Clear All</button>
+                    <button id="btn-next-address" class="buttons">Next</button>
+                </div>
+            </section>
 
-        <!-- Apagar esta div de abajo -->
-        <div style="margin-top: 5em;"></div>
+            <!-- Apagar esta div de abajo -->
+            <div style="margin-top: 5em;"></div>
 
+
+            <!-- Shipping page --------------------------- -->
             <section id="shipping">
                 <aside class="aside-bar">
                     <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
@@ -172,7 +180,8 @@
                         <h3>Gift wrapper imgage</h3>
                         <div>
                             <label for="wrapper-img">Choose a Image to your package </label>
-                            <input type="file" name="wrapper-img" id="wrapper-img" accept=".png, .jpeg, .jpg, .gif, .tiff " style="visibility: hidden;" > 
+                            <input type="file" name="wrapper-img" id="wrapper-img"
+                                accept=".png, .jpeg, .jpg, .gif, .tiff " style="visibility: hidden;">
                         </div>
                     </div>
                 </div>
@@ -180,21 +189,27 @@
                     <button class="buttons" id="clear-all-user">Clear All</button>
                     <button class="buttons" id="btn-next-user"> Next </button>
                 </div>
-            </section>
-
-                    <textarea id="gift'text" name="gift" rows="5" cols="5"></textarea>
-                </div>
-
         </section>
-            <section id="detailsPage">
-                <div id="product-img-confirm">
-                    <img src="/assets/img/cs2pro/fotos numero.jpg" alt="Img product buying">
+
+
+        <!-- Detail page --------------------------- -->
+        <section id="detailsPage">
+            <aside class="aside-bar">
+                <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
+            </aside>
+
+            <div id="product-img-confirm">
+                <img src="/assets/img/cs2pro/fotos numero.jpg" alt="Img product buying">
+            </div>
+            <div id="details-confirm">
+                <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
+                <div>Delivery: price <span class="detail-price-order">9.99€</span> <span id="detail-order-product">(24h)
+                        delivery date 21/12/2021 </span></div>
+                <div>Payment Detail: <span id="detail-price-product">1600€</span> + <span
+                        class="detail-price-product">9.99€</span> Total <span id="detail-price-order">1609.99€</span>
                 </div>
-                <div id="details-confirm">
-                    <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
-                    <div>Delivery: price <span class="detail-price-order">9.99€</span> <span id="detail-order-product">(24h) delivery date 21/12/2021 </span></div>
-                    <div>Payment Detail: <span id="detail-price-product">1600€</span> + <span class="detail-price-product">9.99€</span>  Total <span id="detail-price-order">1609.99€</span> </div>
-                </div>
+            </div>
         </section>
     </body>
+
 </html>
