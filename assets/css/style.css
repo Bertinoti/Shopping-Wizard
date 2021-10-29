@@ -4,7 +4,7 @@ body{
 }
 
 /* footer */
-.contenedor{
+.containerfooter{
   display:grid;
   grid-template-columns: 1fr 1fr;
   font-size: 20px;
@@ -13,44 +13,47 @@ body{
 .socialmedia{
  align-self: auto;
 }
-.segundaColumna h4{
+.Social h4{
   cursor:pointer;
 }
 .socialmedia :hover{
   border-radius: 25px;
   cursor:pointer;
 }
-.primeraColumna :hover{
+.AboutUs :hover{
   cursor:pointer;
 }
 /* footer */
 .carrusel {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 
 }
 
 .carrusel ul {
   list-style: none;
-  margin: 0;
+  margin: 50px;
   padding: 0;
   max-width: 510px;
   scroll-behavior: auto;
+  gap: 20px;
 }
 
-.carrusel-fotos {
+.carrusel-photos {
   display: flex;
-  gap: 10px;
   overflow: hidden;
   align-items: center;
+  object-fit: contain;
 }
 
-.carrusel-fotos img {
+.carrusel-photos img {
   width: 500px;
   height: 400px;
   border-radius: 3px;
   object-fit: contain;
+  /* border: solid; */
+  /* gap: 500px; */
 }
 
 .carrusel-menu {
@@ -62,7 +65,15 @@ body{
   width: 100px;
   height: 80px;
 }
-.gridbotones{
+.carrusel-menu > div {
+  grid-column: 1/5;
+}
+
+#add-button {
+    margin: 0 10%;
+}
+
+.gridbuttons{
     display: none;
 }
 
@@ -73,18 +84,18 @@ body{
       padding: 0;
       scroll-behavior: auto;
     }
-  .gridbotones{
+  .gridbuttons{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
  
-    .carrusel-fotos {
+    .carrusel-photos {
       display: flex;
       gap: 120px;
       overflow: auto;
     }
     
-    .carrusel-fotos img {
+    .carrusel-photos img {
       background: black;
       border: 4px solid black;
       width: 400px;
@@ -94,6 +105,7 @@ body{
     
     .carrusel-menu {
       display: none;
+
     }
 }
 
@@ -136,7 +148,7 @@ nav a:link {
 
 nav a:active,
 nav a:hover {
-  background: #1b9bff;
+  background: #7e9c19;
   border-radius: 25px;
 }
 
@@ -172,6 +184,10 @@ height: 40px;
 width: 60%;
 }
 
+#add-button{
+  width: 80%;
+}
+
 
 /*Aside bar*/
 
@@ -202,6 +218,10 @@ input{
   width: 20%;
   background-color:#88e6e9;
   border-radius: 7px;
+}
+
+#regularAddress {
+  align-self: flex-start;
 }
 
 .aside-bar img{
@@ -250,4 +270,21 @@ input{
 
 #wrapper label{
   color: rgb(253, 80, 0);
+    display: flex;
+    flex: 100%;
+    flex-flow: column;
+    margin-top: 1 em;
+}
+
+#details-confirm > div {
+  text-align: center;
+  margin: 10px 10%;
+  border: 0.02em solid black;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
+#product-img-confirm{
+  width: 80%;
+  margin: 0 auto;
 }
