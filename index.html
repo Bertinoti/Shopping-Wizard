@@ -82,7 +82,7 @@
                     </div>
             </footer>
         </section>
-        <section id="user-page" class="row">
+        <section id="user-page">
             <div class="user-container">
                 <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
@@ -98,43 +98,42 @@
                 <button class="buttons" id="clear-all-user">Clear All</button>
                 <button class="buttons" id="btn-next-user"> Next </button>
             </div>
-            <section>
-                <form>
-                    <input type='text' id="firstName" placeholder="first name" required>
-                    <input type='text' id="lastName" placeholder="last name" required />
-                    <input type='date' id="birthday" placeholder="birthday" required />
-                    <input type='text' id="address1" placeholder="address1" required />
-                    <input type='text' id="address2" placeholder="address2" />
-                    <input type='number' id="postalCode" placeholder="postalCode" required />
-                    <select id="country">
-                        <option value="Andorra">Andorrra</option>
-                        <option value="España">España</option>
-                        <option value="Francia">Francia</option>
-                        <option value="Alemania">Alemania</option>
-                        <option value="Grecia">Grecia</option>
-                    </select>
-                    <div id="boxPhone">
-                    <select id="prefixPhone">
-                        <option value="Andorra">AND</option>
-                        <option value="España">ESP</option>
-                        <option value="Francia">FRA</option>
-                        <option value="Alemania">DEU</option>
-                        <option value="Grecia">GRC</option>
-                    </select>
-                    <input type="number" id="phone"  max="9" required>
-                    <input type="checkbox" id="regularAdrress">
-                    </div>
-                    <aside id="aside-address">
-                        <p>Step 1</p>
-                        <p>Step 2</p>
-                        <p>Step 3</p>
-                        <p>Finish</p>
+            <section id="addressPage">
+                <div class="user-container">
+                    <aside class="aside-bar">
+                        <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
                     </aside>
-                    <div>
-                        <button id="clear-all-address"></button>
-                        <button id="btn-next-address"></button>
-                    </div>
-                </form>
+                    <form>
+                        <input type='text' id="firstName" placeholder="first name" required>
+                        <input type='text' id="lastName" placeholder="last name" required />
+                        <input type='date' id="birthday" placeholder="birthday" required />
+                        <input type='text' id="address1" placeholder="address1" required />
+                        <input type='text' id="address2" placeholder="address2" />
+                        <input type='number' id="postalCode" placeholder="postalCode" required />
+                        <select id="country">
+                            <option value="Andorra">Andorrra</option>
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Grecia">Grecia</option>
+                        </select>
+                        <div class="boxPhone">
+                        <select id="prefixPhone">
+                            <option value="Andorra">AND</option>
+                            <option value="España">ESP</option>
+                            <option value="Francia">FRA</option>
+                            <option value="Alemania">DEU</option>
+                            <option value="Grecia">GRC</option>
+                        </select>
+                        <input type="number" id="phone"  max="9" required>
+                        <input type="checkbox" id="regularAdrress">
+                        </div>
+                        <div>
+                            <button id="clear-all-address" class="buttons">Clear All</button>
+                            <button id="btn-next-address" class="buttons">Next</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
             <!-- Apagar esta div de abajo -->
