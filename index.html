@@ -1,106 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/data.js" defer></script>
-    <script src="assets/javascript/dom.js" defer></script>
-    <script src="assets/javascript/events.js" defer></script>
-    <script src="assets/javascript/main.js" defer></script>
-    <title>PaintBall Marker Planet Ecplise</title>
-</head>
-<body>
-    <!-- <section>
-        <nav>
-            <ul>
-                <li>CS2</li>
-                <li>LV1.6</li>
-                <li>Geo 4</li>
-                <li>Emek</li>
-            </ul>
-        </nav>
-    </section> -->
-    <section id="user-page" class="row">
-        <div class="user-container">
-            <aside class="aside-bar">
-                <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
-            </aside>
-            <form id="user-form" class="column" >
-                <input type="text" id="username" required placeholder="Username">
-                <input type="email" id="email" required placeholder="youremail@mail.com">
-                <input type="password" id="password" required placeholder="P@ssw0rd">
-                <input type="password" id="confirm-password"required placeholder="P@ssw0rd">
-            </form>
-        </div>
-        <div class="button-div">
-            <button class="buttons" id="clear-all-user">Clear All</button>
-            <button class="buttons" id="btn-next-user"> Next </button>
-        </div>
-    <section>
-        <form>
-            <input type='text' id="firstName" placeholder="first name" required>
-            <input type='text' id="lastName" placeholder="last name" required />
-            <input type='date' id="birthday" placeholder="birthday" required />
-            <input type='text' id="address1" placeholder="address1" required />
-            <input type='text' id="address2" placeholder="address2" />
-            <input type='number' id="postalCode" placeholder="postalCode" required/>
-            <select id="country">
-                <option value="Andorra">Andorrra</option>
-                <option value="España">España</option>
-                <option value="Francia">Francia</option>
-                <option value="Alemania">Alemania</option>
-                <option value="Grecia">Grecia</option>
-            </select>
-            <aside id="aside-address">
-                <p>Step 1</p>
-                <p>Step 2</p>
-                <p>Step 3</p>
-                <p>Finish</p>
-            </aside>
-            <div>
-                <button id="clear-all-address"></button>
-                <button id="btn-next-address"></button>
-            </div>
-        </form>
-    </section>
 
-    <!-- Apagar esta div de abajo -->
-    <div style="margin-top: 5em;"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/javascript/data.js" defer></script>
+        <script src="assets/javascript/dom.js" defer></script>
+        <script src="assets/javascript/events.js" defer></script>
+        <script src="assets/javascript/main.js" defer></script>
+        <title>PaintBall Marker Planet Ecplise</title>
+    </head>
 
-    <section id="shipping">
-        <aside class="aside-bar">
-            <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
-        </aside>
-        <h3>shipping Method</h3>
-        <div id="shipping-method">
-            <div>
-                <input type="radio" name="shipping" id="standart-shipping">
-                <label for="standart-shipping">Standart Shipping -<br> Free 5 to 7 days </label>
+    <body>
+        <section id="homepage">
+            <div id="main-image">
+                <nav id="navbar">
+                    <img src="./assets/img/logo.jpg" id="logo-img" alt="logo">
+                    <ul>
+                        <li><a href="">CS2</a></li>
+                        <li><a href="">LV1.6</a></li>
+                        <li><a href="">Geo 4</a></li>
+                        <li><a href="">Emek</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <input type="radio" name="shipping" id="express-shipping">
-                <label for="express-shipping">Express Shipping -<br> 9.99€ 3 to 5 days</label>
+
+
+            <main>
+                <div class="carrusel">
+                    <ul class="carrusel-fotos">
+                        <li id="foto1"><img src="/assets/Imagenes/cs2pro/firstimageee.jpg" alt=""></li>
+                        <li id="foto2"><img src="/assets/Imagenes/cs2pro/bluegold.jpg" alt=""></li>
+                        <li id="foto3"><img src="/assets/Imagenes/cs2pro/blackpurple.jpg" alt=""></li>
+                        <li id="foto4"><img src="/assets/Imagenes/cs2pro/red-black.jpg" alt=""></li>
+                    </ul>
+                    <ul class="carrusel-menu">
+                        <li><a href="#foto1"><img src="/assets/Imagenes/cs2pro/firstimageee.jpg" alt=""></a></li>
+                        <li><a href="#foto2"><img src="/assets/Imagenes/cs2pro/bluegold.jpg" alt=""></a></li>
+                        <li><a href="#foto3"><img src="/assets/Imagenes/cs2pro/blackpurple.jpg" alt=""></a></li>
+                        <li><a href="#foto4"><img src="/assets/Imagenes/cs2pro/red-black.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="gridbotones">
+                    <form method="get" action="#foto1" class="boton">
+                        <button type="submit" style="background-color: rgb(104, 97, 110);">
+                    </form>
+                    <form method="get" action="#foto2" class="boton">
+                        <button type="submit" style="background-color: rgb(25, 33, 110);">
+                    </form>
+                    <form method="get" action="#foto3" class="boton">
+                        <button type="submit" style="background-color: rgb(46, 5, 37);">
+                    </form>
+                    <form method="get" action="#foto4" class="boton">
+                        <button type="radio" style="background-color: rgb(167, 10, 10);">
+                    </form>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="contenedor">
+                    <div class="primeraColumna">
+                        <h4>Informacion</h4>
+                        <br>
+                        <ul>
+                            <li>Sobre nosotros</li><br>
+                            <li>Nuestros servicios</li><br>
+                            <li>Politica de privacidad</li><br>
+                        </ul>
+                    </div>
+                    <div class="segundaColumna">
+                        <h4>Siguenos</h4>
+                        <div class="socialmedia">
+                            <i class="fa-brands fa-facebook fa-2x"></i> <br>
+                            <i class="fa-brands fa-instagram-square fa-2x"></i><br>
+                            <i class="fa-brands fa-youtube-square fa-2x"></i><br>
+                        </div>
+                    </div>
+            </footer>
+        </section>
+        <section id="user-page" class="row">
+            <div class="user-container">
+                <aside class="aside-bar">
+                    <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
+                </aside>
+                <form id="user-form" class="column">
+                    <input type="text" id="username" required placeholder="Username">
+                    <input type="email" id="email" required placeholder="youremail@mail.com">
+                    <input type="password" id="password" required placeholder="P@ssw0rd">
+                    <input type="password" id="confirm-password" required placeholder="P@ssw0rd">
+                </form>
             </div>
-            <div>
-                <input type="radio" name="shipping" id="24h-shipping">
-                <label for="24h-shipping">24h Shipping -<br> 19.99€ 24h to order before to 15h</label>
+            <div class="button-div">
+                <button class="buttons" id="clear-all-user">Clear All</button>
+                <button class="buttons" id="btn-next-user"> Next </button>
             </div>
-        </div>
-        <div id="gift-area">
-            <div>
-                <input type="checkbox" name="gift" id="isGift">
-                <label for="gift"> Is it a gift?</label>
-            </div>
-            <textarea id="gift'text" name="gift" rows="5" cols="5">
+            <section>
+                <form>
+                    <input type='text' id="firstName" placeholder="first name" required>
+                    <input type='text' id="lastName" placeholder="last name" required />
+                    <input type='date' id="birthday" placeholder="birthday" required />
+                    <input type='text' id="address1" placeholder="address1" required />
+                    <input type='text' id="address2" placeholder="address2" />
+                    <input type='number' id="postalCode" placeholder="postalCode" required />
+                    <select id="country">
+                        <option value="Andorra">Andorrra</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Grecia">Grecia</option>
+                    </select>
+                    <aside id="aside-address">
+                        <p>Step 1</p>
+                        <p>Step 2</p>
+                        <p>Step 3</p>
+                        <p>Finish</p>
+                    </aside>
+                    <div>
+                        <button id="clear-all-address"></button>
+                        <button id="btn-next-address"></button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Apagar esta div de abajo -->
+            <div style="margin-top: 5em;"></div>
+
+            <section id="shipping">
+                <aside class="aside-bar">
+                    <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
+                </aside>
+                <h3>shipping Method</h3>
+                <div id="shipping-method">
+                    <div>
+                        <input type="radio" name="shipping" id="standart-shipping">
+                        <label for="standart-shipping">Standart Shipping -<br> Free 5 to 7 days </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="shipping" id="express-shipping">
+                        <label for="express-shipping">Express Shipping -<br> 9.99€ 3 to 5 days</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="shipping" id="24h-shipping">
+                        <label for="24h-shipping">24h Shipping -<br> 19.99€ 24h to order before to 15h</label>
+                    </div>
+                </div>
+                <div id="gift-area">
+                    <div>
+                        <input type="checkbox" name="gift" id="isGift">
+                        <label for="gift"> Is it a gift?</label>
+                    </div>
+                    <textarea id="gift'text" name="gift" rows="5" cols="5">
             </textarea>
-        </div>
+                </div>
 
-    </section>
-    
-</body>
+            </section>
+
+    </body>
+
 </html>
 
 <!-- <div id="product-img-confirm">
