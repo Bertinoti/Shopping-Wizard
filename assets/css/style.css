@@ -5,10 +5,12 @@ body{
 
 
 /*Aside bar*/
-.user-container {
 
+/**************separador div *************/
+section .button-div{
+    margin-bottom: 5em;
 }
-
+/*****************************************/
 form{
     display:flex;
     flex-flow: column;
@@ -46,3 +48,25 @@ aside > p{
     width: 95%;
     margin: 1em auto 2em auto;
 }
+#shipping{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#shipping-method{
+    width: 70%;
+}
+
+#shipping-method div{
+    flex-flow: column wrap;
+    padding: .6em;
+    width: 100%;
+
+}
+#gift-area{
+    display: flex;
+    flex: 100%;
+    flex-flow: column;
+    margin-top: 1 em;
+}
+
