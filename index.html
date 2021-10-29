@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/javascript/data.js" defer></script>
         <script src="assets/javascript/dom.js" defer></script>
         <script src="assets/javascript/events.js" defer></script>
@@ -15,10 +16,10 @@
     </head>
 
     <body>
-        <section id="homepage">
+        <section id="home-page">
             <div id="main-image">
-                <nav id="navbar">
-                    <img src="./assets/img/logo.jpg" id="logo-img" alt="logo">
+                <nav id="nav-bar">
+                    <img src="/assets/img/logo.jpg" id="logo-img" alt="logo">
                     <ul>
                         <li><a href="">CS2</a></li>
                         <li><a href="">LV1.6</a></li>
@@ -32,16 +33,16 @@
             <main>
                 <div class="carrusel">
                     <ul class="carrusel-fotos">
-                        <li id="foto1"><img src="/assets/Imagenes/cs2pro/firstimageee.jpg" alt=""></li>
-                        <li id="foto2"><img src="/assets/Imagenes/cs2pro/bluegold.jpg" alt=""></li>
-                        <li id="foto3"><img src="/assets/Imagenes/cs2pro/blackpurple.jpg" alt=""></li>
-                        <li id="foto4"><img src="/assets/Imagenes/cs2pro/red-black.jpg" alt=""></li>
+                        <li id="foto1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></li>
+                        <li id="foto2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></li>
+                        <li id="foto3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></li>
+                        <li id="foto4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></li>
                     </ul>
                     <ul class="carrusel-menu">
-                        <li><a href="#foto1"><img src="/assets/Imagenes/cs2pro/firstimageee.jpg" alt=""></a></li>
-                        <li><a href="#foto2"><img src="/assets/Imagenes/cs2pro/bluegold.jpg" alt=""></a></li>
-                        <li><a href="#foto3"><img src="/assets/Imagenes/cs2pro/blackpurple.jpg" alt=""></a></li>
-                        <li><a href="#foto4"><img src="/assets/Imagenes/cs2pro/red-black.jpg" alt=""></a></li>
+                        <li><a href="#foto1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></a></li>
+                        <li><a href="#foto2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></a></li>
+                        <li><a href="#foto3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></a></li>
+                        <li><a href="#foto4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></a></li>
                     </ul>
                 </div>
                 <br>
@@ -81,7 +82,7 @@
                     </div>
             </footer>
         </section>
-        <section id="user-page" class="row">
+        <section id="user-page">
             <div class="user-container">
                 <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
@@ -97,36 +98,42 @@
                 <button class="buttons" id="clear-all-user">Clear All</button>
                 <button class="buttons" id="btn-next-user"> Next </button>
             </div>
-
-            <!-- Apagar esta div de abajo -->
-            <div style="margin-top: 5em;"></div>
-
-            <section>
-                <form>
-                    <input type='text' id="firstName" placeholder="first name" required>
-                    <input type='text' id="lastName" placeholder="last name" required />
-                    <input type='date' id="birthday" placeholder="birthday" required />
-                    <input type='text' id="address1" placeholder="address1" required />
-                    <input type='text' id="address2" placeholder="address2" />
-                    <input type='number' id="postalCode" placeholder="postalCode" required />
-                    <select id="country">
-                        <option value="Andorra">Andorrra</option>
-                        <option value="España">España</option>
-                        <option value="Francia">Francia</option>
-                        <option value="Alemania">Alemania</option>
-                        <option value="Grecia">Grecia</option>
-                    </select>
-                    <aside id="aside-address">
-                        <p>Step 1</p>
-                        <p>Step 2</p>
-                        <p>Step 3</p>
-                        <p>Finish</p>
+            <section id="addressPage">
+                <div class="user-container">
+                    <aside class="aside-bar">
+                        <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
                     </aside>
-                    <div>
-                        <button id="clear-all-address"></button>
-                        <button id="btn-next-address"></button>
-                    </div>
-                </form>
+                    <form>
+                        <input type='text' id="firstName" placeholder="first name" required>
+                        <input type='text' id="lastName" placeholder="last name" required />
+                        <input type='date' id="birthday" placeholder="birthday" required />
+                        <input type='text' id="address1" placeholder="address1" required />
+                        <input type='text' id="address2" placeholder="address2" />
+                        <input type='number' id="postalCode" placeholder="postalCode" required />
+                        <select id="country">
+                            <option value="Andorra">Andorrra</option>
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Grecia">Grecia</option>
+                        </select>
+                        <div class="boxPhone">
+                        <select id="prefixPhone">
+                            <option value="Andorra">AND</option>
+                            <option value="España">ESP</option>
+                            <option value="Francia">FRA</option>
+                            <option value="Alemania">DEU</option>
+                            <option value="Grecia">GRC</option>
+                        </select>
+                        <input type="number" id="phone"  max="9" required>
+                        <input type="checkbox" id="regularAdrress">
+                        </div>
+                        <div>
+                            <button id="clear-all-address" class="buttons">Clear All</button>
+                            <button id="btn-next-address" class="buttons">Next</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
             <!-- Apagar esta div de abajo -->
