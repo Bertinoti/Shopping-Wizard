@@ -62,6 +62,10 @@ body{
   width: 100px;
   height: 80px;
 }
+.carrusel-menu img:hover{
+   transform: scale(1.5);
+  }
+
 .gridbotones{
     display: none;
 }
