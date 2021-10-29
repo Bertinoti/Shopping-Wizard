@@ -92,16 +92,19 @@
         display: none;
       }
   }
-/* Starting Document */
-
-
 
 
 /* Navigation Bar */
-
-nav{ 
+nav{
     display: flex;
     height: 4em;
+
+} 
+
+
+nav{ 
+  display: flex;
+  height: 4em;
 }
 
 nav ul {
