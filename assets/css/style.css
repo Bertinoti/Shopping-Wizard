@@ -92,25 +92,19 @@
         display: none;
       }
   }
-/* Starting Document */
 
 
-
-
-<<<<<<< HEAD
-#nav-bar {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 2em;
-=======
 /* Navigation Bar */
-
-nav{ 
+nav{
     display: flex;
     height: 4em;
->>>>>>> baaf6aceb91e07612ba66088e0102c13d7e71a5d
+
+} 
+
+
+nav{ 
+  display: flex;
+  height: 4em;
 }
 
 nav ul {
