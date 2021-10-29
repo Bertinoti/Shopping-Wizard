@@ -97,6 +97,10 @@
                 <button class="buttons" id="clear-all-user">Clear All</button>
                 <button class="buttons" id="btn-next-user"> Next </button>
             </div>
+
+            <!-- Apagar esta div de abajo -->
+            <div style="margin-top: 5em;"></div>
+
             <section>
                 <form>
                     <input type='text' id="firstName" placeholder="first name" required>
@@ -132,7 +136,7 @@
                 <aside class="aside-bar">
                     <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
                 </aside>
-                <h3>shipping Method</h3>
+                <h3>Shipping Method</h3>
                 <div id="shipping-method">
                     <div>
                         <input type="radio" name="shipping" id="standart-shipping">
@@ -152,10 +156,20 @@
                         <input type="checkbox" name="gift" id="isGift">
                         <label for="gift"> Is it a gift?</label>
                     </div>
-                    <textarea id="gift'text" name="gift" rows="5" cols="5">
-            </textarea>
+                    <textarea id="gift'text" name="gift" rows="5" cols="5" placeholder="write here your gift message ">
+                    </textarea>
+                    <div id="wrapper">
+                        <h3>Gift wrapper imgage</h3>
+                        <div>
+                            <label for="wrapper-img">Choose a Image to your package </label>
+                            <input type="file" name="wrapper-img" id="wrapper-img" accept=".png, .jpeg, .jpg, .gif, .tiff " style="visibility: hidden;" > 
+                        </div>
+                    </div>
                 </div>
-
+                <div class="button-div">
+                    <button class="buttons" id="clear-all-user">Clear All</button>
+                    <button class="buttons" id="btn-next-user"> Next </button>
+                </div>
             </section>
 
     </body>
