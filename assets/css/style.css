@@ -213,6 +213,10 @@ aside > p{
     border-radius: 7px;
 }
 
+#regularAddress {
+  align-self: flex-start;
+}
+
 .aside-bar img{
     width: 95%;
     margin: 1em auto 2em auto;
@@ -237,4 +241,17 @@ aside > p{
     flex: 100%;
     flex-flow: column;
     margin-top: 1 em;
+}
+
+#details-confirm > div {
+  text-align: center;
+  margin: 10px 10%;
+  border: 0.02em solid black;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
+#product-img-confirm{
+  width: 80%;
+  margin: 0 auto;
 }
