@@ -103,11 +103,15 @@
                     </aside>
                     <form>
                         <input type='text' id="firstName" placeholder="first name" required>
+                        <p id ="errorFirstName"></p>
                         <input type='text' id="lastName" placeholder="last name" required />
+                        <p id ="errorLastName"></p>
                         <input type='date' id="birthday" placeholder="birthday" required />
                         <input type='text' id="address1" placeholder="address1" required />
+                        <p id ="errorAddress"></p>
                         <input type='text' id="address2" placeholder="address2" />
                         <input type='number' id="postalCode" placeholder="postalCode" required />
+                        <p id ="errorPostCode"></p>
                         <select id="country">
                             <option value="Andorra">Andorrra</option>
                             <option value="España">España</option>
@@ -125,6 +129,7 @@
                         </select>
                         <input type="number" id="phone"  max="9" required>
                         </div>
+                        <p id ="errorPhone"></p>
                         <div>
                             <input type="checkbox" name="regularAddress" id="regularAddress">
                             <label for="regularAddress">This is my regular address</label>
