@@ -154,18 +154,16 @@ nav a:visited {
 }  */
 
 
-.main-image{
+.main-image {
   display: flex;
 }
 
-#logo-img{
-  height: 90%;
-  width: 20%;
+#logo-img {
   padding-left: 1em;
 }
 
 
-.button-add{
+.button-add {
   width: 100%;
   background-color: rgb(81, 255, 0);
   padding: 1em;
@@ -284,4 +282,16 @@ input{
 #product-img-confirm{
   width: 80%;
   margin: 0 auto;
+}
+
+
+
+.error {
+  border-color: red;
+  background-color: rgb(246, 135, 135);
+}
+
+.success{
+  border-color: green;
+  background-color: rgb(169, 233, 169);
 }
