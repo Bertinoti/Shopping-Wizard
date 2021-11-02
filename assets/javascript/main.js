@@ -109,6 +109,8 @@ function setSuccessFor(input, p, message) {
     p.innerHTML = message
 }
 
+/*-----------------------------------------------------------*/
+//TODO change divs 
 function changeDiv(divNum){
     if (divNum < 4){
         actual= DIV_ARRAY[divNum];
@@ -124,6 +126,7 @@ function changeDiv(divNum){
 
 }
 
+//TODO choose delivery method
 function chooseShippment() {
     SHIP_VALUE=0;
     for (var i = 0, length = RADIO_SHIP_BUTTON.length; i < length; i++) {
@@ -137,6 +140,28 @@ function chooseShippment() {
     return SHIP_VALUE;
 }
 
+//TODO print date delivery info
+testButton= document.getElementById('testButton')
+testButton.addEventListener('click', function(){deliveryinfo(3, 5)})
+function deliveryinfo( min, max) {
+    let dateOrder= new Date()
+    year= dateOrder.getFullYear()
+    month= dateOrder.getMonth()
+    day1= dateOrder.getDate()+ min;
+    day2= dateOrder.getDate()+ max;
+    hour= dateOrder.getHours()
+
+    monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+    //console.log(dateOrder  )
+    //console.log(day, month, year)
+    //console.log(dateOrder.setDate(2) , month, year)
+
+    console.log(`Your order will be delivery between ${day1} ${monthArray[month] } ${year} and ${day2} ${monthArray[month]} ${year}`);
+
+}
+
+//TODO  save the gift message
 function giftMsg() {
     let giftMenssage=''
     if (RADIO_MSG_BUTTON[0].checked) {
@@ -145,6 +170,7 @@ function giftMsg() {
     }
 }
 
+//TODO save wrapper file image
 wrapperFile.onchange = function() {
     var fileList = wrapperFile.files;
     wrapperimg= fileList[0]
@@ -152,6 +178,7 @@ wrapperFile.onchange = function() {
     modalText(addText)
 }
 
+//TODO modal window
 function modalText(text) {
     pOne= document.createElement('p')
     pOne.innerHTML= text
@@ -166,34 +193,39 @@ function modalText(text) {
 //  modal.style.display = "block";
 //}
 
+//TODO modal open
 function openModal() {
     MODAL.style.display = "block";
 }
+//TODO modal close
 function closeModal() {
     MODAL.style.display = "none";
 }
 
-// When the user clicks on <span> (x), close the modal
+//TODO clicks on <span> (x), close the modal
 SPAN.onclick = function() {
     MODAL.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+//TODO clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == MODAL) {
         MODAL.style.display = "none";
     }
 }
 
+//TODO start time do section close
 // window.onload= function(){
 //     timeSection()
 // }
 
+//TODO clear all forms
 function clearAllSection() {
-
     alert('all section are clear')
 }
 
+//TODO when time finish clear forms and go to main page
+//TODO display the time remain to user 
 function timeSection() {
     setTimeout(function(){
         clearAllSection()
@@ -206,6 +238,7 @@ function timeSection() {
     }, 2*1000);
 }
 
+/*--------------------------------------------------------------------------*/
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
     imgProduct.src= targetCart.querySelector('img').src
