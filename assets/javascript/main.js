@@ -93,8 +93,13 @@ function validateFormUser (e) {
     if (!validatePassword ()) isValid = false
     if (!validate2Password ()) isValid = false
 
-    if (isValid)
-    console.log('validado');
+    return isValid;
+}
+
+function saveFormUser() {
+    userDatas.username = FORM_USERNAME.textContent;
+    userDatas.email = FORM_EMAIL.textContent;
+    userDatas.password = FORM_PASSWORD.textContent;
 }
 
 function setErrorFor(input, p ,message) {

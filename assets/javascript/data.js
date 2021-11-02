@@ -10,4 +10,8 @@ const Cart= {
 
 
 // solo para probar
-
+const userDatas = {
+    username: null,
+    email: null,
+    password: null
+};
