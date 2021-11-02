@@ -13,7 +13,7 @@ function validateAddress (inputValidation) {
 //  POSTAL CODE VERIFICATION  //
 function validatePostalCode (inputValidation) {
     var postalCodeValue = inputValidation.value.trim();
-    return (postalCodeValue.length < 5) ? true : false;
+    return (postalCodeValue.length < 6) ? true : false;
 }
 
 //  PHONE VERIFICATION  //
@@ -22,17 +22,28 @@ function validatePhone (inputValidation) {
     return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
 }
 
-function isValidateFormAddr() {
-    if(validateSurName(FORM_FIRST_NAME)) isValid = false;
-    if(validateSurName(FORM_LAST_NAME)) isValid = false;
-    if(validateAdress(FORM_ADDR1)) isValid = false;
-    if(validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
-    if(validatePhone(FORM_PHONE)) isValid = false;
+function isValidateFormAddr(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    if(!validateSurName(FORM_FIRST_NAME)) isValid = false;
+    if(!validateSurName(FORM_LAST_NAME)) isValid = false;
+    if(!validateAddress(FORM_ADDR1)) isValid = false;
+    if(!validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
+    if(!validatePhone(FORM_PHONE)) isValid = false;
+
     return isValid;
 }
 
-var isValid = true
-
+function saveFormAddr() {
+    addrDatas.firstName = FORM_FIRST_NAME.value;
+    addrDatas.lastName = FORM_LAST_NAME.value;
+    addrDatas.birthday = FORM_BIRTHDAY.value;
+    addrDatas.addr = FORM_ADDR1.value  + ' ' + FORM_ADDR2.value;
+    addrDatas.postalCode = FORM_POSTAL_CODE.value;
+    addrDatas.country = FORM_COUNTRY.value;
+    addrDatas.phone = FORM_PHONE.value;
+}
 
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
