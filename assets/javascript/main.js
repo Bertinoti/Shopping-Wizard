@@ -97,9 +97,9 @@ function validateFormUser (e) {
 }
 
 function saveFormUser() {
-    userDatas.username = FORM_USERNAME.textContent;
-    userDatas.email = FORM_EMAIL.textContent;
-    userDatas.password = FORM_PASSWORD.textContent;
+    userDatas.username = FORM_USERNAME.value;
+    userDatas.email = FORM_EMAIL.value;
+    userDatas.password = FORM_PASSWORD.value;
 }
 
 function setErrorFor(input, p ,message) {
