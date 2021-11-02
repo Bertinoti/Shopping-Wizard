@@ -210,6 +210,7 @@ function chooseProduct(e){
     colorProduct.textContent=targetCart.querySelector('h4').textContent
     productName.textContent=targetCart.querySelector('p').textContent
     // priceProduct.textContent=targetCart.querySelector('.precio').textContent
+    console.log(imgProduct.src)
 }
 
 function addCart(collect){
