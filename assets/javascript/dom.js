@@ -72,7 +72,7 @@ const detailsProduct=document.querySelector("#detail-title-product")
 const detailsPriceProduct=document.querySelectorAll(".detail-price-order")
 const detailsPriceShipping=document.querySelector("#detail-order-product")
 const detailsPriceTotal=document.querySelector("#detail-priceTotal-order")
-const BUTTON_MAIN=document.querySelector("#buttonMain")
+const BUTTON_MAIN=document.querySelector("#add-button")
 //Prueba
 
 const carruselShopping=document.querySelectorAll("#carruselShopping li")
