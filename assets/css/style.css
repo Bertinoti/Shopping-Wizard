@@ -63,24 +63,37 @@ body{
 }
 /*-----------------------------*/
 /* footer */
-.containerfooter{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 20px;
-  place-items: center;
+footer{
+  position: relative;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.socialmedia{
-  align-self: auto;
+footer .socialmedia{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 10px 0;
+ flex-wrap: wrap;
 }
-.Social h4{
-  cursor:pointer;
+
+.socialmedia li {
+  list-style: none;
 }
-.socialmedia :hover{
-  border-radius: 25px;
-  cursor:pointer;
+
+.socialmedia li i{
+  font-size: 3em;
+  /* color: aliceblue; */
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0,5s;
 }
-.AboutUs :hover{
-  cursor:pointer;
+.socialmedia li i:hover{
+  transform:translateY(-5px);
+  cursor: pointer;
 }
 /* footer */
 .carrusel {
@@ -118,6 +131,7 @@ body{
 .carrusel-menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
 }
 .carrusel-menu img {
   box-sizing: border-box;
@@ -356,4 +370,11 @@ input{
 .success{
   border-color: green;
   background-color: rgb(169, 233, 169);
+}
+.buttonAddToCart{
+align-items: center;
+
+}
+.info-card{
+    display: hidden;
 }

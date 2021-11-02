@@ -56,3 +56,10 @@ USER_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(1)})
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(2)})
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
 DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
+carruselShopping.forEach( Element => {
+    Element.addEventListener("click", (e) => {
+        chooseProduct(e)
+    })
+})
+
+BUTTON_MAIN.addEventListener("click", addCart)
