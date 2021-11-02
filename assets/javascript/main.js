@@ -106,6 +106,7 @@ function setSuccessFor(input, p, message) {
     input.classList.remove("error")
     input.classList.add("success")
     p.innerHTML = message
+}
 
 function changeDiv(divNum){
     if (divNum < 4){
