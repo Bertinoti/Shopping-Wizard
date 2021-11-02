@@ -219,6 +219,7 @@ function addCart(collect){
     console.log(collect);
     Cart.img = imgProduct.src
     Cart.color = colorProduct.textContent
+    Cart.product=productName.textContent
     // Cart.priceProduct = priceProduct.textContent
     console.log(Cart)
 }
@@ -226,7 +227,8 @@ function addCart(collect){
 function showPaintball(){
         detailsProduct.innerHTML=Cart.img
         detailsPriceProduct.innerHTML=Cart.priceProduct
-        detailsPriceShipping.innerHTML=Cart.priceShipping
-        detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
+        // detailsPriceShipping.innerHTML=Cart.priceShipping
+        // detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
+        productNameselected.innerHTML=Cart.product
 }
 // solo para probar 

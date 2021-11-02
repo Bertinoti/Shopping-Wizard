@@ -5,7 +5,8 @@ const Cart= {
     img:null,
     color:null,
     priceProduct:null,
-    priceShipping:null
+    priceShipping:null,
+    // productNameSelected:null
 }
 
 
