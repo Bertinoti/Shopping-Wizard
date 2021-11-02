@@ -226,3 +226,4 @@ function showPaintball(){
         detailsPriceShipping.innerHTML=Cart.priceShipping
         detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
 }
+// solo para probar 

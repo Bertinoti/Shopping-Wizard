@@ -81,3 +81,5 @@ const imgProduct=document.querySelector("#photo")
 const colorProduct=document.querySelector("#colorProduct")
 const productName=document.querySelector("#productName")
 const priceProduct=document.querySelector("#priceProduct")
+
+// solo para probar

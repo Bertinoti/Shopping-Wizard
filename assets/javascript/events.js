@@ -63,3 +63,6 @@ carruselShopping.forEach( Element => {
 })
 
 BUTTON_MAIN.addEventListener("click", addCart)
+
+
+// solo para probar 
