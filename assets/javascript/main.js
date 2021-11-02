@@ -178,11 +178,11 @@ SPAN.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        MODAL.style.display = "none";
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         MODAL.style.display = "none";
+//     }
+// }
 
 // window.onload= function(){
 //     timeSection()
