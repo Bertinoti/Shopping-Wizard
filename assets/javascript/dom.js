@@ -62,7 +62,7 @@ const MODAL = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 const SPAN = document.getElementsByClassName("close")[0];
 
-checkFunction.addEventListener('click', changeDiv(3) )
+// checkFunction.addEventListener('click', changeDiv(3) )
 
 
 
