@@ -5,7 +5,7 @@ function validateSurName (inputValidation) {
 }
 
 //  ADDRESS VERIFICATION  //
-function validateAdress (inputValidation) {
+function validateAddress (inputValidation) {
     var address1Value = inputValidation.value.trim();
     return (address1Value.length < 50) ? true : false;
 }
@@ -32,6 +32,7 @@ function isValidateFormAddr() {
 }
 
 var isValid = true
+
 
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
@@ -154,7 +155,7 @@ wrapperFile.onchange = function() {
 function modalText(text) {
     pOne= document.createElement('p')
     pOne.innerHTML= text
-    modalContent[0].appendChild(pOne)
+    MODAL_CONTENT[0].appendChild(pOne)
     openModal()
     setTimeout(closeModal, 3000)
 }
@@ -179,7 +180,7 @@ SPAN.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == MODAL) {
         MODAL.style.display = "none";
     }
 }
@@ -204,6 +205,7 @@ function timeSection() {
         cont-=2;
     }, 2*1000);
 }
+
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
     imgProduct.src= targetCart.querySelector('img').src
