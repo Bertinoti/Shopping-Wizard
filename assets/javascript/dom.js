@@ -55,14 +55,14 @@ var wrapperFile= document.getElementById('wrapper-img-id')
 var wrapperimg={}
 
 
-//Dom Modal window 
+//Dom Modal window
 // Get the modal
 const MODAL_CONTENT= document.getElementsByClassName('modal-content')
 const MODAL = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 const SPAN = document.getElementsByClassName("close")[0];
 
-//checkFunction.addEventListener('click', wrapperFileUpload )
+// checkFunction.addEventListener('click', changeDiv(3) )
 
 
 
@@ -81,3 +81,5 @@ const imgProduct=document.querySelector("#photo")
 const colorProduct=document.querySelector("#colorProduct")
 const productName=document.querySelector("#productName")
 const priceProduct=document.querySelector("#priceProduct")
+
+// solo para probar
