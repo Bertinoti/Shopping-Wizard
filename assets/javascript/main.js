@@ -28,8 +28,9 @@ function isValidateFormAddr() {
     if(validateAdress(FORM_ADDR1)) isValid = false;
     if(validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
     if(validatePhone(FORM_PHONE)) isValid = false;
-
     return isValid;
+}
+
 var isValid = true
 
 function validateUserName () {
@@ -56,7 +57,7 @@ function validateEmail () {
         setErrorFor(FORM_EMAIL,ERROR_EMAIL,'Invalid Email');
         return false
     }
-    }
+}
 
 function validatePassword(){
     // PASSWORD VERIFICATION //
