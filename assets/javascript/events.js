@@ -50,3 +50,16 @@ FORM_PASSWORD_CHECK.addEventListener('focus', (e) => {
 BTN_ADD_USER_FORM.addEventListener('click', (e) => {
         validateFormUser(e);
 });
+// All events here
+MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
+USER_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(1)})
+ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(2)})
+SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
+DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
+carruselShopping.forEach( Element => {
+    Element.addEventListener("click", (e) => {
+        chooseProduct(e)
+    })
+})
+
+BUTTON_MAIN.addEventListener("click", addCart)
