@@ -211,7 +211,7 @@ function chooseProduct(e){
     imgProduct.src= targetCart.querySelector('img').src
     colorProduct.textContent=targetCart.querySelector('h4').textContent
     productName.textContent=targetCart.querySelector('p').textContent
-    // priceProduct.textContent=targetCart.querySelector('.precio').textContent
+    priceProduct.textContent=targetCart.querySelector('.precio').textContent
     console.log(imgProduct.src)
 }
 
@@ -220,14 +220,14 @@ function addCart(collect){
     Cart.img = imgProduct.src
     Cart.color = colorProduct.textContent
     Cart.product=productName.textContent
-    // Cart.priceProduct = priceProduct.textContent
+    Cart.priceProduct = priceProduct.textContent
     console.log(Cart)
 }
 
 function showPaintball(){
         detailsProduct.innerHTML=Cart.img
         detailsPriceProduct.innerHTML=Cart.priceProduct
-        // detailsPriceShipping.innerHTML=Cart.priceShipping
+        detailsPriceShipping.innerHTML=Cart.priceShipping
         // detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
         productNameselected.innerHTML=Cart.product
 }
