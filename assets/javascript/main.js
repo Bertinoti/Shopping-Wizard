@@ -125,26 +125,39 @@ function changeDiv(divNum){
     }
 
 }
-
 //TODO choose delivery method
 function chooseShippment() {
-    SHIP_VALUE=0;
+    shipValue=0;
     for (var i = 0, length = RADIO_SHIP_BUTTON.length; i < length; i++) {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
-            console.log(RADIO_SHIP_BUTTON[i].value);
-            console.log(SHIP_VALUE);
+            //console.log(RADIO_SHIP_BUTTON[i].value);
+            console.log(shipValue);
             break;
         }
     }
-    return SHIP_VALUE;
+    return shipValue;
+}
+
+function deliveryDate(){
+    chooseShippment()
+    console.log(shipValue)
+    if(shipValue == 19.99){
+        deliveryinfo(1, 2)
+    }else
+    if( shipValue == 9.99){
+        deliveryinfo(3, 5)
+    }else{
+        deliveryinfo(5, 7)
+    }
 }
 
 //TODO print date delivery info
 testButton= document.getElementById('testButton')
-testButton.addEventListener('click', function(){deliveryinfo(3, 5)})
+testButton.addEventListener('click', deliveryDate)
+
 function deliveryinfo( min, max) {
-    let dateOrder= new Date()
+    let dateOrder = new Date()
     year= dateOrder.getFullYear()
     month= dateOrder.getMonth()
     day1= dateOrder.getDate()+ min;
