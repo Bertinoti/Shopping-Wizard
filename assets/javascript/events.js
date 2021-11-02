@@ -11,7 +11,7 @@ FORM_LAST_NAME.addEventListener('focus', (e) => {
 });
 
 FORM_ADDR1.addEventListener('focus', (e) => {
-        (validateAdress1(FORM_ADDR1))
+        (validateAddress1(FORM_ADDR1))
                 ? setSuccessFor(FORM_LAST_NAME,ERROR_USERNAME,'Valid First name')
                 : setErrorFor(FORM_LAST_NAME,ERROR_USERNAME,'Invalid First name');
 });
