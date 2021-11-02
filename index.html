@@ -91,9 +91,13 @@
                 </aside>
                 <form id="user-form" class="column">
                     <input type="text" id="username" required placeholder="Username">
+                    <p id ="errorUserName"></p>
                     <input type="email" id="email" required placeholder="youremail@mail.com">
+                    <p id ="errorEmail"></p>
                     <input type="password" id="password" required placeholder="P@ssw0rd">
+                    <p id ="errorPassword"></p>
                     <input type="password" id="confirm-password" required placeholder="P@ssw0rd">
+                    <p id ="errorPasswordCheck"></p>
                 </form>
             </div>
             <div class="button-div">
@@ -101,7 +105,7 @@
                 <button class="buttons" id="btn-next-user"> Next </button>
             </div>
 
-            <!-- Adress page --------------------->
+            <!-- Ad<ress page --------------------->
             <section id="addressPage">
                 <div class="user-container">
                     <aside class="aside-bar">
@@ -113,13 +117,15 @@
                         <input type='text' id="lastName" placeholder="last name" required />
                         <p id ="errorLastName"></p>
                         <input type='date' id="birthday" placeholder="birthday" required />
+                        <p id ="errorBirthday"></p>
                         <input type='text' id="address1" placeholder="address1" required />
                         <p id ="errorAddress"></p>
                         <input type='text' id="address2" placeholder="address2" />
+                        <p id ="errorAddress2"></p>
                         <input type='number' id="postalCode" placeholder="postalCode" required />
                         <p id ="errorPostCode"></p>
                         <select id="country">
-                            <option value="Andorra">Andorrra</option>
+                            <option value="Andorra">Andorra</option>
                             <option value="España">España</option>
                             <option value="Francia">Francia</option>
                             <option value="Alemania">Alemania</option>
