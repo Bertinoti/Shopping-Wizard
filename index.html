@@ -39,12 +39,32 @@
                         <li id="photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></li>
                         <li id="photo4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></li>
                     </ul>
-                    <ul class="carrusel-menu">
-                        <li><a href="#photo1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></a></li>
-                        <li><a href="#photo2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></a></li>
-                        <li><a href="#photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></a></li>
-                        <li><a href="#photo4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></a></li>
+                    <ul class="carrusel-menu"  id="carruselprueba">
+                        <li><a href="#photo1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></a>
+                            <div style="display: none">
+                                <h4>BLACK/GOLD</h4>
+                                <p>CS2 PRO</p>
+                                <p class="precio">1699</p>
+                            </div></li>
+                        <li><a href="#photo2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></a>
+                            <div style="display: none">
+                                <h4>BLACK/GOLD</h4>
+                                <p>CS2 P2RO</p>
+                                <p class="precio">1699</p></div></li>
+                        <li><a href="#photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></a>
+                            <div style="display: none">
+                                <h4>BLACK/GOLD</h4>
+                                <p>CS2 PRO</p>
+                                <p class="precio">1699</p></div></li>
+                        <li><a href="#photo4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></a>
+                            <div style="display: none">
+                                <h4>BLACK/GOLD</h4>
+                                <p>CS2 PRO</p>
+                                <p class="precio">1699</p></div></li>
                     </ul>
+                    <form method="get" action="" class="buttonAddToCart" id="Addtocart">
+                        <button type="radio" style="background-color: rgb(253, 253, 253);">Add Cart
+                    </form>
                 </div>
                 <div class="gridbuttons">
                     <form method="get" action="#photo1" >
@@ -61,25 +81,12 @@
                     </form>
                 </div>
             </main>
-            <footer class="footer">
-                <div class="containerfooter">
-                    <div class="AboutUs">
-                        <h4>Informacion</h4>
-                        <br>
-                        <ul>
-                            <li>Sobre nosotros</li><br>
-                            <li>Nuestros servicios</li><br>
-                            <li>Politica de privacidad</li><br>
-                        </ul>
-                    </div>
-                    <div class="Social">
-                        <h4>Siguenos</h4>
-                        <div class="socialmedia">
-                            <i class="fa-brands fa-facebook fa-2x"></i> <br>
-                            <i class="fa-brands fa-instagram-square fa-2x"></i><br>
-                            <i class="fa-brands fa-youtube-square fa-2x"></i><br>
-                        </div>
-                    </div>
+            <footer>
+                            <ul class="socialmedia">
+                                <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                                <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+                                <li><i class="fa-brands fa-youtube-square fa-2x"></i></li>
+                            </ul>
             </footer>
         </section>
 
@@ -196,9 +203,19 @@
             <aside class="aside-bar">
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
             </aside>
-
-            <div id="product-img-confirm">
-                <img src="/assets/img/cs2pro/fotos numero.jpg" alt="Img product buying">
+            <div>
+                <table id="contenedordetodo">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
             <div id="details-confirm">
                 <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
