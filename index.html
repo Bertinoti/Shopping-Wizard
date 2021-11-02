@@ -11,9 +11,9 @@
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/javascript/data.js" defer></script>
+        <script src="assets/javascript/main.js" defer></script>
         <script src="assets/javascript/dom.js" defer></script>
         <script src="assets/javascript/events.js" defer></script>
-        <script src="assets/javascript/main.js" defer></script>
         <title>PaintBall Marker Planet Eclipse</title>
     </head>
 
@@ -34,12 +34,32 @@
             <main>
                 <div class="carrusel">
                     <ul class="carrusel-photos">
-                        <li id="photo1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></li>
-                        <li id="photo2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></li>
-                        <li id="photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></li>
-                        <li id="photo4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt=""></li>
+                        <li id="photo"><img src="assets/img/cs2pro/fotos numero.jpg" alt="">
+                            <div>
+                                <h4 id="colorProduct">BLACK/GOLD</h4>
+                                <p id="productName"><b>CS2 PRO</b></p>
+                                <p class="priceProduct"><b>1699</b></p>
+                            </div></li>
+                        <!-- <li id="photo2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt="">
+                            <div>
+                                <h4>BLACK/GREY</h4>
+                                <p><b>CS2 PRO</b></p>
+                                <p class="precio"><b>1699</b></p>
+                            </div></li>
+                        <li id="photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt="">
+                            <div>
+                                <h4>RED/GOLD</h4>
+                                <p><b>CS2 PRO</b></p>
+                                <p class="precio"><b>1699</b></p>
+                            </div></li>
+                        <li id="photo4"><img src="/assets/img/cs2pro/fotonumero4.jpg" alt="">
+                            <div>
+                                <h4>BLUE/GOLD</h4>
+                                <p><b>CS2 PRO</b> </p>
+                                <p class="precio"><b>1699</b></p>
+                            </div></li> -->
                     </ul>
-                    <ul class="carrusel-menu"  id="carruselprueba">
+                    <ul class="carrusel-menu"  id="carruselShopping">
                         <li><a href="#photo1"><img src="/assets/img/cs2pro/fotos numero.jpg" alt=""></a>
                             <div style="display: none">
                                 <h4>BLACK/GOLD</h4>
@@ -48,7 +68,7 @@
                             </div></li>
                         <li><a href="#photo2"><img src="/assets/img/cs2pro/fotonumero2.jpg" alt=""></a>
                             <div style="display: none">
-                                <h4>BLACK/GOLD</h4>
+                                <h4>BLACK/WHITE</h4>
                                 <p>CS2 P2RO</p>
                                 <p class="precio">1699</p></div></li>
                         <li><a href="#photo3"><img src="/assets/img/cs2pro/fotonumero3.jpg" alt=""></a>
@@ -62,9 +82,8 @@
                                 <p>CS2 PRO</p>
                                 <p class="precio">1699</p></div></li>
                     </ul>
-                    <form method="get" action="" class="buttonAddToCart" id="Addtocart">
-                        <button type="radio" style="background-color: rgb(253, 253, 253);">Add Cart
-                    </form>
+
+                        <button type="radio" style="background-color: rgb(253, 253, 253);" id="buttonMain">Add Cart
                 </div>
                 <div class="gridbuttons">
                     <form method="get" action="#photo1" >
@@ -204,13 +223,13 @@
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
             </aside>
             <div>
-                <table id="contenedordetodo">
+                <table id="containerShop">
                     <thead>
                         <tr>
                             <th>Imagen</th>
                             <th>Nombre</th>
                             <th>Precio</th>
-                            <th>Cantidad</th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
