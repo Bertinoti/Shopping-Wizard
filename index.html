@@ -1,268 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/progressBar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="assets/javascript/dom.js" defer></script>
+    <script src="assets/javascript/main.js" defer></script>
+    <script src="assets/javascript/data.js" defer></script>
+    <script src="assets/javascript/events.js" defer></script>
+    <title>PaintBall Marker Planet Eclipse</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/progressBar.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/mediaquery.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <script src="assets/javascript/dom.js" defer></script>
-            <script src="assets/javascript/main.js" defer></script>
-            <script src="assets/javascript/data.js" defer></script>
-            <script src="assets/javascript/events.js" defer></script>
-        <title>PaintBall Marker Planet Eclipse</title>
-    </head>
+  <body>
+    <section id="home-page">
+      <header>
+        <nav id="nav-bar">
+          <img src="/assets/img/logo.png" id="logo-img" alt="logo" />
+          <ul>
+            <li><a href="">CS2</a></li>
+            <li><a href="">LV1.6</a></li>
+            <li><a href="">Geo 4</a></li>
+            <li><a href="">Emek</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <body>
-        <section id="home-page">
-            <header>
-                <nav id="nav-bar">
-                    <img src="/assets/img/logo.jpg" id="logo-img" alt="logo">
-                    <ul>
-                        <li><a href="">CS2</a></li>
-                        <li><a href="">LV1.6</a></li>
-                        <li><a href="">Geo 4</a></li>
-                        <li><a href="">Emek</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <main>
-                <div class="carrusel">
-                    <ul class="carrusel-photos">
-                        <li id="photo"><a><img src="assets/img/cs2pro/fotos numero.jpg" alt=""></a>
-                            <div class="textocarrusel">
-                                <h4 id="colorProduct">BLACK/GOLD</h4>
-                                <p id="productName"><b>CS2 PRO</b></p>
-                                <p id="priceProduct"><b>1699</b></p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="carrusel-menu"  id="carruselShopping">
-                        <li><a><img src="assets/img/cs2pro/fotos numero.jpg" alt=""></a>
-                            <div style="display: none">
-                                <h4>BLACK/GOLD</h4>
-                                <p>CS2 PRO</p>
-                                <p class="precio">1699</p>
-                            </div></li>
-                        <li><a><img src="assets/img/cs2pro/fotonumero2.jpg" alt=""></a>
-                            <div style="display: none">
-                                <h4>BLACK/WHITE</h4>
-                                <p>CS2 P2RO</p>
-                                <p class="precio">1699</p></div></li>
-                        <li><a><img src="assets/img/cs2pro/fotonumero3.jpg" alt=""></a>
-                            <div style="display: none">
-                                <h4>RED/GOLD</h4>
-                                <p>CS2 PRO</p>
-                                <p class="precio">1699</p></div></li>
-                        <li><a><img src="assets/img/cs2pro/fotonumero4.jpg" alt=""></a>
-                            <div style="display: none">
-                                <h4>BLUE/GOLD</h4>
-                                <p>CS2 PRO</p>
-                                <p class="precio">1699</p></div></li>
-                    </ul>
-                    <button id='add-button' class="buttonMainPage"> Add Cart </button>
-                </div>
-                <!-- <div>
+      <main>
+        <div class="carrusel">
+          <ul class="carrusel-photos">
+            <li id="photo">
+              <a><img src="assets/img/cs2pro/fotos numero.jpg" alt="" /></a>
+              <div class="textocarrusel">
+                <h4 id="colorProduct">BLACK/GOLD</h4>
+                <p id="productName"><b>CS2 PRO</b></p>
+                <p id="priceProduct"><b>1699</b></p>
+              </div>
+            </li>
+          </ul>
+          <ul class="carrusel-menu" id="carruselShopping">
+            <li>
+              <a><img src="assets/img/cs2pro/fotos numero.jpg" alt="" /></a>
+              <div style="display: none">
+                <h4>BLACK/GOLD</h4>
+                <p>CS2 PRO</p>
+                <p class="precio">1699</p>
+              </div>
+            </li>
+            <li>
+              <a><img src="assets/img/cs2pro/fotonumero2.jpg" alt="" /></a>
+              <div style="display: none">
+                <h4>BLACK/WHITE</h4>
+                <p>CS2 P2RO</p>
+                <p class="precio">1699</p>
+              </div>
+            </li>
+            <li>
+              <a><img src="assets/img/cs2pro/fotonumero3.jpg" alt="" /></a>
+              <div style="display: none">
+                <h4>RED/GOLD</h4>
+                <p>CS2 PRO</p>
+                <p class="precio">1699</p>
+              </div>
+            </li>
+            <li>
+              <a><img src="assets/img/cs2pro/fotonumero4.jpg" alt="" /></a>
+              <div style="display: none">
+                <h4>BLUE/GOLD</h4>
+                <p>CS2 PRO</p>
+                <p class="precio">1699</p>
+              </div>
+            </li>
+          </ul>
+          <button id="add-button" class="buttonMainPage">Add Cart</button>
+        </div>
+        <!-- <div>
                     <button id='add-button' class="buttonMainPage"> Add Cart </button>
                 </div> -->
-            </main>
-            <footer>
-                            <ul class="socialmedia">
-                                <li><i class="fa-brands fa-facebook fa-2x"></i></li>
-                                <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
-                                <li><i class="fa-brands fa-youtube-square fa-2x"></i></li>
-                            </ul>
-            </footer>
-        </section>
+      </main>
+      <footer>
+        <ul class="socialmedia">
+          <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+          <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+          <li><i class="fa-brands fa-youtube-square fa-2x"></i></li>
+        </ul>
+      </footer>
+    </section>
 
-        <!-- User page ---------------- -->
-        <section id="user-page">
-            <section class="container-proggresBar">
-                <ol class="progress-bar">
-                  <li class="is-active"><span>Customer information</span></li>
-                  <li><span>Shipping Information</span></li>
-                  <li><span>Payment method</span></li>
-                  <li><span>Confirmation</span></li>
-                </ol>
-              </section>
-            <div class="user-container">
-
-                <!-- <aside class="aside-bar">
+    <!-- User page ---------------- -->
+    <section id="user-page">
+      <section class="container-proggresBar">
+        <ol class="progress-bar">
+          <li class="is-active"><span>Customer information</span></li>
+          <li><span>Shipping Information</span></li>
+          <li><span>Payment method</span></li>
+          <li><span>Confirmation</span></li>
+        </ol>
+      </section>
+      <div class="user-container">
+        <!-- <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
                 </aside> -->
 
+        <form id="user-form" class="column">
+          <input type="text" id="username" required placeholder="Username" />
+          <p id="errorUserName"></p>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="youremail@mail.com"
+          />
+          <p id="errorEmail"></p>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="P@ssw0rd"
+          />
+          <p id="errorPassword"></p>
+          <input
+            type="password"
+            id="confirm-password"
+            required
+            placeholder="P@ssw0rd"
+          />
+          <p id="errorPasswordCheck"></p>
+        </form>
+      </div>
+      <div class="button-div">
+        <button class="buttons" id="clear-all-user">Clear All</button>
+        <button class="buttons" id="btn-next-user">Next</button>
+      </div>
+    </section>
 
-                <form id="user-form" class="column">
-                    <input type="text" id="username" required placeholder="Username">
-                    <p id ="errorUserName"></p>
-                    <input type="email" id="email" required placeholder="youremail@mail.com">
-                    <p id ="errorEmail"></p>
-                    <input type="password" id="password" required placeholder="P@ssw0rd">
-                    <p id ="errorPassword"></p>
-                    <input type="password" id="confirm-password" required placeholder="P@ssw0rd">
-                    <p id ="errorPasswordCheck"></p>
-                </form>
-            </div>
-            <div class="button-div">
-                <button class="buttons" id="clear-all-user">Clear All</button>
-                <button class="buttons" id="btn-next-user"> Next </button>
-            </div>
-        </section>
-
-            <!-- Address page --------------------->
-            <section id="address-page">
-                <section class="container-proggresBar">
-                    <ol class="progress-bar">
-                      <li class="is-complete"><span>Customer information</span></li>  
-                      <li class="is-active"><span>Shipping Information</span></li>  
-                      <li><span>Payment method</span></li>
-                      <li><span>Confirmation</span></li>
-                    </ol>
-                </section>
-                <div class="user-container">
-                    <!-- <aside class="aside-bar">
+    <!-- Address page --------------------->
+    <section id="address-page">
+      <section class="container-proggresBar">
+        <ol class="progress-bar">
+          <li class="is-complete"><span>Customer information</span></li>
+          <li class="is-active"><span>Shipping Information</span></li>
+          <li><span>Payment method</span></li>
+          <li><span>Confirmation</span></li>
+        </ol>
+      </section>
+      <div class="user-container">
+        <!-- <aside class="aside-bar">
                         <img src="assets/img/progress-bar2-4.png" alt="progress-bar1-4">
                     </aside> -->
-                    <form>
-                        <input type='text' id="firstName" placeholder="first name" required>
-                        <p id ="errorFirstName"></p>
-                        <input type='text' id="lastName" placeholder="last name" required />
-                        <p id ="errorLastName"></p>
-                        <input type='date' id="birthday" placeholder="birthday" required />
-                        <p id ="errorBirthday"></p>
-                        <input type='text' id="address1" placeholder="address1" required />
-                        <p id ="errorAddress"></p>
-                        <input type='text' id="address2" placeholder="address2" />
-                        <p id ="errorAddress2"></p>
-                        <input type='number' id="postalCode" placeholder="postalCode" required />
-                        <p id ="errorPostCode"></p>
-                        <select id="country">
-                            <option value="Andorra">Andorra</option>
-                            <option value="España">España</option>
-                            <option value="Francia">Francia</option>
-                            <option value="Alemania">Alemania</option>
-                            <option value="Grecia">Grecia</option>
-                        </select>
-                        <div class="boxPhone">
-                            <select id="prefixPhone">
-                                <option value="Andorra">AND</option>
-                                <option value="España">ESP</option>
-                                <option value="Francia">FRA</option>
-                                <option value="Alemania">DEU</option>
-                                <option value="Grecia">GRC</option>
-                            </select>
-                            <input type="number" id="phone" max="9" required>
-                        </div>
-                        <p id ="errorPhone"></p>
-                        <div>
-                            <input type="checkbox" name="regularAddress" id="regularAddress">
-                            <label for="regularAddress">This is my regular address</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="button-div">
-                    <button id="clear-all-address" class="buttons">Clear All</button>
-                    <button id="btn-next-address" class="buttons">Next</button>
-                </div>
-            </section>
+        <form>
+          <input type="text" id="firstName" placeholder="first name" required />
+          <p id="errorFirstName"></p>
+          <input type="text" id="lastName" placeholder="last name" required />
+          <p id="errorLastName"></p>
+          <input type="date" id="birthday" placeholder="birthday" required />
+          <p id="errorBirthday"></p>
+          <input type="text" id="address1" placeholder="address1" required />
+          <p id="errorAddress"></p>
+          <input type="text" id="address2" placeholder="address2" />
+          <p id="errorAddress2"></p>
+          <input
+            type="number"
+            id="postalCode"
+            placeholder="postalCode"
+            required
+          />
+          <p id="errorPostCode"></p>
+          <select id="country">
+            <option value="Andorra">Andorra</option>
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Grecia">Grecia</option>
+          </select>
+          <div class="boxPhone">
+            <select id="prefixPhone">
+              <option value="Andorra">AND</option>
+              <option value="España">ESP</option>
+              <option value="Francia">FRA</option>
+              <option value="Alemania">DEU</option>
+              <option value="Grecia">GRC</option>
+            </select>
+            <input type="number" id="phone" max="9" required />
+          </div>
+          <p id="errorPhone"></p>
+          <div>
+            <input type="checkbox" name="regularAddress" id="regularAddress" />
+            <label for="regularAddress">This is my regular address</label>
+          </div>
+        </form>
+      </div>
+      <div class="button-div">
+        <button id="clear-all-address" class="buttons">Clear All</button>
+        <button id="btn-next-address" class="buttons">Next</button>
+      </div>
+    </section>
 
-        <!-- Shipping page --------------------------- -->
-        <section id="shipping-page">
-            <section class="container-proggresBar">
-                <ol class="progress-bar">
-                  <li class="is-complete"><span>Customer information</span></li>
-                  <li class="is-complete"><span>Shipping Information</span></li>
-                  <li class="is-active"><span>Payment method</span></li>
-                  <li><span>Confirmation</span></li>
-                </ol>
-            </section>
-            <!-- <aside class="aside-bar">
+    <!-- Shipping page --------------------------- -->
+    <section id="shipping-page">
+      <section class="container-proggresBar">
+        <ol class="progress-bar">
+          <li class="is-complete"><span>Customer information</span></li>
+          <li class="is-complete"><span>Shipping Information</span></li>
+          <li class="is-active"><span>Payment method</span></li>
+          <li><span>Confirmation</span></li>
+        </ol>
+      </section>
+      <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
             </aside> -->
-            <h3>Shipping Method</h3>
-            <div id="shipping-method">
-                <div>
-                    <input type="radio" name="shipping" id="standart-shipping" value="0" checked>
-                    <label for="standart-shipping">Standart Shipping -<br> Free 5 to 7 days </label>
-                </div>
-                <div>
-                    <input type="radio" name="shipping" id="express-shipping" value="9.99">
-                    <label for="express-shipping">Express Shipping -<br> 9.99€ 3 to 5 days</label>
-                </div>
-                <div>
-                    <input type="radio" name="shipping" id="48h-shipping" value="19.99">
-                    <label for="48h-shipping">48h Shipping -<br> 19.99€ 24h to 48h</label>
-                </div>
-                <div id="orderInfo">
-                </div>
-            </div>
-            <div id="gift-area">
-                <div>
-                    <input type="checkbox" name="gift" id="isGift">
-                    <label for="gift"> Is it a gift?</label>
-                </div>
-                <textarea id="gift-text-id" name="gift-text" rows="5" cols="5"
-                    placeholder="write here your gift message "></textarea>
-                <div id="wrapper">
-                    <h3>Gift wrapper imgage</h3>
-                    <div>
-                        <label for="wrapper-img-id">Choose a Image to your package </label>
-                        <input type="file" name="wrapper-img" id="wrapper-img-id"
-                            accept=".png, .jpeg, .jpg, .gif, .tiff " style="visibility: hidden;">
-                    </div>
-                </div>
-            </div>
-            <div class="button-div">
-                <button class="buttons" id="clear-all-user">Clear All</button>
-                <button class="buttons" id="btn-next-shippiment"> Next </button>
-            </div>
-        </section>
+      <h3>Shipping Method</h3>
+      <div id="shipping-method">
+        <div>
+          <input
+            type="radio"
+            name="shipping"
+            id="standart-shipping"
+            value="0"
+            checked
+          />
+          <label for="standart-shipping"
+            >Standart Shipping -<br />
+            Free 5 to 7 days
+          </label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="shipping"
+            id="express-shipping"
+            value="9.99"
+          />
+          <label for="express-shipping"
+            >Express Shipping -<br />
+            9.99€ 3 to 5 days</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="shipping" id="48h-shipping" value="19.99" />
+          <label for="48h-shipping"
+            >48h Shipping -<br />
+            19.99€ 24h to 48h</label
+          >
+        </div>
+        <div id="orderInfo"></div>
+      </div>
+      <div id="gift-area">
+        <div>
+          <input type="checkbox" name="gift" id="isGift" />
+          <label for="gift"> Is it a gift?</label>
+        </div>
+        <textarea
+          id="gift-text-id"
+          name="gift-text"
+          rows="5"
+          cols="5"
+          placeholder="write here your gift message "
+        ></textarea>
+        <div id="wrapper">
+          <h3>Gift wrapper imgage</h3>
+          <div>
+            <label for="wrapper-img-id">Choose a Image to your package </label>
+            <input
+              type="file"
+              name="wrapper-img"
+              id="wrapper-img-id"
+              accept=".png, .jpeg, .jpg, .gif, .tiff "
+              style="visibility: hidden"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="button-div">
+        <button class="buttons" id="clear-all-user">Clear All</button>
+        <button class="buttons" id="btn-next-shippiment">Next</button>
+      </div>
+    </section>
 
+    <!-- Detail page --------------------------- -->
+    <section id="details-page">
+      <section class="container-proggresBar">
+        <ol class="progress-bar">
+          <li class="is-complete"><span>Customer information</span></li>
+          <li class="is-complete"><span>Shipping Information</span></li>
+          <li class="is-complete"><span>Payment method</span></li>
+          <li class="is-active"><span>Confirmation</span></li>
+        </ol>
+      </section>
 
-        <!-- Detail page --------------------------- -->
-        <section id="details-page">
-            <section class="container-proggresBar">
-                <ol class="progress-bar" >
-                    <li class="is-complete"><span>Customer information</span></li>
-                    <li class="is-complete"><span>Shipping Information</span></li>
-                    <li class="is-complete"><span>Payment method</span></li>
-                    <li class="is-active"><span>Confirmation</span></li>
-                </ol>
-            </section>
-
-            <!-- <aside class="aside-bar">
+      <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
             </aside> -->
-            <div id="details-confirm">
-                <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
-                <div>Delivery: price <span class="detail-price-order">9.99€</span> <span id="detail-order-product">(24h)
-                        delivery date 21/12/2021 </span></div>
-                <div>Payment Detail: <span id="detail-price-product">1600€</span> + <span
-                        class="detail-price-product">9.99€</span> Total <span class="detail-price-order">1609.99€</span>
-                </div>
-            </div>
-            <button id="submitButton"> To finish your order push the button </button>
-        </section>
-    </body>
-
-
-    <!-- Trigger/Open The Modal -->
-    <!-- <button id="myBtn">Open Modal</button> -->
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
+      <div id="details-confirm">
+        <div>
+          Produto:
+          <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span>
         </div>
-    </div>
-    <!-- <button class="buttons" id="testButton"> Next </button> -->
+        <div>
+          Delivery: price <span class="detail-price-order">9.99€</span>
+          <span id="detail-order-product">(24h) delivery date 21/12/2021 </span>
+        </div>
+        <div>
+          Payment Detail: <span id="detail-price-product">1600€</span> +
+          <span class="detail-price-product">9.99€</span> Total
+          <span class="detail-price-order">1609.99€</span>
+        </div>
+      </div>
+      <button id="submitButton">To finish your order push the button</button>
+    </section>
+  </body>
 
+  <!-- Trigger/Open The Modal -->
+  <!-- <button id="myBtn">Open Modal</button> -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    </div>
+  </div>
+  <!-- <button class="buttons" id="testButton"> Next </button> -->
 </html>
