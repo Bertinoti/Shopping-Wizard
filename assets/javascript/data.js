@@ -6,7 +6,9 @@ const Cart= {
     color:null,
     priceProduct:null,
     priceShipping:null,
-    giftMessage:null
+    deliveryDate: null,
+    giftMessage:null,
+    wrapperImg:null
 }
 
 monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
