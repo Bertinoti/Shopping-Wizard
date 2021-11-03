@@ -53,8 +53,8 @@ USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
         }
 });
 
-ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() {
-        if(isValidateFormAddr()) {
+ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
+        if(isValidateFormAddr(e)) {
                 saveFormAddr();
                 changeDiv(2);
                 deliveryDate();
