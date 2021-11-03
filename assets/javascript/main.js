@@ -99,6 +99,7 @@ function validate2Password (){
 
 function validateFormUser (e) {
     e.preventDefault()
+    let isValid = true;
     if (!validateUserName ()) isValid = false
     if (!validateEmail ()) isValid = false
     if (!validatePassword ()) isValid = false
