@@ -52,15 +52,22 @@ USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
         }
 });
 
-ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
-        if(isValidateFormAddr(e)) {
-                saveFormAddr();
-                changeDiv(2);
-        }
-});
-
-SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
+// Change divs Events
+MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
+USER_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(1)})
+ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() {
+        changeDiv(2)
+        deliveryDate()})
+SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {
+        changeDiv(3)
+        giftMsg()})
 DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
+
+//shippiment events
+shippingMethod.addEventListener('change', deliveryDate)
+
+
+
 
 carruselShopping.forEach( Element => {
     Element.addEventListener("click", (e) => {

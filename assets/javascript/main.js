@@ -125,6 +125,8 @@ function setSuccessFor(input, p, message) {
     p.innerHTML = message
 }
 
+/*-----------------------------------------------------------*/
+//TODO change divs 
 function changeDiv(divNum){
     if (divNum < 4){
         actual= DIV_ARRAY[divNum];
@@ -139,28 +141,65 @@ function changeDiv(divNum){
     }
 
 }
-
+//TODO choose delivery method
 function chooseShippment() {
-    SHIP_VALUE=0;
+    shipValue=0;
     for (var i = 0, length = RADIO_SHIP_BUTTON.length; i < length; i++) {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
-            console.log(RADIO_SHIP_BUTTON[i].value);
-            console.log(SHIP_VALUE);
+            //console.log(RADIO_SHIP_BUTTON[i].value);
+            //console.log(shipValue);
             break;
         }
     }
-    return SHIP_VALUE;
+    return shipValue;
 }
 
-function giftMsg() {
-    let giftMenssage=''
-    if (RADIO_MSG_BUTTON[0].checked) {
-        giftMenssage= textValue.value
-        console.log(giftMenssage)
+//TODO print date delivery info
+function deliveryinfo( min, max) {
+    let dateOrder = new Date()
+    year= dateOrder.getFullYear()
+    month= dateOrder.getMonth()
+    day1= dateOrder.getDate()+ min;
+    day2= dateOrder.getDate()+ max;
+
+    deliveryDateMsg( day1, day2, month, year)
+}
+
+//TODO delivery options and dates info
+function deliveryDate(){
+    chooseShippment()
+    if(shipValue == 19.99){
+        deliveryinfo(1, 2)
+    }else
+    if( shipValue == 9.99){
+        deliveryinfo(3, 5)
+    }else{
+        deliveryinfo(5, 7)
     }
 }
 
+//TODO print a menssage to delivery dates
+function deliveryDateMsg(d1, d2, month, year){
+    if(orderMsgInfo.childElementCount >= 1){
+        orderMsgInfo.removeChild(orderMsgInfo.getElementsByTagName('div')[0]);
+    }
+    deliveryMsg= `Your order will be delivery between ${d1} ${monthArray[month] } ${year} and ${d2} ${monthArray[month]} ${year}`
+    divMsg= document.createElement('div');
+    divMsg.innerHTML= deliveryMsg;
+    orderMsgInfo.appendChild(divMsg)
+}
+
+
+//TODO  save the gift message
+function giftMsg() {
+    if (RADIO_MSG_BUTTON[0].checked) {
+        Cart.giftMessage=textValue.value
+        //console.log(Cart.giftMessage)
+    }
+}
+
+//TODO save wrapper file image
 wrapperFile.onchange = function() {
     var fileList = wrapperFile.files;
     wrapperimg= fileList[0]
@@ -168,6 +207,7 @@ wrapperFile.onchange = function() {
     modalText(addText)
 }
 
+//TODO modal window
 function modalText(text) {
     pOne= document.createElement('p')
     pOne.innerHTML= text
@@ -182,34 +222,39 @@ function modalText(text) {
 //  modal.style.display = "block";
 //}
 
+//TODO modal open
 function openModal() {
     MODAL.style.display = "block";
 }
+//TODO modal close
 function closeModal() {
     MODAL.style.display = "none";
 }
 
-// When the user clicks on <span> (x), close the modal
+//TODO clicks on <span> (x), close the modal
 SPAN.onclick = function() {
     MODAL.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+//TODO clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == MODAL) {
         MODAL.style.display = "none";
     }
 }
 
-// window.onload= function(){
-//     timeSection()
-// }
+//TODO start time do section close
+//window.onload= function(){
+  //  timeSection()
+//}
 
+//TODO clear all forms
 function clearAllSection() {
-
     alert('all section are clear')
 }
 
+//TODO when time finish clear forms and go to main page
+//TODO display the time remain to user 
 function timeSection() {
     setTimeout(function(){
         clearAllSection()
@@ -222,6 +267,7 @@ function timeSection() {
     }, 2*1000);
 }
 
+/*--------------------------------------------------------------------------*/
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
     imgProduct.src= targetCart.querySelector('img').src
@@ -246,3 +292,7 @@ function showPaintball(){
         detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
 }
 // solo para probar 
+
+testButton= document.getElementById('testButton')
+testButton.addEventListener('click', deliveryDate)
+
