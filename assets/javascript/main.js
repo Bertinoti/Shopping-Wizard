@@ -139,6 +139,7 @@ function chooseShippment() {
     return shipValue;
 }
 
+//TODO delivery options and dates info
 function deliveryDate(){
     chooseShippment()
     console.log(shipValue)
@@ -153,22 +154,12 @@ function deliveryDate(){
 }
 
 //TODO print date delivery info
-testButton= document.getElementById('testButton')
-testButton.addEventListener('click', deliveryDate)
-
 function deliveryinfo( min, max) {
     let dateOrder = new Date()
     year= dateOrder.getFullYear()
     month= dateOrder.getMonth()
     day1= dateOrder.getDate()+ min;
     day2= dateOrder.getDate()+ max;
-    hour= dateOrder.getHours()
-
-    monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
-    //console.log(dateOrder  )
-    //console.log(day, month, year)
-    //console.log(dateOrder.setDate(2) , month, year)
 
     console.log(`Your order will be delivery between ${day1} ${monthArray[month] } ${year} and ${day2} ${monthArray[month]} ${year}`);
 
@@ -228,9 +219,9 @@ window.onclick = function(event) {
 }
 
 //TODO start time do section close
-// window.onload= function(){
-//     timeSection()
-// }
+//window.onload= function(){
+  //  timeSection()
+//}
 
 //TODO clear all forms
 function clearAllSection() {
@@ -276,3 +267,7 @@ function showPaintball(){
         detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
 }
 // solo para probar 
+
+testButton= document.getElementById('testButton')
+testButton.addEventListener('click', deliveryDate)
+
