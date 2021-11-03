@@ -132,25 +132,11 @@ function chooseShippment() {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
             //console.log(RADIO_SHIP_BUTTON[i].value);
-            console.log(shipValue);
+            //console.log(shipValue);
             break;
         }
     }
     return shipValue;
-}
-
-//TODO delivery options and dates info
-function deliveryDate(){
-    chooseShippment()
-    console.log(shipValue)
-    if(shipValue == 19.99){
-        deliveryinfo(1, 2)
-    }else
-    if( shipValue == 9.99){
-        deliveryinfo(3, 5)
-    }else{
-        deliveryinfo(5, 7)
-    }
 }
 
 //TODO print date delivery info
@@ -161,16 +147,39 @@ function deliveryinfo( min, max) {
     day1= dateOrder.getDate()+ min;
     day2= dateOrder.getDate()+ max;
 
-    console.log(`Your order will be delivery between ${day1} ${monthArray[month] } ${year} and ${day2} ${monthArray[month]} ${year}`);
-
+    deliveryDateMsg( day1, day2, month, year)
 }
+
+//TODO delivery options and dates info
+function deliveryDate(){
+    chooseShippment()
+    if(shipValue == 19.99){
+        deliveryinfo(1, 2)
+    }else
+    if( shipValue == 9.99){
+        deliveryinfo(3, 5)
+    }else{
+        deliveryinfo(5, 7)
+    }
+}
+
+//TODO print a menssage to delivery dates
+function deliveryDateMsg(d1, d2, month, year){
+    if(orderMsgInfo.childElementCount >= 1){
+        orderMsgInfo.removeChild(orderMsgInfo.getElementsByTagName('div')[0]);
+    }
+    deliveryMsg= `Your order will be delivery between ${d1} ${monthArray[month] } ${year} and ${d2} ${monthArray[month]} ${year}`
+    divMsg= document.createElement('div');
+    divMsg.innerHTML= deliveryMsg;
+    orderMsgInfo.appendChild(divMsg)
+}
+
 
 //TODO  save the gift message
 function giftMsg() {
-    let giftMenssage=''
     if (RADIO_MSG_BUTTON[0].checked) {
-        giftMenssage= textValue.value
-        console.log(giftMenssage)
+        Cart.giftMessage=textValue.value
+        //console.log(Cart.giftMessage)
     }
 }
 

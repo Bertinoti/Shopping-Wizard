@@ -51,12 +51,22 @@ BTN_ADD_USER_FORM.addEventListener('click', (e) => {
         validateFormUser(e);
 });
 
-
+// Change divs Events
 MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
 USER_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(1)})
-ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(2)})
-SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
+ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() {
+        changeDiv(2)
+        deliveryDate()})
+SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {
+        changeDiv(3)
+        giftMsg()})
 DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
+
+//shippiment events
+shippingMethod.addEventListener('change', deliveryDate)
+
+
+
 
 carruselShopping.forEach( Element => {
     Element.addEventListener("click", (e) => {
