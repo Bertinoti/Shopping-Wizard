@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/progressBar.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/progressBar.css" />
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/mediaquery.css" />
     <link
       rel="stylesheet"
@@ -113,18 +114,6 @@
             </footer>
         </section>
 
-        <!-- User page ---------------- -->
-        <section id="user-page">
-            <section class="container-proggresBar">
-                <ol class="progress-bar">
-                    <li class="is-active"><span>Customer information</span></li>
-                    <li><span>Shipping Information</span></li>
-                    <li><span>Payment method</span></li>
-                    <li><span>Confirmation</span></li>
-                </ol>
-            </section>
-            <div class="user-container">
-
     <!-- User page ---------------- -->
     <section id="user-page">
       <section class="container-proggresBar">
@@ -139,39 +128,6 @@
         <!-- <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
                 </aside> -->
-
-        <form id="user-form" class="column">
-          <input type="text" id="username" required placeholder="Username" />
-          <p id="errorUserName"></p>
-          <input
-            type="email"
-            id="email"
-            required
-            placeholder="youremail@mail.com"
-          />
-          <p id="errorEmail"></p>
-          <input
-            type="password"
-            id="password"
-            required
-            placeholder="P@ssw0rd"
-          />
-          <p id="errorPassword"></p>
-          <input
-            type="password"
-            id="confirm-password"
-            required
-            placeholder="P@ssw0rd"
-          />
-          <p id="errorPasswordCheck"></p>
-        </form>
-      </div>
-      <div class="button-div">
-        <button class="buttons" id="clear-all-user">Clear All</button>
-        <button class="buttons" id="btn-next-user">Next</button>
-      </div>
-    </section>
-
                 <form id="user-form" class="column">
                     <div class="form-tooltip">
                         <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter and max 20</span></i>
@@ -365,20 +321,6 @@
             </div>
             <button id="submitButton"> To finish your order push the button </button>
         </section>
-    </body>
-
-        <div>
-          Delivery: price <span class="detail-price-order">9.99€</span>
-          <span id="detail-order-product">(24h) delivery date 21/12/2021 </span>
-        </div>
-        <div>
-          Payment Detail: <span id="detail-price-product">1600€</span> +
-          <span class="detail-price-product">9.99€</span> Total
-          <span class="detail-price-order">1609.99€</span>
-        </div>
-      
-      <button id="submitButton">To finish your order push the button</button>
-    </section>
   </body>
 
   <!-- Trigger/Open The Modal -->

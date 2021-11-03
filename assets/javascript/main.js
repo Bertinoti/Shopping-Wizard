@@ -297,7 +297,7 @@ function showPaintball(){
         detailsPriceShipping.forEach( element => {
             element.textContent = Cart.priceShipping;
         });
-        detailsOrderShipping.innerHTML = Cart.giftMessage;
+        detailsOrderShipping.innerHTML = Cart.deliveryDate;
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 // solo para probar 
