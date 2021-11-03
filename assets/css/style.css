@@ -153,6 +153,7 @@ footer .socialmedia {
 }
 .textocarrusel{
   text-align: center;
+  font-weight: bold;
 }
 
 .carrusel-photos img {
@@ -224,12 +225,14 @@ nav a:link {
     color: black;
     font-size: 17px;
     text-transform: uppercase;
-    transition: background-color .5s linear;
+    transition: .5s linear;
     padding: 3px 6px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 nav a:active, nav a:hover {
-    background: #7e9c19;
+    background: #da5c22;
     border-radius: 25px;
 }
 
@@ -237,9 +240,9 @@ nav a:visited {
     color: black;
 }
 
-*/ .main-image {
+/* #main-image {
     display: flex;
-}
+} */
 
 #logo-img {
     padding-left: 1em;
@@ -381,3 +384,43 @@ input {
 .info-card {
     display: hidden;
 }
+.buttonMainPage {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 50px;
+	background: #6fb9db;
+	color: rgb(8, 8, 8);
+	/* font-size: 10px; */
+	font-weight: 500px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.buttonMainPage:after {
+	content: "";
+	width: 100%;
+	height: 300px;
+	background: #4b8bc7;
+	position: absolute;
+	z-index: 1;
+	top: -400px;
+	left: 0;
+	transition: .4s ease-in-out all;
+	border-radius: 0px 0px 300px 300px;
+}
+
+.buttonMainPage:hover:after {
+	top: 0;
+}
+.buttonMainPage span {
+	position: relative;
+	z-index: 2;
+	transition: .1s ease all;
+}
+
