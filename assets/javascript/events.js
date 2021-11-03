@@ -44,6 +44,7 @@ FORM_PASSWORD_CHECK.addEventListener('focus', (e) => {
         validate2Password();
 });
 
+// Change divs Events
 MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
 USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
         if(validateFormUser(e)) {
@@ -52,12 +53,13 @@ USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
         }
 });
 
-// Change divs Events
-MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
-USER_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(1)})
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() {
-        changeDiv(2)
-        deliveryDate()})
+        if(isValidateFormAddr()) {
+                saveFormAddr();
+                changeDiv(2);
+                deliveryDate();
+        }
+})
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {
         changeDiv(3)
         giftMsg()})
