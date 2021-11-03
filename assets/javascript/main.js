@@ -291,7 +291,6 @@ function showPaintball(){
         detailsColorProduct.innerHTML=Cart.color
         detailsPriceProduct.innerHTML=Cart.priceProduct
         detailsPriceShipping.forEach( element => {
-            console.log('priceShipping', element)
             element.textContent = Cart.priceShipping;
         });
         detailsOrderShipping.innerHTML = Cart.giftMessage;
