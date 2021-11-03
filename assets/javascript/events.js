@@ -26,7 +26,35 @@ FORM_PHONE.addEventListener('focus', (e) => {
         (validatePhone(FORM_PHONE))
                 ? setSuccessFor(FORM_PHONE,ERROR_PHONE,'Valid Phone')
                 : setErrorFor(FORM_PHONE,ERROR_PHONE,'Invalid postal code max length: 9 and only numbers');
-});SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
+});
+
+FORM_USERNAME.addEventListener('focus', (e) => {
+        validateUserName();
+});
+
+FORM_EMAIL.addEventListener('focus', (e) => {
+        validateEmail();
+});
+
+FORM_PASSWORD.addEventListener('focus', (e) => {
+        validatePassword();
+});
+
+FORM_PASSWORD_CHECK.addEventListener('focus', (e) => {
+        validate2Password();
+});
+
+MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
+USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
+        if(validateFormUser(e)) {
+                saveFormUser();
+                changeDiv(1);
+        }
+});
+
+ADDRESS_NEXT_DIV_PAGE.addEventListener('click', function() { changeDiv(2)})
+
+SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
 DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
 
 carruselShopping.forEach( Element => {
