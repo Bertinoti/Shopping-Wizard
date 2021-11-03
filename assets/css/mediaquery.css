@@ -67,6 +67,7 @@
     }
 
     #submitButton {
+        width: 60%;
         margin: auto 20%;
     }
 
@@ -76,14 +77,21 @@
     }
 }
 
-
-
 @media screen and (min-width: 768px) {
     body {
         font-size: 1em;
     }
-}
 
+    .carrusel {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #submitButton {
+        width: 40%;
+        margin: auto 30%;
+    }
 
 @media screen and (min-width: 1024px) {
     body {

@@ -67,17 +67,19 @@ const SPAN = document.getElementsByClassName("close")[0];
 
 
 // const pruebadessa=document.querySelector("#carruselShopping")
+const detailsImgProduct=document.getElementById("detail-img-product")
 const detailsNameProduct=document.querySelector("#detail-title-product")
+const detailsColorProduct=document.querySelector("#detail-color-product")
 const detailsPriceProduct=document.querySelector("#detail-price-product")
 const detailsPriceShipping=document.querySelectorAll(".detail-price-shipping")
 const detailsOrderShipping=document.querySelector("#detail-order-shipping")
-const detailsPriceTotal=document.querySelector("#detail-priceTotal-order")
+const detailsPriceTotal=document.querySelector("#detail-priceTotal-product")
 const BUTTON_MAIN=document.querySelector("#add-button")
 //Prueba
 
 const carruselShopping=document.querySelectorAll("#carruselShopping li")
 //carrusel
-const imgProduct=document.querySelector("#photo")
+const imgProduct=document.querySelector("#photo img")
 const colorProduct=document.querySelector("#colorProduct")
 const productName=document.querySelector("#productName")
 const priceProduct=document.querySelector("#priceProduct")
