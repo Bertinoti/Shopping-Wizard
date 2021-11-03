@@ -47,6 +47,8 @@ const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
 // Dom Shippment
 const RADIO_SHIP_BUTTON= document.getElementsByName('shipping')
 const CHECK_FUNCTION = document.getElementById('checkFunction')
+const orderMsgInfo= document.getElementById('orderInfo')
+const shippingMethod= document.getElementById('shipping-method')
 
 const RADIO_MSG_BUTTON= document.getElementsByName('gift')
 var textValue= document.getElementById("gift-text-id")
@@ -56,10 +58,8 @@ var wrapperimg={}
 
 
 //Dom Modal window
-// Get the modal
 const MODAL_CONTENT= document.getElementsByClassName('modal-content')
 const MODAL = document.getElementById("myModal");
-// Get the <span> element that closes the modal
 const SPAN = document.getElementsByClassName("close")[0];
 
 // checkFunction.addEventListener('click', changeDiv(3) )
