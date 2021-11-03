@@ -147,8 +147,7 @@ function chooseShippment() {
     for (var i = 0, length = RADIO_SHIP_BUTTON.length; i < length; i++) {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
-            //console.log(RADIO_SHIP_BUTTON[i].value);
-            //console.log(shipValue);
+            Cart.priceShipping= shipValue
             break;
         }
     }
@@ -188,6 +187,7 @@ function deliveryDateMsg(d1, d2, month, year){
     divMsg= document.createElement('div');
     divMsg.innerHTML= deliveryMsg;
     orderMsgInfo.appendChild(divMsg)
+    Cart.deliveryDate= `${d1} ${monthArray[month] } ${year} to ${d2} ${monthArray[month]} ${year}`
 }
 
 
@@ -205,6 +205,7 @@ wrapperFile.onchange = function() {
     wrapperimg= fileList[0]
     addText= 'Thank You your upload was successfull';
     modalText(addText)
+    Cart.wrapperimg= wrapperimg;
 }
 
 //TODO modal window
