@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 /*try to do a Modal Window */
@@ -380,4 +381,9 @@ input {
 
 .info-card {
     display: hidden;
+}
+
+.container-proggresBar{
+    margin: 10%;
+    width: 80%;
 }

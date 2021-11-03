@@ -6,11 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/progressBar.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/mediaquery.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
             <script src="assets/javascript/dom.js" defer></script>
             <script src="assets/javascript/main.js" defer></script>
             <script src="assets/javascript/data.js" defer></script>
@@ -83,10 +85,21 @@
 
         <!-- User page ---------------- -->
         <section id="user-page">
+            <section class="container-proggresBar">
+                <ol class="progress-bar">
+                  <li class="is-active"><span>Customer information</span></li>
+                  <li><span>Shipping Information</span></li>
+                  <li><span>Payment method</span></li>
+                  <li><span>Confirmation</span></li>
+                </ol>
+              </section>
             <div class="user-container">
-                <aside class="aside-bar">
+
+                <!-- <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
-                </aside>
+                </aside> -->
+
+
                 <form id="user-form" class="column">
                     <input type="text" id="username" required placeholder="Username">
                     <p id ="errorUserName"></p>
@@ -106,10 +119,18 @@
 
             <!-- Address page --------------------->
             <section id="address-page">
+                <section class="container-proggresBar">
+                    <ol class="progress-bar">
+                      <li class="is-complete"><span>Customer information</span></li>  
+                      <li class="is-active"><span>Shipping Information</span></li>  
+                      <li><span>Payment method</span></li>
+                      <li><span>Confirmation</span></li>
+                    </ol>
+                </section>
                 <div class="user-container">
-                    <aside class="aside-bar">
+                    <!-- <aside class="aside-bar">
                         <img src="assets/img/progress-bar2-4.png" alt="progress-bar1-4">
-                    </aside>
+                    </aside> -->
                     <form>
                         <input type='text' id="firstName" placeholder="first name" required>
                         <p id ="errorFirstName"></p>
@@ -155,9 +176,17 @@
 
         <!-- Shipping page --------------------------- -->
         <section id="shipping-page">
-            <aside class="aside-bar">
+            <section class="container-proggresBar">
+                <ol class="progress-bar">
+                  <li class="is-complete"><span>Customer information</span></li>
+                  <li class="is-complete"><span>Shipping Information</span></li>
+                  <li class="is-active"><span>Payment method</span></li>
+                  <li><span>Confirmation</span></li>
+                </ol>
+            </section>
+            <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
-            </aside>
+            </aside> -->
             <h3>Shipping Method</h3>
             <div id="shipping-method">
                 <div>
@@ -200,13 +229,19 @@
 
         <!-- Detail page --------------------------- -->
         <section id="details-page">
-            <aside class="aside-bar">
+            <section class="container-proggresBar">
+                <ol class="progress-bar" >
+                    <li class="is-complete"><span>Customer information</span></li>
+                    <li class="is-complete"><span>Shipping Information</span></li>
+                    <li class="is-complete"><span>Payment method</span></li>
+                    <li class="is-active"><span>Confirmation</span></li>
+                </ol>
+            </section>
+
+            <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
-            </aside>
-            <div>
-            </div>
+            </aside> -->
             <div id="details-confirm">
-                <img src="assets/img/cs2pro/fotos numero.jpg"/>
                 <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
                 <div>Delivery: price <span class="detail-price-order">9.99€</span> <span id="detail-order-product">(24h)
                         delivery date 21/12/2021 </span></div>
