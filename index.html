@@ -82,9 +82,20 @@
         <!-- User page ---------------- -->
         <section id="user-page">
             <div class="user-container">
-                <aside class="aside-bar">
+                <section>
+                    <ol class="progress-bar">
+                      <li class="is-active"><span>Customer information</span></li>
+                      <li><span>Shipping Information</span></li>
+                      <li><span>Payment method</span></li>
+                      <li><span>Confirmation</span></li>
+                    </ol>
+                  </section>
+
+                <!-- <aside class="aside-bar">
                     <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
-                </aside>
+                </aside> -->
+
+
                 <form id="user-form" class="column">
                     <input type="text" id="username" required placeholder="Username">
                     <p id ="errorUserName"></p>
@@ -105,9 +116,17 @@
             <!-- Address page --------------------->
             <section id="address-page">
                 <div class="user-container">
-                    <aside class="aside-bar">
+                    <!-- <aside class="aside-bar">
                         <img src="assets/img/progress-bar2-4.png" alt="progress-bar1-4">
-                    </aside>
+                    </aside> -->
+                    <section>
+                        <ol class="progress-bar">
+                          <li class="is-complete"><span>Customer information</span></li>  
+                          <li class="is-active"><span>Shipping Information</span></li>  
+                          <li><span>Payment method</span></li>
+                          <li><span>Confirmation</span></li>
+                        </ol>
+                    </section>
                     <form>
                         <input type='text' id="firstName" placeholder="first name" required>
                         <p id ="errorFirstName"></p>
@@ -153,9 +172,17 @@
 
         <!-- Shipping page --------------------------- -->
         <section id="shipping-page">
-            <aside class="aside-bar">
+            <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar3-4.png" alt="progress-bar1-4">
-            </aside>
+            </aside> -->
+            <section>
+                <ol class="progress-bar">
+                  <li class="is-complete"><span>Customer information</span></li>
+                  <li class="is-complete"><span>Shipping Information</span></li>
+                  <li class="is-active"><span>Payment method</span></li>
+                  <li><span>Confirmation</span></li>
+                </ol>
+            </section>
             <h3>Shipping Method</h3>
             <div id="shipping-method">
                 <div>
@@ -196,9 +223,19 @@
 
         <!-- Detail page --------------------------- -->
         <section id="details-page">
-            <aside class="aside-bar">
+                <ol class="progress-bar">
+                  <li class="is-complete"><span>Customer information</span></li>
+                  <li class="is-complete"><span>Shipping Information</span></li>
+                  <li class="is-complete"><span>Payment method</span></li>
+                  <li class="is-active"><span>Confirmation</span></li>
+                </ol>
+            </section>
+
+            <!-- <aside class="aside-bar">
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
-            </aside>
+            </aside> -->
+            
+
             <div>
                 <table id="containerShop">
                     <thead>
