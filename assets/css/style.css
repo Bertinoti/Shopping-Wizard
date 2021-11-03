@@ -215,8 +215,12 @@ form {
 
 #user-form{
     width:80%;
-
 }
+
+#user-container{
+    width: 80%;
+}
+
 .form-tooltip{
     width: 100%;
 }
