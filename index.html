@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="assets/css/mediaquery.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,11 +35,11 @@
             <main>
                 <div class="carrusel">
                     <ul class="carrusel-photos">
-                        <li id="photo"><img src="assets/img/cs2pro/fotos numero.jpg" alt="">
-                            <div>
+                        <li id="photo"><a><img src="assets/img/cs2pro/fotos numero.jpg" alt=""></a>
+                            <div class="textocarrusel">
                                 <h4 id="colorProduct">BLACK/GOLD</h4>
                                 <p id="productName"><b>CS2 PRO</b></p>
-                                <p class="priceProduct"><b>1699</b></p>
+                                <p id="priceProduct"><b>1699</b></p>
                             </div>
                         </li>
                     </ul>
@@ -57,19 +57,20 @@
                                 <p class="precio">1699</p></div></li>
                         <li><a><img src="assets/img/cs2pro/fotonumero3.jpg" alt=""></a>
                             <div style="display: none">
-                                <h4>BLACK/GOLD</h4>
+                                <h4>RED/GOLD</h4>
                                 <p>CS2 PRO</p>
                                 <p class="precio">1699</p></div></li>
                         <li><a><img src="assets/img/cs2pro/fotonumero4.jpg" alt=""></a>
                             <div style="display: none">
-                                <h4>BLACK/GOLD</h4>
+                                <h4>BLUE/GOLD</h4>
                                 <p>CS2 PRO</p>
                                 <p class="precio">1699</p></div></li>
                     </ul>
+                    <button id='add-button' class="buttonMainPage"> Add Cart </button>
                 </div>
-                <div>
-                    <button id='add-button'> Add Cart </button>
-                </div>
+                <!-- <div>
+                    <button id='add-button' class="buttonMainPage"> Add Cart </button>
+                </div> -->
             </main>
             <footer>
                             <ul class="socialmedia">
@@ -202,22 +203,9 @@
             <aside class="aside-bar">
                 <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
             </aside>
-            <div>
-                <table id="containerShop">
-                    <thead>
-                        <tr>
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Precio</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
             <div id="details-confirm">
-                <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span></div>
+                <div>Produto: <span id="detail-title-product">Planet Eclipse CS2 pro Marker</span>
+                    <span id="ProductNameselected"> </span></div>
                 <div>Delivery: price <span class="detail-price-order">9.99€</span> <span id="detail-order-product">(24h)
                         delivery date 21/12/2021 </span></div>
                 <div>Payment Detail: <span id="detail-price-product">1600€</span> + <span

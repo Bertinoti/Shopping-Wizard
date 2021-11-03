@@ -81,5 +81,7 @@ const imgProduct=document.querySelector("#photo")
 const colorProduct=document.querySelector("#colorProduct")
 const productName=document.querySelector("#productName")
 const priceProduct=document.querySelector("#priceProduct")
+//newnconst
+const productNameSelected=document.querySelector("#productNameselected")
 
 // solo para probar
