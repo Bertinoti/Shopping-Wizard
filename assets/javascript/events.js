@@ -46,17 +46,20 @@ FORM_PASSWORD_CHECK.addEventListener('focus', (e) => {
 
 MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0)} )
 USER_NEXT_DIV_PAGE.addEventListener('click',(e) => {
-        if(validateFormUser(e)) {
-                saveFormUser();
-                changeDiv(1);
-        }
+        // if(validateFormUser(e)) {
+        //         saveFormUser();
+        //         changeDiv(1);
+        // }
+        changeDiv(1);
 });
 
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
-        if(isValidateFormAddr(e)) {
-                saveFormAddr();
-                changeDiv(2);
-        }
+        // if(isValidateFormAddr(e)) {
+        //         saveFormAddr();
+        //         changeDiv(2);
+        // }
+        changeDiv(2);
+
 });
 
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {changeDiv(3)})
