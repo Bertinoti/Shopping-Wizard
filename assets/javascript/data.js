@@ -15,3 +15,13 @@ const userDatas = {
     email: null,
     password: null
 };
+
+const addrDatas = {
+    firstName: null,
+    lastName: null,
+    birthday: null,
+    addr: null,
+    postalCode: null,
+    country: null,
+    phone: null
+}
