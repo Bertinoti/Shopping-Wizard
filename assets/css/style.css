@@ -322,8 +322,7 @@ input {
     margin: 0 auto;
 }
 
-#shipping h3 {
-    display: flex;
+#shipping-page h3 {
     width: 80%;
     margin: 0 auto;
 }

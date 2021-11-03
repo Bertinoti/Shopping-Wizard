@@ -6,9 +6,24 @@ const Cart= {
     color:null,
     priceProduct:null,
     priceShipping:null,
-    // productNameSelected:null
+    giftMessage:null
 }
 
+monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 // solo para probar
+const userDatas = {
+    username: null,
+    email: null,
+    password: null
+};
 
+const addrDatas = {
+    firstName: null,
+    lastName: null,
+    birthday: null,
+    addr: null,
+    postalCode: null,
+    country: null,
+    phone: null
+}
