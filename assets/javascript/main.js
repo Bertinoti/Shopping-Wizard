@@ -148,6 +148,7 @@ function chooseShippment() {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
             Cart.priceShipping= shipValue
+            //console.log(Cart.priceShipping)
             break;
         }
     }
@@ -188,6 +189,7 @@ function deliveryDateMsg(d1, d2, month, year){
     divMsg.innerHTML= deliveryMsg;
     orderMsgInfo.appendChild(divMsg)
     Cart.deliveryDate= `${d1} ${monthArray[month] } ${year} to ${d2} ${monthArray[month]} ${year}`
+    //console.log(Cart.deliveryDate)
 }
 
 
@@ -205,7 +207,8 @@ wrapperFile.onchange = function() {
     wrapperimg= fileList[0]
     addText= 'Thank You your upload was successfull';
     modalText(addText)
-    Cart.wrapperimg= wrapperimg;
+    Cart.wrapperImg= wrapperimg;
+    //console.log(Cart.wrapperImg)
 }
 
 //TODO modal window
@@ -279,7 +282,7 @@ function chooseProduct(e){
 }
 
 function addCart(collect){
-    console.log(collect);
+    //console.log(collect);
     Cart.img = imgProduct.src
     Cart.color = colorProduct.textContent
     Cart.product=productName.textContent
@@ -298,6 +301,12 @@ function showPaintball(){
 }
 // solo para probar 
 
+// function console(){
+//     console.log('a;SJKLDNFA;LKJN')
+//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
+//     //console.log(Object.values(Cart))
+//     //Cart.forEach(el=> {console.log(el)})
+// }
 testButton= document.getElementById('testButton')
-testButton.addEventListener('click', deliveryDate)
+testButton.addEventListener('click', console)
 
