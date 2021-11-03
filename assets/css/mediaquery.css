@@ -67,11 +67,26 @@
     }
 
     #submitButton {
+        width: 60%;
         margin: auto 20%;
     }
 
     footer {
         min-height: 50px;
         padding: 10px 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carrusel {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #submitButton {
+        width: 40%;
+        margin: auto 30%;
     }
 }

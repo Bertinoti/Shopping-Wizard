@@ -271,30 +271,31 @@ function timeSection() {
 /*--------------------------------------------------------------------------*/
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
-    imgProduct.src= targetCart.querySelector('img').src
+    imgProduct.setAttribute('src', targetCart.querySelector('img').src)
     colorProduct.textContent=targetCart.querySelector('h4').textContent
     productName.textContent=targetCart.querySelector('p').textContent
     priceProduct.textContent=targetCart.querySelector('.precio').textContent
-    console.log(imgProduct.src)
 }
 
-function addCart(collect){
-    console.log(collect);
-    Cart.img = imgProduct.src
+function addCart(){
+    Cart.img = imgProduct.src;
     Cart.color = colorProduct.textContent
-    Cart.product=productName.textContent
+    Cart.nameProduct=productName.textContent
     Cart.priceProduct = priceProduct.textContent
     console.log(Cart)
 }
 
 function showPaintball(){
-        detailsNameProduct.innerHTML=Cart.img
+        detailsImgProduct.setAttribute('src', Cart.img);
+        detailsNameProduct.innerHTML=Cart.nameProduct;
+        detailsColorProduct.innerHTML=Cart.color
         detailsPriceProduct.innerHTML=Cart.priceProduct
         detailsPriceShipping.forEach( element => {
-            element.innerHTML = Cart.priceShipping;
+            console.log('priceShipping', element)
+            element.textContent = Cart.priceShipping;
         });
         detailsOrderShipping.innerHTML = Cart.giftMessage;
-        detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping;
+        detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 // solo para probar 
 

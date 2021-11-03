@@ -4,6 +4,7 @@ const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DET
 const Cart= {
     img:null,
     color:null,
+    nameProduct: null,
     priceProduct:null,
     priceShipping:null,
     deliveryDate: null,
