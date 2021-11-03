@@ -48,7 +48,7 @@ function saveFormAddr() {
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
     //  USER NAME VERIFICATION  //
-    if(userNameValue.length > 5 && userNameValue.length < 20) {
+    if(userNameValue.length > 4 && userNameValue.length < 21) {
         setSuccessFor(FORM_USERNAME,ERROR_USERNAME,'Valid Username');
         return true
     } else {
@@ -61,7 +61,7 @@ function validateEmail () {
     // EMAIL VERIFICATION //
     const EMAIL_PATTERN = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
     var emailValue = FORM_EMAIL.value.trim();
-    if(emailValue.match(EMAIL_PATTERN) && emailValue.length < 50) {
+    if(emailValue.match(EMAIL_PATTERN) && emailValue.length < 51) {
         setSuccessFor(FORM_EMAIL,ERROR_EMAIL,'Valid Email');
         return true
     } else {
