@@ -67,10 +67,10 @@ const SPAN = document.getElementsByClassName("close")[0];
 
 
 // const pruebadessa=document.querySelector("#carruselShopping")
-const finalContainer=document.querySelector("#containerShop tbody ")
-const detailsProduct=document.querySelector("#detail-title-product")
-const detailsPriceProduct=document.querySelectorAll(".detail-price-order")
-const detailsPriceShipping=document.querySelector("#detail-order-product")
+const detailsNameProduct=document.querySelector("#detail-title-product")
+const detailsPriceProduct=document.querySelector("#detail-price-product")
+const detailsPriceShipping=document.querySelectorAll(".detail-price-shipping")
+const detailsOrderShipping=document.querySelector("#detail-order-shipping")
 const detailsPriceTotal=document.querySelector("#detail-priceTotal-order")
 const BUTTON_MAIN=document.querySelector("#add-button")
 //Prueba

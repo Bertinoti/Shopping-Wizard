@@ -359,7 +359,7 @@ input {
     padding: 0.5em;
 }
 
-#product-img-confirm>img {
+#details-confirm > img {
     width: 80%;
     margin: 0 10%;
 }

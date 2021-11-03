@@ -62,8 +62,12 @@ ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
 })
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function() {
         changeDiv(3)
-        giftMsg()})
-DETAIL_SUBMIT_ORDER.addEventListener('click', function () {changeDiv(4)})
+        giftMsg()
+})
+DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
+        showPaintball()
+        changeDiv(4)
+})
 
 //shippiment events
 shippingMethod.addEventListener('change', deliveryDate)

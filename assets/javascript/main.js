@@ -287,11 +287,13 @@ function addCart(collect){
 }
 
 function showPaintball(){
-        detailsProduct.innerHTML=Cart.img
+        detailsNameProduct.innerHTML=Cart.img
         detailsPriceProduct.innerHTML=Cart.priceProduct
-        detailsPriceShipping.innerHTML=Cart.priceShipping
-        // detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
-        productNameselected.innerHTML=Cart.product
+        detailsPriceShipping.forEach( element => {
+            element.innerHTML = Cart.priceShipping;
+        });
+        detailsOrderShipping.innerHTML = Cart.giftMessage;
+        detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping;
 }
 // solo para probar 
 
