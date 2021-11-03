@@ -47,7 +47,6 @@ function saveFormAddr() {
 
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
-
     //  USER NAME VERIFICATION  //
     if(userNameValue.length > 5 && userNameValue.length < 20) {
         setSuccessFor(FORM_USERNAME,ERROR_USERNAME,'Valid Username');
@@ -99,6 +98,7 @@ function validate2Password (){
 
 function validateFormUser (e) {
     e.preventDefault()
+    let isValid = true;
     if (!validateUserName ()) isValid = false
     if (!validateEmail ()) isValid = false
     if (!validatePassword ()) isValid = false
