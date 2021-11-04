@@ -1,8 +1,52 @@
+//  FIRST NAME AND LAST NAME VERIFICATION  //
+function validateSurName (inputValidation) {
+    var valueInput = inputValidation.value.trim();
+    return (valueInput.length < 20) ? true : false;
+}
 
-//TODO Username validation //
+//  ADDRESS VERIFICATION  //
+function validateAddress (inputValidation) {
+    var address1Value = inputValidation.value.trim();
+    return (address1Value.length < 50 && address1Value.length > 10) ? true : false;
+}
+
+//  POSTAL CODE VERIFICATION  //
+function validatePostalCode (inputValidation) {
+    var postalCodeValue = inputValidation.value.trim();
+    return (postalCodeValue.length < 6) ? true : false;
+}
+
+//  PHONE VERIFICATION  //
+function validatePhone (inputValidation) {
+    var phoneValue = inputValidation.value.trim();
+    return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
+}
+// Validation for whole user form //
+function isValidateFormAddr(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    if(!validateSurName(FORM_FIRST_NAME)) isValid = false;
+    if(!validateSurName(FORM_LAST_NAME)) isValid = false;
+    if(!validateAddress(FORM_ADDR1)) isValid = false;
+    if(!validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
+    if(!validatePhone(FORM_PHONE)) isValid = false;
+
+    return isValid;
+}
+// Form values //
+function saveFormAddr() {
+    addrDatas.firstName = FORM_FIRST_NAME.value;
+    addrDatas.lastName = FORM_LAST_NAME.value;
+    addrDatas.birthday = FORM_BIRTHDAY.value;
+    addrDatas.addr = FORM_ADDR1.value  + ' ' + FORM_ADDR2.value;
+    addrDatas.postalCode = FORM_POSTAL_CODE.value;
+    addrDatas.country = FORM_COUNTRY.value;
+    addrDatas.phone = FORM_PHONE.value;
+}
+//  USER NAME VERIFICATION  //
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
-    //  USER NAME VERIFICATION  //
     if(userNameValue.length > 4 && userNameValue.length < 21) {
         setSuccessFor(FORM_USERNAME,ERROR_USERNAME,'Valid Username');
         return true
@@ -85,6 +129,10 @@ function setSuccessFor(input, p, message) {
     input.classList.add("success")
     p.innerHTML = message
 }
+// Function to clearform //
+function clearform (dom){
+    dom.reset()
+   }
 
 //TODO  FIRST NAME AND LAST NAME VERIFICATION  //
 function validateSurName (inputValidation) {
@@ -201,14 +249,6 @@ function deliveryDateMsg(d1, d2, month, year){
     //console.log(Cart.deliveryDate)
 }
 
-//TODO display div gift 
-function displayDivGift() {
-   if (isGift.checked ){
-        giftOn.style.display='block'
-    }else{
-        giftOn.style.display='none'
-    }
-}
 
 //TODO  save the gift message
 function giftMsg() {
@@ -324,6 +364,14 @@ function showPaintball(){
         detailsOrderShipping.innerHTML = Cart.deliveryDate;
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
+// solo para probar 
 
+// function console(){
+//     console.log('a;SJKLDNFA;LKJN')
+//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
+//     //console.log(Object.values(Cart))
+//     //Cart.forEach(el=> {console.log(el)})
+// }
 testButton= document.getElementById('testButton')
-//testButton.addEventListener('click', console);
+testButton.addEventListener('click', console)
+

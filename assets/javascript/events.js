@@ -1,22 +1,22 @@
-// First name validation //
+
 FORM_FIRST_NAME.addEventListener('blur', (e) => {
         (validateSurName(FORM_FIRST_NAME))
                 ? setSuccessFor(FORM_FIRST_NAME, ERROR_USERNAME, 'Valid First name')
                 : setErrorFor(FORM_FIRST_NAME, ERROR_USERNAME, 'Invalid First name max length: 20');
 });
-// Last name validation //
+
 FORM_LAST_NAME.addEventListener('blur', (e) => {
         (validateSurName(FORM_LAST_NAME))
                 ? setSuccessFor(FORM_LAST_NAME, ERROR_USERNAME, 'Valid Last name')
                 : setErrorFor(FORM_LAST_NAME, ERROR_USERNAME, 'Invalid Last name max length: 20');
 });
-// Address validation //
+
 FORM_ADDR1.addEventListener('blur', (e) => {
         (validateAddress(FORM_ADDR1))
                 ? setSuccessFor(FORM_ADDR1, ERROR_ADDR, 'Valid Addr')
                 : setErrorFor(FORM_ADDR1, ERROR_ADDR, 'Invalid address max length: 50');
 });
-// Postalcode validation //
+
 FORM_POSTAL_CODE.addEventListener('blur', (e) => {
         (validatePostalCode(FORM_POSTAL_CODE))
                 ? setSuccessFor(FORM_POSTAL_CODE, ERROR_POST_CODE, 'Valid Postal Code')
@@ -26,7 +26,7 @@ FORM_POSTAL_CODE.addEventListener('blur', (e) => {
 FORM_COUNTRY.addEventListener('change', (e) => {
         FORM_PREFIX_PHONE.value = PREFIXES_PHONES[FORM_COUNTRY.value];
 });
-// Phone number validation //
+
 FORM_PHONE.addEventListener('blur', (e) => {
         (validatePhone(FORM_PHONE))
                 ? setSuccessFor(FORM_PHONE, ERROR_PHONE, 'Valid Phone')
@@ -44,9 +44,18 @@ FORM_EMAIL.addEventListener('blur', (e) => {
 FORM_PASSWORD.addEventListener('blur', (e) => {
         validatePassword();
 });
-
+// 
 FORM_PASSWORD_CHECK.addEventListener('blur', (e) => {
         validate2Password();
+});
+// Event to reset form
+BTN_RESET_FORM.addEventListener('click', () => {
+        clearform(USER_FORM)
+});
+
+// Event to reset 2nd form //
+BTN_RESET_FORM2.addEventListener('click', () => {
+        clearform(ADDR_PAGE)
 });
 
 // Change divs Events

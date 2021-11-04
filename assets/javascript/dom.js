@@ -16,6 +16,8 @@ const FORM_PHONE =  document.getElementById('phone')
 const ERROR_PHONE = document.getElementById("errorPhone")
 const FORM_REGULAR_ADDR =  document.getElementById('regularAddress')
 const BTN_ADD_ADDR_FORM =  document.getElementById('regularAddress')
+const BTN_RESET_FORM2 = document.getElementById("clear-all-address")
+const ADDR_PAGE = document.getElementById('addr-form')
 
 /* User Form */
 const USER_FORM = document.getElementById("user-form")
@@ -28,6 +30,8 @@ const ERROR_PASSWORD = document.getElementById("errorPassword")
 const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")
 const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
 const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
+const BTN_RESET_FORM = document.getElementById("clear-all-user")
+
 
 // All elements here
 // dom div sections
