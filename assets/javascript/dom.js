@@ -41,7 +41,7 @@ const DETAIL_SECTION = document.getElementById('details-page')
 const MAIN_ADD_BUTTON = document.getElementById('add-button')
 const USER_NEXT_DIV_PAGE= document.getElementById('btn-next-user')
 const ADDRESS_NEXT_DIV_PAGE= document.getElementById('btn-next-address')
-const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shipment')
+const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shippiment')
 const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
 
 // Dom Shippment
@@ -75,8 +75,6 @@ const detailsPriceProduct=document.querySelector("#detail-price-product")
 const detailsPriceShipping=document.querySelectorAll(".detail-price-shipping")
 const detailsOrderShipping=document.querySelector("#detail-order-shipping")
 const detailsPriceTotal=document.querySelector("#detail-priceTotal-product")
-const BUTTON_MAIN=document.querySelector("#add-button")
-//Prueba
 
 const carruselShopping=document.querySelectorAll("#carruselShopping li")
 //carrusel
