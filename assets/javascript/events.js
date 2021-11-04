@@ -22,6 +22,10 @@ FORM_POSTAL_CODE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_POSTAL_CODE,ERROR_POST_CODE,'Invalid postal code max length: 5');
 });
 
+FORM_COUNTRY.addEventListener('change', (e) => {
+        FORM_PREFIX_PHONE.value = PREFIXES_PHONES[FORM_COUNTRY.value];
+});
+
 FORM_PHONE.addEventListener('blur', (e) => {
         (validatePhone(FORM_PHONE))
                 ? setSuccessFor(FORM_PHONE,ERROR_PHONE,'Valid Phone')

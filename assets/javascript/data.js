@@ -30,3 +30,11 @@ const addrDatas = {
     country: null,
     phone: null
 }
+
+const PREFIXES_PHONES = {
+    andorra: '+376',
+    spain: '+34',
+    france: '+33',
+    deutschland: '+49',
+    greece: '+30'
+};
