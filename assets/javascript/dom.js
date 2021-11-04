@@ -1,3 +1,4 @@
+
 /* User Form */
 const USER_FORM = document.getElementById("user-form")
 const FORM_USERNAME = document.getElementById("username")
@@ -29,6 +30,9 @@ const FORM_PHONE =  document.getElementById('phone')
 const ERROR_PHONE = document.getElementById("errorPhone")
 const FORM_REGULAR_ADDR =  document.getElementById('regularAddress')
 const BTN_ADD_ADDR_FORM =  document.getElementById('regularAddress')
+const BTN_RESET_FORM2 = document.getElementById("clear-all-address")
+const ADDR_PAGE = document.getElementById('addr-form')
+
 
 
 // All elements here
