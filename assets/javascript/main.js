@@ -291,10 +291,12 @@ wrapperFile.onchange = function () {
 }
 
 //! mudar este button
-submitLastButton.onclick = function () {
+DETAIL_SUBMIT_ORDER.onclick = function () {
     addText = 'Thank you for your purchase'
     modalText(addText)
-    setTimeout(closeModal, 2000)
+    clearAllSection()
+    changeDiv(4)
+    location.reload();
 }
 
 //TODO modal window
@@ -335,8 +337,9 @@ window.onload = function () {
 
 //TODO clear all forms
 function clearAllSection() {
+    clearform(USER_FORM)
+    clearform(ADDR_PAGE)
 
-    //alert('all section are clear')
 }
 
 //TODO when time finish clear forms and go to main page
@@ -372,7 +375,6 @@ function addCart(collect) {
     Cart.color = colorProduct.textContent
     Cart.nameProduct = productName.textContent
     Cart.priceProduct = priceProduct.textContent
-    console.log(Cart)
 }
 
 //TODO

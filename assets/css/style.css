@@ -382,12 +382,14 @@ input {
 .info-card {
     display: hidden;
 }
+
 .buttonMainPage {
-	display: inline-flex;
+	display:flex;
 	align-items: center;
 	justify-content: center;
-	/* width: 80%;
-	height: 50px; */
+    justify-items: center;
+	width: 80%;
+    margin: 0 auto;
 	background: #6fb9db;
 	color: rgb(8, 8, 8);
 	/* font-size: 10px; */

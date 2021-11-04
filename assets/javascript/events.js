@@ -96,9 +96,12 @@ SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         showPaintball()
 })
 
-submitLastButton.addEventListener('click', function () {
-        changeDiv(4)
-})
+// DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
+//         addText = 'Thank you for your purchase'
+//         modalText(addText)
+//         clearAllSection()
+//         changeDiv(4)
+// })
 
 //shippiment events
 shippingMethod.addEventListener('change', deliveryDate)
