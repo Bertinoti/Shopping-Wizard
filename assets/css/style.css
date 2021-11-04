@@ -94,6 +94,7 @@ footer .socialmedia {
     grid-template-columns: 1fr;
     object-fit: contain;
     align-items: center;
+    justify-content: center;
 }
 .carrusel-menu :hover{
   cursor:pointer;
@@ -111,6 +112,7 @@ footer .socialmedia {
     /* border: solid; */
     /* gap: 500px; */
     text-align: center;
+    justify-content: center;
 }
 
 .carrusel-menu {
