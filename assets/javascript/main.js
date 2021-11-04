@@ -72,7 +72,7 @@ function validateEmail () {
 // Password validation //
 function validatePassword(){
     // PASSWORD VERIFICATION //
-    const PASSWORD_PATTERN = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/
+    const PASSWORD_PATTERN = ("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
     var passwordValue = FORM_PASSWORD.value.trim();
     if(passwordValue.match(PASSWORD_PATTERN)){
         setSuccessFor(FORM_PASSWORD,ERROR_PASSWORD,'Valid Password');
