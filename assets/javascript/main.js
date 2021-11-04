@@ -201,7 +201,6 @@ function displayDivGift() {
     }
 }
 
-
 //TODO  save the gift message
 function giftMsg() {
     if (RADIO_MSG_BUTTON[0].checked) {
