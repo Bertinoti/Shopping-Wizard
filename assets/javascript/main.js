@@ -1,50 +1,5 @@
-//  FIRST NAME AND LAST NAME VERIFICATION  //
-function validateSurName (inputValidation) {
-    var valueInput = inputValidation.value.trim();
-    return (valueInput.length < 20) ? true : false;
-}
 
-//  ADDRESS VERIFICATION  //
-function validateAddress (inputValidation) {
-    var address1Value = inputValidation.value.trim();
-    return (address1Value.length < 50) ? true : false;
-}
-
-//  POSTAL CODE VERIFICATION  //
-function validatePostalCode (inputValidation) {
-    var postalCodeValue = inputValidation.value.trim();
-    return (postalCodeValue.length < 6) ? true : false;
-}
-
-//  PHONE VERIFICATION  //
-function validatePhone (inputValidation) {
-    var phoneValue = inputValidation.value.trim();
-    return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
-}
-// 1st form page validation //
-function isValidateFormAddr(e) {
-    e.preventDefault();
-    let isValid = true;
-
-    if(!validateSurName(FORM_FIRST_NAME)) isValid = false;
-    if(!validateSurName(FORM_LAST_NAME)) isValid = false;
-    if(!validateAddress(FORM_ADDR1)) isValid = false;
-    if(!validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
-    if(!validatePhone(FORM_PHONE)) isValid = false;
-
-    return isValid;
-}
-// 2nd form page validation //
-function saveFormAddr() {
-    addrDatas.firstName = FORM_FIRST_NAME.value;
-    addrDatas.lastName = FORM_LAST_NAME.value;
-    addrDatas.birthday = FORM_BIRTHDAY.value;
-    addrDatas.addr = FORM_ADDR1.value  + ' ' + FORM_ADDR2.value;
-    addrDatas.postalCode = FORM_POSTAL_CODE.value;
-    addrDatas.country = FORM_COUNTRY.value;
-    addrDatas.phone = FORM_PHONE.value;
-}
-// Username validation //
+//TODO Username validation //
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
     //  USER NAME VERIFICATION  //
@@ -56,7 +11,8 @@ function validateUserName () {
         return false
     }
 }
-// Email validation //
+
+//TODO Email validation //
 function validateEmail () {
     // EMAIL VERIFICATION //
     const EMAIL_PATTERN = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
@@ -69,7 +25,8 @@ function validateEmail () {
         return false
     }
 }
-// Password validation //
+
+//TODO Password validation //
 function validatePassword(){
     // PASSWORD VERIFICATION //
     const PASSWORD_PATTERN = ("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
@@ -82,7 +39,8 @@ function validatePassword(){
         return false
     }
 }
-// 2nd password validation //
+
+//TODO 2nd password validation //
 function validate2Password (){
     // PASSWORD CHECK //
     var passwordValue = FORM_PASSWORD.value.trim();
@@ -95,7 +53,8 @@ function validate2Password (){
         return false
     }
 }
-// 2nd form page validation //
+
+//TODO 2nd form page validation //
 function validateFormUser (e) {
     e.preventDefault()
     let isValid = true;
@@ -103,28 +62,78 @@ function validateFormUser (e) {
     if (!validateEmail ()) isValid = false
     if (!validatePassword ()) isValid = false
     if (!validate2Password ()) isValid = false
-
     return isValid;
 }
-// Storing user info //
+
+//TODO Storing user info //
 function saveFormUser() {
     userDatas.username = FORM_USERNAME.value;
     userDatas.email = FORM_EMAIL.value;
     userDatas.password = FORM_PASSWORD.value;
 }
-// Function created for error on validation //
+
+//TODO Function created for error on validation //
 function setErrorFor(input, p ,message) {
     input.classList.remove("success")
     input.classList.add("error")
     p.innerHTML = message
 }
-// Function created for success on validation //
+
+//TODO Function created for success on validation //
 function setSuccessFor(input, p, message) {
     input.classList.remove("error")
     input.classList.add("success")
     p.innerHTML = message
 }
 
+//TODO  FIRST NAME AND LAST NAME VERIFICATION  //
+function validateSurName (inputValidation) {
+    var valueInput = inputValidation.value.trim();
+    return (valueInput.length < 20) ? true : false;
+}
+
+//TODO  ADDRESS VERIFICATION  //
+function validateAddress (inputValidation) {
+    var address1Value = inputValidation.value.trim();
+    return (address1Value.length < 50) ? true : false;
+}
+
+//TODO  POSTAL CODE VERIFICATION  //
+function validatePostalCode (inputValidation) {
+    var postalCodeValue = inputValidation.value.trim();
+    return (postalCodeValue.length < 6) ? true : false;
+}
+
+//TODO  PHONE VERIFICATION  //
+function validatePhone (inputValidation) {
+    var phoneValue = inputValidation.value.trim();
+    return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
+}
+
+//TODO 1st form page validation //
+function isValidateFormAddr(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    if(!validateSurName(FORM_FIRST_NAME)) isValid = false;
+    if(!validateSurName(FORM_LAST_NAME)) isValid = false;
+    if(!validateAddress(FORM_ADDR1)) isValid = false;
+    if(!validatePostalCode(FORM_POSTAL_CODE)) isValid = false;
+    if(!validatePhone(FORM_PHONE)) isValid = false;
+
+    return isValid;
+}
+
+//TODO 2nd form page validation //
+function saveFormAddr() {
+    addrDatas.firstName = FORM_FIRST_NAME.value;
+    addrDatas.lastName = FORM_LAST_NAME.value;
+    addrDatas.birthday = FORM_BIRTHDAY.value;
+    addrDatas.addr = FORM_ADDR1.value  + ' ' + FORM_ADDR2.value;
+    addrDatas.postalCode = FORM_POSTAL_CODE.value;
+    addrDatas.country = FORM_COUNTRY.value;
+    addrDatas.phone = FORM_PHONE.value;
+}
 /*-----------------------------------------------------------*/
 //TODO change divs 
 function changeDiv(divNum){
@@ -241,6 +250,7 @@ function openModal() {
 //TODO modal close
 function closeModal() {
     MODAL.style.display = "none";
+    MODAL_CONTENT[0].removeChild(MODAL_CONTENT[0].getElementsByTagName('p')[0])
 }
 
 //TODO clicks on <span> (x), close the modal
@@ -256,12 +266,13 @@ window.onclick = function(event) {
 }
 
 //TODO start time do section close
-//window.onload= function(){
-  //  timeSection()
-//}
+window.onload= function(){
+    timeSection()
+}
 
 //TODO clear all forms
 function clearAllSection() {
+
     alert('all section are clear')
 }
 
@@ -271,15 +282,18 @@ function timeSection() {
     setTimeout(function(){
         clearAllSection()
         changeDiv(4)
-    }, 12*1000)
-    cont= 10
+        location.reload();
+    }, 5*60*1000)
+    cont= 4
     setInterval(() => {
-        console.log(`remain ${cont} seconds to finish your section`)
-        cont-=2;
-    }, 2*1000);
+        remainMsg= `Remain ${cont} Minutes to finish your section`
+        modalText(remainMsg)
+        cont-=1;
+    }, 60*1000);
 }
 
 /*--------------------------------------------------------------------------*/
+//TODO
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
     imgProduct.setAttribute('src', targetCart.querySelector('img').src)
@@ -288,6 +302,7 @@ function chooseProduct(e){
     priceProduct.textContent=targetCart.querySelector('.precio').textContent
 }
 
+//TODO
 function addCart(collect){
     //console.log(collect);
     Cart.img = imgProduct.src
@@ -297,6 +312,7 @@ function addCart(collect){
     console.log(Cart)
 }
 
+//TODO
 function showPaintball(){
         detailsImgProduct.setAttribute('src', Cart.img);
         detailsNameProduct.innerHTML=Cart.nameProduct;
@@ -310,5 +326,4 @@ function showPaintball(){
 }
 
 testButton= document.getElementById('testButton')
-//testButton.addEventListener('click', console)
-
+//testButton.addEventListener('click', console);
