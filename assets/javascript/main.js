@@ -227,6 +227,11 @@ wrapperFile.onchange = function() {
     Cart.wrapperImg= wrapperimg;
     //console.log(Cart.wrapperImg)
 }
+submitLastButton.onclick= function(){
+    addText= 'Thank you for your purchase'
+    modalText(addText)
+    setTimeout(closeModal,2000)
+}
 
 //TODO modal window
 function modalText(text) {

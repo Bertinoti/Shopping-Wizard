@@ -55,6 +55,7 @@ const isGift= document.getElementById('isGift')
 const giftOn= document.getElementById('onGift')
 var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
+var submitLastButton=document.getElementById("submitButton")
 
 
 

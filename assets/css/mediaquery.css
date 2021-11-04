@@ -79,12 +79,15 @@
         padding: 10px 50px;
     }
     #details-confirm img{
-        height: 700px;
-        width: 800px;
+        max-width: max-content;
+        min-height: max-content;
+        height: 500px;
+        width: 700px;
         margin-left: 50%;
         transform: translateX(-47%);
-        border: solid 3px black;
+        /* border: solid 3px black; */
     }
+    
 }
 
 @media screen and (min-width: 768px) {
