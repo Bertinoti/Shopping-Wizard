@@ -1,22 +1,45 @@
-// First name validation //
+//TODO validate User Page
+FORM_USERNAME.addEventListener('blur', (e) => {
+validateUserName();
+});
+
+FORM_EMAIL.addEventListener('blur', (e) => {
+        validateEmail();
+});
+
+FORM_PASSWORD.addEventListener('blur', (e) => {
+        validatePassword();
+});
+
+FORM_PASSWORD_CHECK.addEventListener('blur', (e) => {
+        validate2Password();
+});
+
+//TODO First name validation //
 FORM_FIRST_NAME.addEventListener('blur', (e) => {
         (validateSurName(FORM_FIRST_NAME))
                 ? setSuccessFor(FORM_FIRST_NAME, ERROR_USERNAME, 'Valid First name')
                 : setErrorFor(FORM_FIRST_NAME, ERROR_USERNAME, 'Invalid First name max length: 20');
 });
-// Last name validation //
+//TODO Last name validation //
 FORM_LAST_NAME.addEventListener('blur', (e) => {
         (validateSurName(FORM_LAST_NAME))
                 ? setSuccessFor(FORM_LAST_NAME, ERROR_USERNAME, 'Valid Last name')
                 : setErrorFor(FORM_LAST_NAME, ERROR_USERNAME, 'Invalid Last name max length: 20');
 });
-// Address validation //
+//TODO Validate Birthday
+FORM_BIRTHDAY.addEventListener('blur', (e)=> {
+        validateBirth(FORM_BIRTHDAY)
+                ? setSuccessFor(FORM_BIRTHDAY,ERROR_BIRTH, 'Valid Birthday')
+                : setErrorFor(FORM_BIRTHDAY,ERROR_BIRTH, 'The Birthday need to be before than current day');
+})
+//TODO Address validation //
 FORM_ADDR1.addEventListener('blur', (e) => {
         (validateAddress(FORM_ADDR1))
                 ? setSuccessFor(FORM_ADDR1, ERROR_ADDR, 'Valid Addr')
                 : setErrorFor(FORM_ADDR1, ERROR_ADDR, 'Invalid address max length: 50');
 });
-// Postalcode validation //
+//TODO Postalcode validation //
 FORM_POSTAL_CODE.addEventListener('blur', (e) => {
         (validatePostalCode(FORM_POSTAL_CODE))
                 ? setSuccessFor(FORM_POSTAL_CODE, ERROR_POST_CODE, 'Valid Postal Code')
@@ -33,21 +56,6 @@ FORM_PHONE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_PHONE, ERROR_PHONE, 'Invalid postal code max length: 9 and only numbers');
 });
 
-FORM_USERNAME.addEventListener('blur', (e) => {
-        validateUserName();
-});
-
-FORM_EMAIL.addEventListener('blur', (e) => {
-        validateEmail();
-});
-
-FORM_PASSWORD.addEventListener('blur', (e) => {
-        validatePassword();
-});
-
-FORM_PASSWORD_CHECK.addEventListener('blur', (e) => {
-        validate2Password();
-});
 
 // Change divs Events
 for(const iterator of MAIN_ADD_BUTTON) {
@@ -64,13 +72,13 @@ USER_NEXT_DIV_PAGE.addEventListener('click', (e) => {
 });
 
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
-        /*if (isValidateFormAddr(e)) {
+        if (isValidateFormAddr(e)) {
                 saveFormAddr();
                 changeDiv(2);
                 deliveryDate();
-        }*/
-        deliveryDate();
-        changeDiv(2);
+        }
+        //deliveryDate();
+        //changeDiv(2);
 })
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         changeDiv(3)
@@ -92,4 +100,4 @@ carruselShopping.forEach(Element => {
         })
 })
 
-BUTTON_MAIN.addEventListener("click", addCart)
+//BUTTON_MAIN.addEventListener("click", addCart);

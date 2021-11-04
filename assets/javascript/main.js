@@ -2,6 +2,7 @@
 //TODO Username validation //
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
+    FORM_USERNAME.value = userNameValue.replace(/\s/g, '')
     //  USER NAME VERIFICATION  //
     if(userNameValue.length > 4 && userNameValue.length < 21) {
         setSuccessFor(FORM_USERNAME,ERROR_USERNAME,'Valid Username');
@@ -110,6 +111,14 @@ function validatePhone (inputValidation) {
     return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
 }
 
+
+//TODO Birthday VERIFICATION
+function validateBirth(inputValidation) {
+    let today = new Date().toISOString().slice(0, 10)
+    var birthday = inputValidation.value;
+    return  birthday < today
+}
+
 //TODO 1st form page validation //
 function isValidateFormAddr(e) {
     e.preventDefault();
@@ -157,7 +166,6 @@ function chooseShippment() {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
             Cart.priceShipping= shipValue
-            //console.log(Cart.priceShipping)
             break;
         }
     }
@@ -242,12 +250,6 @@ function modalText(text) {
     setTimeout(closeModal, 3000)
 }
 
-
-// When the user clicks on the button, open the modal
-//btn.onclick = function() {
-//  modal.style.display = "block";
-//}
-
 //TODO modal open
 function openModal() {
     MODAL.style.display = "block";
@@ -278,7 +280,7 @@ window.onload= function(){
 //TODO clear all forms
 function clearAllSection() {
 
-    alert('all section are clear')
+    //alert('all section are clear')
 }
 
 //TODO when time finish clear forms and go to main page
@@ -291,7 +293,7 @@ function timeSection() {
     }, 5*60*1000)
     cont= 4
     setInterval(() => {
-        remainMsg= `Remain ${cont} Minutes to finish your section`
+        let remainMsg= `Remain ${cont} Minutes to finish your section`
         modalText(remainMsg)
         cont-=1;
     }, 60*1000);
@@ -331,4 +333,6 @@ function showPaintball(){
 }
 
 testButton= document.getElementById('testButton')
-//testButton.addEventListener('click', console);
+testButton.addEventListener('click', ()=> {
+    validateBirth(FORM_BIRTHDAY)
+});
