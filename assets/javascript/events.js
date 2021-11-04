@@ -74,8 +74,7 @@ DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
 
 //shippiment events
 shippingMethod.addEventListener('change', deliveryDate)
-
-
+isGift.addEventListener('change', displayDivGift )
 
 
 carruselShopping.forEach( Element => {
@@ -86,5 +85,3 @@ carruselShopping.forEach( Element => {
 
 BUTTON_MAIN.addEventListener("click", addCart)
 
-
-// solo para probar 

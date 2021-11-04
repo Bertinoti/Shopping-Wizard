@@ -29,6 +29,10 @@ body {
     margin: 0 auto;
 }
 
+#onGift{
+    display: none;
+}
+
 /*-----------------------------*/
 
 /* footer */
@@ -274,7 +278,6 @@ input {
 
 #shipping-page h3 {
     width: 80%;
-    margin: 0 auto;
 }
 
 #shipping-method {
@@ -286,6 +289,25 @@ input {
     flex-flow: column wrap;
     padding: .6em;
     width: 100%;
+}
+
+#gift-text-id{
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#text-div{
+    width: 100%;
+    display: inline-flex;
+    align-items: baseline;
+
+}
+#text-div .form-tooltip{
+    margin: 5px;
+    width: min-content;
 }
 
 #gift-area {
@@ -311,6 +333,10 @@ input {
     flex: 100%;
     flex-flow: column;
     margin-top: 1 em;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 /* Detais Confirmation---------------------------------*/

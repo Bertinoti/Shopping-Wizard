@@ -12,9 +12,6 @@ const Cart= {
     wrapperImg:null
 }
 
-monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
-// solo para probar
 const userDatas = {
     username: null,
     email: null,
@@ -30,3 +27,7 @@ const addrDatas = {
     country: null,
     phone: null
 }
+
+const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+var wrapperimg={}
