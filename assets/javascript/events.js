@@ -114,4 +114,13 @@ carruselShopping.forEach(Element => {
         })
 })
 
-//BUTTON_MAIN.addEventListener("click", addCart);
+// BUTTON_MAIN.addEventListener("click", addCart)
+
+// solo para probar
+
+for(let item of navArea.children) {
+        item.addEventListener("click", (e) => {
+                const productSelected = products.find(product => product.name === e.target.textContent);
+                buildListImgsProduct(productSelected);
+        })
+}

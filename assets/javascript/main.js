@@ -384,19 +384,34 @@ function addCart(collect) {
 }
 
 //TODO
-function showPaintball() {
-    detailsImgProduct.setAttribute('src', Cart.img);
-    detailsNameProduct.innerHTML = Cart.nameProduct;
-    detailsColorProduct.innerHTML = Cart.color
-    detailsPriceProduct.innerHTML = Cart.priceProduct
-    detailsPriceShipping.forEach(element => {
-        element.textContent = Cart.priceShipping;
-    });
-    detailsOrderShipping.innerHTML = Cart.deliveryDate;
-    detailsPriceTotal.innerHTML = parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
+function showPaintball(){
+        detailsImgProduct.setAttribute('src', Cart.img);
+        detailsNameProduct.innerHTML=Cart.nameProduct;
+        detailsColorProduct.innerHTML=Cart.color
+        detailsPriceProduct.innerHTML=Cart.priceProduct
+        detailsPriceShipping.forEach( element => {
+            element.textContent = Cart.priceShipping;
+        });
+        detailsOrderShipping.innerHTML = Cart.deliveryDate;
+        detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 
-// testButton= document.getElementById('testButton')
-// testButton.addEventListener('click', ()=> {
-//     validateBirth(FORM_BIRTHDAY)
-// });
+testButton= document.getElementById('testButton')
+//testButton.addEventListener('click', console)
+
+function buildListImgsProduct(product) {
+    console.log(product);
+    let listImgHTML = document.querySelectorAll('#carruselShopping img');
+    let listColorsHTML = document.querySelectorAll('#carruselShopping h4');
+    let listPriceHTML = document.querySelectorAll('#carruselShopping .precio');
+    let listNameHTML = document.querySelectorAll('#carruselShopping .name');
+
+    let imgMain = document.querySelector('#photo img');
+    imgMain.setAttribute('src', product.imgs[0]);
+    for (let index = 0; index < listImgHTML.length; index++) {
+        listImgHTML[index].setAttribute('src', product.imgs[index]);
+        listNameHTML[index].textContent = product.name;
+        listColorsHTML[index].textContent = product.color[index];
+        listPriceHTML[index].textContent = parseFloat(product.price);
+    }
+}

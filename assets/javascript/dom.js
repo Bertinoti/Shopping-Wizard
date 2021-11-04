@@ -85,6 +85,7 @@ const detailsOrderShipping=document.querySelector("#detail-order-shipping")
 const detailsPriceTotal=document.querySelector("#detail-priceTotal-product")
 
 const carruselShopping=document.querySelectorAll("#carruselShopping li")
+const carruselShoppingId=document.getElementById("carruselShopping")
 //carrusel
 const imgProduct=document.querySelector("#photo img")
 const colorProduct=document.querySelector("#colorProduct")
@@ -93,3 +94,5 @@ const priceProduct=document.querySelector("#priceProduct")
 //newnconst
 const productNameSelected=document.querySelector("#productNameselected")
 
+// solo para probar
+const navArea = document.getElementById('nav-bar-menu');

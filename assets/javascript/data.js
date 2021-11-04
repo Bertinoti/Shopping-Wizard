@@ -43,17 +43,19 @@ const PREFIXES_PHONES = {
 
 const products = [
     {
-        name: 'CS2 Pro',
+        name: 'CS2',
         color: ['BLACK/GOLD', 'BLACK/WHITE', 'RED/GOLD', 'BLUE/GOLD'],
-        price: '1699€',
+        price: 1699,
         imgs: ['assets/img/cs2pro/fotos numero.jpg', 'assets/img/cs2pro/fotonumero2.jpg', 'assets/img/cs2pro/fotonumero3.jpg', 'assets/img/cs2pro/fotonumero4.jpg'],
-        imgSelected:'assets/img/cs2pro/fotos numero.jpg'
+        colorSelected: 'BLACK/GOLD',
+        imgSelected: 'assets/img/cs2pro/fotos numero.jpg'
     },
     {
-        name: 'L1.6',
+        name: 'LV1.6',
         color: ['BLACK', 'BLACK/GREY', 'FIRE/OPAL', 'SILVER/RED'],
-        price: '1369.95€',
+        price: 1369.95,
         imgs: ['assets/img/LV1.6/black.jpg', 'assets/img/LV1.6/blackgrey.jpg', 'assets/img/LV1.6/fireopal.jpg', 'assets/img/LV1.6/silvered.jpg'],
-        imgSelected:'assets/img/LV1.6/black.jpg'
+        colorSelected: 'BLACK',
+        imgSelected: 'assets/img/LV1.6/black.jpg'
     }
 ]
