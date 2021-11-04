@@ -58,6 +58,14 @@ FORM_PHONE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_PHONE, ERROR_PHONE, 'Invalid postal code max length: 9 and only numbers');
 });
 
+BTN_RESET_FORM.addEventListener('click', ()=>{
+        clearform(USER_FORM)
+})
+
+
+BTN_RESET_FORM2.addEventListener('click', ()=>{
+        clearform(ADDR_PAGE)
+})
 
 //todo Change divs Events
 for(const iterator of MAIN_ADD_BUTTON) {
