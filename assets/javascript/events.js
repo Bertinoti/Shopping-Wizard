@@ -30,8 +30,8 @@ FORM_LAST_NAME.addEventListener('blur', (e) => {
 //TODO Validate Birthday
 FORM_BIRTHDAY.addEventListener('blur', (e)=> {
         validateBirth(FORM_BIRTHDAY)
-                // ? setSuccessFor(FORM_BIRTHDAY,ERROR_BIRTH, 'Valid Addr')
-                // : setErrorFor(FORM_BIRTHDAY,ERROR_BIRTH, 'The Birthday need to be before than current day');
+                ? setSuccessFor(FORM_BIRTHDAY,ERROR_BIRTH, 'Valid Birthday')
+                : setErrorFor(FORM_BIRTHDAY,ERROR_BIRTH, 'The Birthday need to be before than current day');
 })
 //TODO Address validation //
 FORM_ADDR1.addEventListener('blur', (e) => {
@@ -100,4 +100,4 @@ carruselShopping.forEach(Element => {
         })
 })
 
-BUTTON_MAIN.addEventListener("click", addCart)
+//BUTTON_MAIN.addEventListener("click", addCart);

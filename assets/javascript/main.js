@@ -111,13 +111,12 @@ function validatePhone (inputValidation) {
     return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
 }
 
+
 //TODO Birthday VERIFICATION
 function validateBirth(inputValidation) {
-    var curDate= new Date()
-    var birthday = inputValidation;
-    console.log(curDate)
-    console.log(birthday)
-    //return( birthday < curDate)? true : false;
+    let today = new Date().toISOString().slice(0, 10)
+    var birthday = inputValidation.value;
+    return  birthday < today
 }
 
 //TODO 1st form page validation //
@@ -329,4 +328,6 @@ function showPaintball(){
 }
 
 testButton= document.getElementById('testButton')
-//testButton.addEventListener('click', console);
+testButton.addEventListener('click', ()=> {
+    validateBirth(FORM_BIRTHDAY)
+});
