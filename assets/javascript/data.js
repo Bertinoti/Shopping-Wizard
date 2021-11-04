@@ -4,9 +4,12 @@ const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DET
 const Cart= {
     img:null,
     color:null,
+    nameProduct: null,
     priceProduct:null,
     priceShipping:null,
-    giftMessage:null
+    deliveryDate: null,
+    giftMessage:null,
+    wrapperImg:null
 }
 
 monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']

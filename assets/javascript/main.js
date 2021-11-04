@@ -48,7 +48,7 @@ function saveFormAddr() {
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
     //  USER NAME VERIFICATION  //
-    if(userNameValue.length > 5 && userNameValue.length < 20) {
+    if(userNameValue.length > 4 && userNameValue.length < 21) {
         setSuccessFor(FORM_USERNAME,ERROR_USERNAME,'Valid Username');
         return true
     } else {
@@ -61,7 +61,7 @@ function validateEmail () {
     // EMAIL VERIFICATION //
     const EMAIL_PATTERN = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
     var emailValue = FORM_EMAIL.value.trim();
-    if(emailValue.match(EMAIL_PATTERN) && emailValue.length < 50) {
+    if(emailValue.match(EMAIL_PATTERN) && emailValue.length < 51) {
         setSuccessFor(FORM_EMAIL,ERROR_EMAIL,'Valid Email');
         return true
     } else {
@@ -147,8 +147,8 @@ function chooseShippment() {
     for (var i = 0, length = RADIO_SHIP_BUTTON.length; i < length; i++) {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
-            //console.log(RADIO_SHIP_BUTTON[i].value);
-            //console.log(shipValue);
+            Cart.priceShipping= shipValue
+            //console.log(Cart.priceShipping)
             break;
         }
     }
@@ -188,6 +188,8 @@ function deliveryDateMsg(d1, d2, month, year){
     divMsg= document.createElement('div');
     divMsg.innerHTML= deliveryMsg;
     orderMsgInfo.appendChild(divMsg)
+    Cart.deliveryDate= `${d1} ${monthArray[month] } ${year} to ${d2} ${monthArray[month]} ${year}`
+    //console.log(Cart.deliveryDate)
 }
 
 
@@ -205,6 +207,8 @@ wrapperFile.onchange = function() {
     wrapperimg= fileList[0]
     addText= 'Thank You your upload was successfull';
     modalText(addText)
+    Cart.wrapperImg= wrapperimg;
+    //console.log(Cart.wrapperImg)
 }
 
 //TODO modal window
@@ -270,31 +274,40 @@ function timeSection() {
 /*--------------------------------------------------------------------------*/
 function chooseProduct(e){
     const targetCart = e.target.parentNode.parentNode;
-    imgProduct.src= targetCart.querySelector('img').src
+    imgProduct.setAttribute('src', targetCart.querySelector('img').src)
     colorProduct.textContent=targetCart.querySelector('h4').textContent
     productName.textContent=targetCart.querySelector('p').textContent
     priceProduct.textContent=targetCart.querySelector('.precio').textContent
-    console.log(imgProduct.src)
 }
 
 function addCart(collect){
-    console.log(collect);
+    //console.log(collect);
     Cart.img = imgProduct.src
     Cart.color = colorProduct.textContent
-    Cart.product=productName.textContent
+    Cart.nameProduct=productName.textContent
     Cart.priceProduct = priceProduct.textContent
     console.log(Cart)
 }
 
 function showPaintball(){
-        detailsProduct.innerHTML=Cart.img
+        detailsImgProduct.setAttribute('src', Cart.img);
+        detailsNameProduct.innerHTML=Cart.nameProduct;
+        detailsColorProduct.innerHTML=Cart.color
         detailsPriceProduct.innerHTML=Cart.priceProduct
-        detailsPriceShipping.innerHTML=Cart.priceShipping
-        // detailsPriceTotal.innerHTML=Cart.priceProduct + Cart.priceShipping
-        productNameselected.innerHTML=Cart.product
+        detailsPriceShipping.forEach( element => {
+            element.textContent = Cart.priceShipping;
+        });
+        detailsOrderShipping.innerHTML = Cart.deliveryDate;
+        detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 // solo para probar 
 
+// function console(){
+//     console.log('a;SJKLDNFA;LKJN')
+//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
+//     //console.log(Object.values(Cart))
+//     //Cart.forEach(el=> {console.log(el)})
+// }
 testButton= document.getElementById('testButton')
-testButton.addEventListener('click', deliveryDate)
+testButton.addEventListener('click', console)
 
