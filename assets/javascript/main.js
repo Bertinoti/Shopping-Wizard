@@ -406,8 +406,11 @@ function buildListImgsProduct(product) {
     let listPriceHTML = document.querySelectorAll('#carruselShopping .precio');
     let listNameHTML = document.querySelectorAll('#carruselShopping .name');
 
-    let imgMain = document.querySelector('#photo img');
-    imgMain.setAttribute('src', product.imgs[0]);
+    imgProduct.setAttribute('src', product.imgs[0]);
+    colorProduct.textContent = product.colorSelected;
+    productName.textContent = product.name;
+    priceProduct.textContent = product.price;
+
     for (let index = 0; index < listImgHTML.length; index++) {
         listImgHTML[index].setAttribute('src', product.imgs[index]);
         listNameHTML[index].textContent = product.name;
