@@ -38,7 +38,7 @@ const SHIP_SECTION = document.getElementById('shipping-page')
 const DETAIL_SECTION = document.getElementById('details-page')
 
 //dom section buttons
-const MAIN_ADD_BUTTON = document.getElementById('add-button')
+const MAIN_ADD_BUTTON = document.getElementsByClassName('add-button')
 const USER_NEXT_DIV_PAGE= document.getElementById('btn-next-user')
 const ADDRESS_NEXT_DIV_PAGE= document.getElementById('btn-next-address')
 const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shippiment')

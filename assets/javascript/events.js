@@ -50,7 +50,11 @@ FORM_PASSWORD_CHECK.addEventListener('blur', (e) => {
 });
 
 // Change divs Events
-MAIN_ADD_BUTTON.addEventListener('click', function () { changeDiv(0) })
+for(const iterator of MAIN_ADD_BUTTON) {
+        iterator.addEventListener('click', function () { changeDiv(0); addCart()})
+}
+
+
 USER_NEXT_DIV_PAGE.addEventListener('click', (e) => {
         /*if (validateFormUser(e)) {
                 saveFormUser();
