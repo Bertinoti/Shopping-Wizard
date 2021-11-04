@@ -21,7 +21,7 @@ function validatePhone (inputValidation) {
     var phoneValue = inputValidation.value.trim();
     return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
 }
-
+// 1st form page validation //
 function isValidateFormAddr(e) {
     e.preventDefault();
     let isValid = true;
@@ -34,7 +34,7 @@ function isValidateFormAddr(e) {
 
     return isValid;
 }
-
+// 2nd form page validation //
 function saveFormAddr() {
     addrDatas.firstName = FORM_FIRST_NAME.value;
     addrDatas.lastName = FORM_LAST_NAME.value;
@@ -44,7 +44,7 @@ function saveFormAddr() {
     addrDatas.country = FORM_COUNTRY.value;
     addrDatas.phone = FORM_PHONE.value;
 }
-
+// Username validation //
 function validateUserName () {
     var userNameValue = FORM_USERNAME.value.trim();
     //  USER NAME VERIFICATION  //
@@ -56,7 +56,7 @@ function validateUserName () {
         return false
     }
 }
-
+// Email validation //
 function validateEmail () {
     // EMAIL VERIFICATION //
     const EMAIL_PATTERN = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
@@ -69,7 +69,7 @@ function validateEmail () {
         return false
     }
 }
-
+// Password validation //
 function validatePassword(){
     // PASSWORD VERIFICATION //
     const PASSWORD_PATTERN = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/
@@ -82,7 +82,7 @@ function validatePassword(){
         return false
     }
 }
-
+// 2nd password validation //
 function validate2Password (){
     // PASSWORD CHECK //
     var passwordValue = FORM_PASSWORD.value.trim();
@@ -95,7 +95,7 @@ function validate2Password (){
         return false
     }
 }
-
+// 2nd form page validation //
 function validateFormUser (e) {
     e.preventDefault()
     let isValid = true;
@@ -106,19 +106,19 @@ function validateFormUser (e) {
 
     return isValid;
 }
-
+// Storing user info //
 function saveFormUser() {
     userDatas.username = FORM_USERNAME.value;
     userDatas.email = FORM_EMAIL.value;
     userDatas.password = FORM_PASSWORD.value;
 }
-
+// Function created for error on validation //
 function setErrorFor(input, p ,message) {
     input.classList.remove("success")
     input.classList.add("error")
     p.innerHTML = message
 }
-
+// Function created for success on validation //
 function setSuccessFor(input, p, message) {
     input.classList.remove("error")
     input.classList.add("success")
@@ -192,6 +192,14 @@ function deliveryDateMsg(d1, d2, month, year){
     //console.log(Cart.deliveryDate)
 }
 
+//TODO display div gift 
+function displayDivGift() {
+   if (isGift.checked ){
+        giftOn.style.display='block'
+    }else{
+        giftOn.style.display='none'
+    }
+}
 
 //TODO  save the gift message
 function giftMsg() {
@@ -300,14 +308,7 @@ function showPaintball(){
         detailsOrderShipping.innerHTML = Cart.deliveryDate;
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
-// solo para probar 
 
-// function console(){
-//     console.log('a;SJKLDNFA;LKJN')
-//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
-//     //console.log(Object.values(Cart))
-//     //Cart.forEach(el=> {console.log(el)})
-// }
 testButton= document.getElementById('testButton')
-testButton.addEventListener('click', console)
+//testButton.addEventListener('click', console)
 
