@@ -296,7 +296,13 @@ DETAIL_SUBMIT_ORDER.onclick = function () {
     modalText(addText)
     clearAllSection()
     changeDiv(4)
-    location.reload();
+    console.log(Cart)
+    console.log(userDatas)
+    console.log(addrDatas)
+    clearTimeout(sectionTimer)
+    clearInterval(setMenssage)
+    //setTimeout(location.reload(), 3000)
+    ;
 }
 
 //TODO modal window
@@ -345,13 +351,13 @@ function clearAllSection() {
 //TODO when time finish clear forms and go to main page
 //TODO display the time remain to user 
 function timeSection() {
-    setTimeout(function () {
+    sectionTimer= setTimeout(function () {
         clearAllSection()
         changeDiv(4)
         location.reload();
     }, 5 * 60 * 1000)
     cont = 4
-    setInterval(() => {
+    setMenssage= setInterval(() => {
         let remainMsg = `Remain ${cont} Minutes to finish your section`
         modalText(remainMsg)
         cont -= 1;
