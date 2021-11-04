@@ -5,15 +5,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS Links -->
         <link rel="stylesheet" href="assets/css/normalize.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/progressBar.css" />
         <link rel="stylesheet" href="assets/css/modal.css">
         <link rel="stylesheet" href="assets/css/mediaquery.css" />
+
+        <!--CDN for Icons and Fonts   -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        <!--Links JavScript  -->
         <script src="assets/javascript/dom.js" defer></script>
         <script src="assets/javascript/main.js" defer></script>
         <script src="assets/javascript/data.js" defer></script>
@@ -95,8 +100,7 @@
                 </div>
             </main>
             <div class="botonprimero">
-              <button id='add-button' class="buttonMainPage add-button"><span>Add Cart</span></button></div>
-
+                <button id='add-button' class="buttonMainPage add-button"><span>Add Cart</span></button></div>
             <footer>
                 <ul class="socialmedia">
                     <li><i class="fa-brands fa-facebook fa-2x"></i></li>
@@ -176,7 +180,6 @@
                     <input type='date' id="birthday" placeholder="birthday" required>
                     <p id="errorBirthday"></p>
                     </div>
-
                     <div class="form-tooltip">
                     <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address max 50 characters</span></i>
                     <input type='text' id="address1" placeholder="Address" required>
@@ -277,8 +280,8 @@
                 </div>
             </div>
             <div class="button-div">
-                <button class="buttons" id="clear-all-user">Clear All</button>
-                <button class="buttons" id="btn-next-shippiment">Next</button>
+                <button class="buttonMainPage" id="clear-all-user"><span>Clear All</span></button>
+                <button class="buttonMainPage" id="btn-next-shippiment"><span>Next</span></button>
             </div>
         </section>
 
@@ -295,15 +298,14 @@
 
 
             <div id="details-confirm">
-                <img src="/assets/img/cs2pro/fotos numero.jpg" id="detail-img-product">
-                <div>Produto: <span id="detail-title-product"></span>Color: <span id="detail-color-product"></span>
+                <img src="/assets/img/cs2pro/fotos numero.jpg" id="detail-img-product" class="img1">
+                <div class="img2"> <b>Product:</b> <span id="detail-title-product"></span> <b>Color:</b> <span id="detail-color-product"></span><b> Price: </b><span id="detail-price-product"></span> €<span></span>
                 </div>
-                <div>Delivery: price <span class="detail-price-shipping"></span> <span id="detail-order-shipping">
+                <div class="img2"><b>Shipment: </b> <span class="detail-price-shipping"></span> <span>€</span><b> Delivery Date: </b><span id="detail-order-shipping">
                     </span></div>
-                <div>Payment Detail: <span id="detail-price-product"></span> + <span
-                        class="detail-price-shipping"></span> Total <span id="detail-priceTotal-product"></span>
+                <div class="img3"> <b>Total: </b> <span id="detail-priceTotal-product"></span><span> €</span>
                 </div>
-                <button id="submitButton"> To finish your order push the button </button>
+                <button id="submitButton" class="buttonMainPage img4"><span><b>FINISH ORDER</b></span></button>
         </section>
 
         <!-- The Modal -->

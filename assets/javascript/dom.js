@@ -1,3 +1,15 @@
+/* User Form */
+const USER_FORM = document.getElementById("user-form")
+const FORM_USERNAME = document.getElementById("username")
+const ERROR_USERNAME = document.getElementById("errorUserName")
+const FORM_EMAIL = document.getElementById("email")
+const ERROR_EMAIL = document.getElementById("errorEmail")
+const FORM_PASSWORD = document.getElementById ("password")
+const ERROR_PASSWORD = document.getElementById("errorPassword")
+const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")
+const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
+const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
+
 /* Address Form */
 const ADDR_FORM = document.getElementById('addressPage')
 const FORM_FIRST_NAME =  document.getElementById('firstName')
@@ -5,6 +17,7 @@ const ERROR_FIRST_NAME = document.getElementById("errorFirstName")
 const FORM_LAST_NAME =  document.getElementById('lastName')
 const ERROR_LAST_NAME = document.getElementById("errorLastName")
 const FORM_BIRTHDAY =  document.getElementById('birthday')
+const ERROR_BIRTH = document.getElementById("errorBirthday")
 const FORM_ADDR1 =  document.getElementById('address1')
 const ERROR_ADDR = document.getElementById("errorAddress")
 const FORM_ADDR2 =  document.getElementById('address2')
@@ -59,6 +72,8 @@ const isGift= document.getElementById('isGift')
 const giftOn= document.getElementById('onGift')
 var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
+
+//var submitLastButton=document.getElementById("submitButton")
 
 
 

@@ -399,6 +399,7 @@ input {
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
+    font-weight: bolder;
 }
 .buttonMainPage:after {
 	content: "";
@@ -422,11 +423,3 @@ input {
 	transition: .1s ease all;
 }
 
-/* .botonprimero{
-    width: 30%;
-	height: 50px; 
-   align-items: center;
-   display: grid;
-   object-fit: center;
-   margin-left: 700px;
-} */

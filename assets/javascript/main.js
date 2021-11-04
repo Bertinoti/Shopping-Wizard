@@ -132,7 +132,7 @@ function setSuccessFor(input, p, message) {
 // Function to clearform //
 function clearform (dom){
     dom.reset()
-   }
+}
 
 //TODO  FIRST NAME AND LAST NAME VERIFICATION  //
 function validateSurName (inputValidation) {
@@ -156,6 +156,14 @@ function validatePostalCode (inputValidation) {
 function validatePhone (inputValidation) {
     var phoneValue = inputValidation.value.trim();
     return (phoneValue.length === 9 && !isNaN(phoneValue)) ? true : false;
+}
+
+
+//TODO Birthday VERIFICATION
+function validateBirth(inputValidation) {
+    let today = new Date().toISOString().slice(0, 10)
+    var birthday = inputValidation.value;
+    return  birthday < today
 }
 
 //TODO 1st form page validation //
@@ -205,7 +213,6 @@ function chooseShippment() {
         if (RADIO_SHIP_BUTTON[i].checked) {
             shipValue= RADIO_SHIP_BUTTON[i].value
             Cart.priceShipping= shipValue
-            //console.log(Cart.priceShipping)
             break;
         }
     }
@@ -267,6 +274,11 @@ wrapperFile.onchange = function() {
     Cart.wrapperImg= wrapperimg;
     //console.log(Cart.wrapperImg)
 }
+submitLastButton.onclick= function(){
+    addText= 'Thank you for your purchase'
+    modalText(addText)
+    setTimeout(closeModal,2000)
+}
 
 //TODO modal window
 function modalText(text) {
@@ -276,12 +288,6 @@ function modalText(text) {
     openModal()
     setTimeout(closeModal, 3000)
 }
-
-
-// When the user clicks on the button, open the modal
-//btn.onclick = function() {
-//  modal.style.display = "block";
-//}
 
 //TODO modal open
 function openModal() {
@@ -313,7 +319,7 @@ window.onload= function(){
 //TODO clear all forms
 function clearAllSection() {
 
-    alert('all section are clear')
+    //alert('all section are clear')
 }
 
 //TODO when time finish clear forms and go to main page
@@ -326,7 +332,7 @@ function timeSection() {
     }, 5*60*1000)
     cont= 4
     setInterval(() => {
-        remainMsg= `Remain ${cont} Minutes to finish your section`
+        let remainMsg= `Remain ${cont} Minutes to finish your section`
         modalText(remainMsg)
         cont-=1;
     }, 60*1000);
@@ -364,14 +370,8 @@ function showPaintball(){
         detailsOrderShipping.innerHTML = Cart.deliveryDate;
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
-// solo para probar 
 
-// function console(){
-//     console.log('a;SJKLDNFA;LKJN')
-//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
-//     //console.log(Object.values(Cart))
-//     //Cart.forEach(el=> {console.log(el)})
-// }
-testButton= document.getElementById('testButton')
-testButton.addEventListener('click', console)
-
+// testButton= document.getElementById('testButton')
+// testButton.addEventListener('click', ()=> {
+//     validateBirth(FORM_BIRTHDAY)
+// });
