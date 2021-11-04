@@ -60,22 +60,25 @@
         padding: 10px 50px;
     }
 }
-
 @media screen and (min-width: 768px) {
+
     body {
+
         font-size: 1em;
+
     }
-    .carrusel {
-        display: grid;
-        justify-content: center;
-        align-items: center;
+
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+    body {
+
+        font-size: 1.2em;
+
     }
-    #submitButton {
-        width: 40%;
-        margin: auto 30%;
-    }
-    @media screen and (min-width: 1024px) {
-        body {
-            font-size: 1.2em;
-        }
-    }
+
+}
