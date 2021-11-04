@@ -20,11 +20,11 @@
         font-size: 1.2em;
     }
 
-    .carrusel {
+    /* .carrusel {
         display: grid;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .carrusel ul {
         list-style: none;
