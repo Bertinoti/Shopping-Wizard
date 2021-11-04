@@ -44,7 +44,7 @@ const MAIN_ADD_BUTTON = document.getElementsByClassName('add-button')
 const USER_NEXT_DIV_PAGE= document.getElementById('btn-next-user')
 const ADDRESS_NEXT_DIV_PAGE= document.getElementById('btn-next-address')
 const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shippiment')
-const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
+//const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
 
 // Dom Shippment
 const RADIO_SHIP_BUTTON= document.getElementsByName('shipping')
@@ -58,8 +58,7 @@ const giftOn= document.getElementById('onGift')
 var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
 
-//var submitLastButton=document.getElementById("submitButton")
-
+var submitLastButton=document.getElementById("submitButton")
 
 
 //Dom Modal window

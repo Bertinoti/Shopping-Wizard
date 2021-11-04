@@ -88,8 +88,7 @@ SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         showPaintball()
 })
 
-DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
-        
+submitLastButton.addEventListener('click', function () {
         changeDiv(4)
 })
 
