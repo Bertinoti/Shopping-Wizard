@@ -78,6 +78,13 @@
         min-height: 50px;
         padding: 10px 50px;
     }
+    #details-confirm img{
+        height: 700px;
+        width: 800px;
+        margin-left: 50%;
+        transform: translateX(-47%);
+        border: solid 3px black;
+    }
 }
 
 @media screen and (min-width: 768px) {
