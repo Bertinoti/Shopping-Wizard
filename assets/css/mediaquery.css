@@ -12,7 +12,8 @@
        align-items: center;
        display: grid;
        object-fit: center;
-       margin-left: 700px;
+       margin-left: 50%;
+  transform: translateX(-50%);
     }
     
     nav {
@@ -31,6 +32,8 @@
     .carrusel {
         display: flex;
         justify-content: center;
+        align-self: center;
+        align-items: center;
         /* align-items: center; */
     }
     
@@ -75,7 +78,7 @@
         min-height: 50px;
         padding: 10px 50px;
     }
-
+}
 
 @media screen and (min-width: 768px) {
     body {
