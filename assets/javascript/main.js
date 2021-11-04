@@ -332,7 +332,7 @@ function showPaintball(){
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 
-testButton= document.getElementById('testButton')
-testButton.addEventListener('click', ()=> {
-    validateBirth(FORM_BIRTHDAY)
-});
+// testButton= document.getElementById('testButton')
+// testButton.addEventListener('click', ()=> {
+//     validateBirth(FORM_BIRTHDAY)
+// });
