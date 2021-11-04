@@ -46,10 +46,12 @@ FORM_POSTAL_CODE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_POSTAL_CODE, ERROR_POST_CODE, 'Invalid postal code max length: 5');
 });
 
+//TODO Phone Number validation
 FORM_COUNTRY.addEventListener('change', (e) => {
         FORM_PREFIX_PHONE.value = PREFIXES_PHONES[FORM_COUNTRY.value];
 });
-// Phone number validation //
+
+//todo Phone number validation //
 FORM_PHONE.addEventListener('blur', (e) => {
         (validatePhone(FORM_PHONE))
                 ? setSuccessFor(FORM_PHONE, ERROR_PHONE, 'Valid Phone')
@@ -57,18 +59,17 @@ FORM_PHONE.addEventListener('blur', (e) => {
 });
 
 
-// Change divs Events
+//todo Change divs Events
 for(const iterator of MAIN_ADD_BUTTON) {
         iterator.addEventListener('click', function () { changeDiv(0); addCart()})
 }
 
-
 USER_NEXT_DIV_PAGE.addEventListener('click', (e) => {
-        /*if (validateFormUser(e)) {
+        if (validateFormUser(e)) {
                 saveFormUser();
                 changeDiv(1);
-        }*/
-        changeDiv(1);
+        }
+        //changeDiv(1);
 });
 
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
@@ -80,12 +81,15 @@ ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
         //deliveryDate();
         //changeDiv(2);
 })
+
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         changeDiv(3)
         giftMsg()
         showPaintball()
 })
+
 DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
+        
         changeDiv(4)
 })
 
