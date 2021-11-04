@@ -32,7 +32,7 @@
         padding: 0;
         max-width: 510px;
         scroll-behavior: auto;
-        gap: 20px;
+        /* gap: 20px; */
     }
 
     .carrusel-photos {
@@ -40,15 +40,19 @@
         overflow: hidden;
         align-items: center;
         object-fit: contain;
+        justify-content: center;
     }
 
     .carrusel-photos img {
-        width: 500px;
+        width: 520px;
         height: 400px;
         border-radius: 3px;
         object-fit: contain;
         /* border: solid; */
         /* gap: 500px; */
+        align-items: center;
+        justify-content: center;
+
     }
 
     .carrusel-menu {
