@@ -192,6 +192,14 @@ function deliveryDateMsg(d1, d2, month, year){
     //console.log(Cart.deliveryDate)
 }
 
+//TODO display div gift 
+function displayDivGift() {
+   if (isGift.checked ){
+        giftOn.style.display='block'
+    }else{
+        giftOn.style.display='none'
+    }
+}
 
 //TODO  save the gift message
 function giftMsg() {
@@ -300,14 +308,7 @@ function showPaintball(){
         detailsOrderShipping.innerHTML = Cart.deliveryDate;
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
-// solo para probar 
 
-// function console(){
-//     console.log('a;SJKLDNFA;LKJN')
-//     console.log(Object.values(Cart.deliveryDate, Cart.priceShipping, Cart.wrapperImg))
-//     //console.log(Object.values(Cart))
-//     //Cart.forEach(el=> {console.log(el)})
-// }
 testButton= document.getElementById('testButton')
-testButton.addEventListener('click', console)
+//testButton.addEventListener('click', console)
 

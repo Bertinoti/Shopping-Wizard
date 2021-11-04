@@ -51,10 +51,11 @@ const orderMsgInfo= document.getElementById('orderInfo')
 const shippingMethod= document.getElementById('shipping-method')
 
 const RADIO_MSG_BUTTON= document.getElementsByName('gift')
+const isGift= document.getElementById('isGift')
+const giftOn= document.getElementById('onGift')
 var textValue= document.getElementById("gift-text-id")
-
 var wrapperFile= document.getElementById('wrapper-img-id')
-var wrapperimg={}
+
 
 
 //Dom Modal window
@@ -86,4 +87,3 @@ const priceProduct=document.querySelector("#priceProduct")
 //newnconst
 const productNameSelected=document.querySelector("#productNameselected")
 
-// solo para probar
