@@ -213,6 +213,24 @@ function changeDiv(divNum) {
     }
 
 }
+//!apagar todo esto 
+//TODO change product page
+//actual='0'
+function changePage(num) {
+    if(num == 1){
+        cs2.style.display="block"
+        lv1.style.display="none"
+        //geo4.style.display="none"
+        //emek.style.display="none"
+    }else
+    if(num == 2){
+        lv1.style.display="block"
+        cs2.style.display="none"
+        //geo4.style.display="none"
+        //emek.style.display="none"
+    }
+}
+
 //TODO choose delivery method
 function chooseShippment() {
     shipValue = 0;

@@ -3,6 +3,9 @@ const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DET
 
 const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
+//!apagar todo esto 
+divPage=[cs2, lv1]
+
 // Shopping char object //
 const Cart= {
     img:null,

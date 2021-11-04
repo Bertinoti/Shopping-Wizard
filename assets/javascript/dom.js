@@ -1,3 +1,11 @@
+//!apagar todo esto 
+//todo nav DOM
+// const cs2Button= document.getElementById('cs2')
+// const lv1Button= document.getElementById('lv1')
+// const cs2 = document.getElementById('page-cs2')
+// const lv1 = document.getElementById('page-lv1')
+// const geo4 = document.getElementById('geo4')
+// const emek = document.getElementById('emek')
 
 /* User Form */
 const USER_FORM = document.getElementById("user-form")

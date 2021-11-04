@@ -1,3 +1,7 @@
+//!apagar todo esto 
+// cs2Button.addEventListener('click', changePage(1))
+// lv1Button.addEventListener('click', changePage(2))
+
 //TODO validate User Page
 FORM_USERNAME.addEventListener('blur', (e) => {
 validateUserName();

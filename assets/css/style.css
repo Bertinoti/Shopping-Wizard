@@ -4,6 +4,10 @@ body {
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+#page-lv1{
+    display: none;
+}
+
 /*section to change-----------*/
 
 #home-page {
