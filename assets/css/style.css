@@ -74,9 +74,12 @@ footer .socialmedia {
 }
 
 /* footer ------------------------------------*/
-
+.botonprimero{
+    display: none;
+}
 .carrusel {
     display: grid;
+    /* gap:10px; */
     justify-content: center;
     align-items: center;
 }
@@ -94,7 +97,7 @@ footer .socialmedia {
     grid-template-columns: 1fr;
     object-fit: contain;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .carrusel-menu :hover{
   cursor:pointer;
@@ -419,3 +422,11 @@ input {
 	transition: .1s ease all;
 }
 
+/* .botonprimero{
+    width: 30%;
+	height: 50px; 
+   align-items: center;
+   display: grid;
+   object-fit: center;
+   margin-left: 700px;
+} */
