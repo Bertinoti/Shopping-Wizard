@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -89,6 +90,9 @@ footer .socialmedia {
     grid-template-columns: 1fr;
     object-fit: contain;
     align-items: center;
+}
+.carrusel-menu :hover{
+  cursor:pointer;
 }
 .textocarrusel{
   text-align: center;
