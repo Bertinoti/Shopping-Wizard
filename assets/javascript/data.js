@@ -1,6 +1,6 @@
-// All data variables here
+// All data variables here //
 const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DETAIL_SECTION]
-
+// Shopping char object //
 const Cart= {
     img:null,
     color:null,
@@ -14,13 +14,13 @@ const Cart= {
 
 monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-// solo para probar
+// User object //
 const userDatas = {
     username: null,
     email: null,
     password: null
 };
-
+// User object address //
 const addrDatas = {
     firstName: null,
     lastName: null,

@@ -18,14 +18,14 @@ const FORM_REGULAR_ADDR =  document.getElementById('regularAddress')
 const BTN_ADD_ADDR_FORM =  document.getElementById('regularAddress')
 
 /* User Form */
-const USER_FORM = document.getElementById("user-form")                     // const for form
-const FORM_USERNAME = document.getElementById("username")                  // const for getting username
+const USER_FORM = document.getElementById("user-form")
+const FORM_USERNAME = document.getElementById("username")
 const ERROR_USERNAME = document.getElementById("errorUserName")
-const FORM_EMAIL = document.getElementById("email")                        // const for getting mail
+const FORM_EMAIL = document.getElementById("email")
 const ERROR_EMAIL = document.getElementById("errorEmail")
-const FORM_PASSWORD = document.getElementById ("password")                 // const for getting password
+const FORM_PASSWORD = document.getElementById ("password")
 const ERROR_PASSWORD = document.getElementById("errorPassword")
-const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")   // const for getting checked password
+const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")
 const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
 const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
 
@@ -41,7 +41,7 @@ const DETAIL_SECTION = document.getElementById('details-page')
 const MAIN_ADD_BUTTON = document.getElementById('add-button')
 const USER_NEXT_DIV_PAGE= document.getElementById('btn-next-user')
 const ADDRESS_NEXT_DIV_PAGE= document.getElementById('btn-next-address')
-const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shippiment')
+const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shipment')
 const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
 
 // Dom Shippment

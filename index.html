@@ -48,7 +48,7 @@
         <section id="home-page">
             <header>
                 <nav id="nav-bar">
-                    <img src="/assets/img/logo.jpg" id="logo-img" alt="logo">
+                    <img src="/assets/img/logo.png" id="logo-img" alt="logo">
                     <ul class="navArea">
                         <li><a href="">CS2</a></li>
                         <li><a href="">LV1.6</a></li>
@@ -121,9 +121,6 @@
         </ol>
       </section>
       <div class="user-container">
-        <!-- <aside class="aside-bar">
-                    <img src="assets/img/progress-bar1-4.png" alt="progress-bar1-4">
-                </aside> -->
                 <form id="user-form" class="column">
                     <div class="form-tooltip">
                         <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter and max 20</span></i>
@@ -164,25 +161,42 @@
                 </ol>
             </section>
             <div class="user-container">
-                <!-- <aside class="aside-bar">
-                        <img src="assets/img/progress-bar2-4.png" alt="progress-bar1-4">
-                    </aside> -->
                 <form>
                     <div class="form-tooltip">
-                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter and max 20</span></i>
-                        <input type='text' id="firstName" placeholder="first name" required>
-                        <p id="errorFirstName"></p>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">First name with min 5 letter and max 20</span></i>
+                    <input type='text' id="firstName" placeholder="first name" required>
+                    <p id="errorFirstName"></p>
                     </div>
-                    <input type='text' id="lastName" placeholder="last name" required />
+
+                    <div class="form-tooltip">
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Last name with min 5 letter and max 20</span></i>
+                    <input type='text' id="lastName" placeholder="last name" required>
                     <p id="errorLastName"></p>
-                    <input type='date' id="birthday" placeholder="birthday" required />
+                    </div>
+
+                    <div class="form-tooltip">
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Select a valid date</span></i>
+                    <input type='date' id="birthday" placeholder="birthday" required>
                     <p id="errorBirthday"></p>
-                    <input type='text' id="address1" placeholder="address1" required />
+                    </div>
+
+                    <div class="form-tooltip">
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address1</span></i>
+                    <input type='text' id="address1" placeholder="Address" required>
                     <p id="errorAddress"></p>
-                    <input type='text' id="address2" placeholder="address2" />
-                    <p id="errorAddress2"></p>
-                    <input type='number' id="postalCode" placeholder="postalCode" required />
+                    </div>
+
+                    <div class="form-tooltip">
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address2</span></i>
+                    <input type='text' id="address2" placeholder="Address2" required>
+                    <p id="errorAddress"></p>
+                    </div>
+
+                    <div class="form-tooltip">
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Postal Code</span></i>
+                    <input type='text' id="postalCode" placeholder="postalCode" required>
                     <p id="errorPostCode"></p>
+                    </div>
                     <select id="country">
                         <option value="Andorra">Andorra</option>
                         <option value="España">España</option>
@@ -305,9 +319,7 @@
                 </ol>
             </section>
 
-      <!-- <aside class="aside-bar">
-                <img src="assets/img/progress-bar4-4.png" alt="progress-bar1-4">
-            </aside> -->
+
             <div id="details-confirm">
                 <img src="/assets/img/cs2pro/fotos numero.jpg" id="detail-img-product">
                 <div>Produto: <span id="detail-title-product"></span>Color: <span id="detail-color-product"></span></div>
