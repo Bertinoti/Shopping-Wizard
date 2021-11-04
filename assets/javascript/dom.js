@@ -10,6 +10,7 @@ const ERROR_PASSWORD = document.getElementById("errorPassword")
 const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")
 const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
 const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
+const BTN_RESET_FORM = document.getElementById("clear-all-user")
 
 /* Address Form */
 const ADDR_FORM = document.getElementById('addressPage')
@@ -63,7 +64,6 @@ var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
 
 //var submitLastButton=document.getElementById("submitButton")
-
 
 
 //Dom Modal window

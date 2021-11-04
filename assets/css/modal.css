@@ -34,8 +34,8 @@
   /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
 
+/* The Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -56,7 +56,6 @@
 .tooltip {
   position: relative;
   display: inline-block;
-  /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */

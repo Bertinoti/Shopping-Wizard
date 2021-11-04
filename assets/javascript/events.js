@@ -58,6 +58,14 @@ FORM_PHONE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_PHONE, ERROR_PHONE, 'Invalid postal code max length: 9 and only numbers');
 });
 
+BTN_RESET_FORM.addEventListener('click', ()=>{
+        clearform(USER_FORM)
+})
+
+
+BTN_RESET_FORM2.addEventListener('click', ()=>{
+        clearform(ADDR_PAGE)
+})
 
 //todo Change divs Events
 for(const iterator of MAIN_ADD_BUTTON) {
@@ -88,10 +96,12 @@ SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         showPaintball()
 })
 
-DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
-        
-        changeDiv(4)
-})
+// DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
+//         addText = 'Thank you for your purchase'
+//         modalText(addText)
+//         clearAllSection()
+//         changeDiv(4)
+// })
 
 //shippiment events
 shippingMethod.addEventListener('change', deliveryDate)
