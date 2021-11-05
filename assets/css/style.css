@@ -99,6 +99,9 @@ footer .socialmedia {
     align-items: center;
     /* justify-content: center; */
 }
+.carrusel-photos :hover{
+cursor: default;
+}
 .carrusel-menu :hover{
   cursor:pointer;
 }

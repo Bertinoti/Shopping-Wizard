@@ -96,7 +96,7 @@ function clearform(dom) {
 //TODO  FIRST NAME AND LAST NAME VERIFICATION  //
 function validateSurName(inputValidation) {
     var valueInput = inputValidation.value.trim();
-    return (valueInput.length < 20) ? true : false;
+    return (valueInput.length < 20 && valueInput.length > 3) ? true : false;
 }
 
 //TODO  ADDRESS VERIFICATION  //
