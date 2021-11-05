@@ -2,6 +2,8 @@
 //TODO  USER NAME VERIFICATION  //
 function validateUserName() {
     var userNameValue = FORM_USERNAME.value.trim();
+    FORM_USERNAME.value= userNameValue.replace(/\s+/g, "");
+    userNameValue=FORM_USERNAME.value;
     if (userNameValue.length > 4 && userNameValue.length < 21) {
         setSuccessFor(FORM_USERNAME, ERROR_USERNAME, 'Valid Username');
         return true

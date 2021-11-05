@@ -46,7 +46,7 @@
         <title>PaintBall Marker Planet Eclipse</title>
     </head>
 
-    <body>
+    <body>  
         <section id="home-page">
             <header>
                 <nav id="nav-bar">
@@ -124,7 +124,7 @@
                 <form id="user-form" class="column">
                     <div class="form-tooltip">
                         <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter
-                                and max 20</span></i>
+                                and max 20 without space</span></i>
                         <input type="text" id="username" required placeholder="Username">
                         <p id="errorUserName"></p>
                     </div>
@@ -134,7 +134,7 @@
                         <p id="errorEmail"></p>
                     </div>
                     <div class="form-tooltip">
-                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Password must contain Upper and Lower case + a special character</span></i>
+                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Password must contain at least 8 Character and an Upper case, Lower case and a special character</span></i>
                         <input type="password" id="password" required placeholder="P@ssw0rd">
                         <p id="errorPassword"></p>
                     </div>
@@ -164,13 +164,13 @@
             <div class="user-container">
                 <form id="addr-form">
                     <div class="form-tooltip">
-                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">First name with min 5 letter and max 20</span></i>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">First name with min 3 letter and max 20</span></i>
                     <input type='text' id="firstName" placeholder="first name" required>
                     <p id="errorFirstName"></p>
                     </div>
 
                     <div class="form-tooltip">
-                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Last name with min 5 letter and max 20</span></i>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Last name with min 3 letter and max 20</span></i>
                     <input type='text' id="lastName" placeholder="last name" required>
                     <p id="errorLastName"></p>
                     </div>
