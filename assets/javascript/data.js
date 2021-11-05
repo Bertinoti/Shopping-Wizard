@@ -1,9 +1,11 @@
-// All data variables here //
+//! All data variables here //
+//TODO div change Array
 const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DETAIL_SECTION]
 
+//TODO Month name Array
 const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-// Shopping char object //
+//TODO Shopping char object
 const Cart= {
     img:null,
     color:null,
@@ -15,12 +17,14 @@ const Cart= {
     wrapperImg:null
 }
 
+//TODO User data
 const userDatas = {
     username: null,
     email: null,
     password: null
 };
-// User object address //
+
+//TODO User object address //
 const addrDatas = {
     firstName: null,
     lastName: null,
@@ -31,8 +35,9 @@ const addrDatas = {
     phone: null
 }
 
+//var wrapperimg={}
 
-var wrapperimg={}
+//TODO Prefix Number and Country 
 const PREFIXES_PHONES = {
     andorra: '+376',
     spain: '+34',
@@ -41,6 +46,7 @@ const PREFIXES_PHONES = {
     greece: '+30'
 };
 
+//TODO Products Objects  
 const products = [
     {
         name: 'CS2',
