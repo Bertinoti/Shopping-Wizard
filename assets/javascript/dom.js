@@ -1,5 +1,5 @@
 
-/* User Form */
+//TODO User Form
 const USER_FORM = document.getElementById("user-form")
 const FORM_USERNAME = document.getElementById("username")
 const ERROR_USERNAME = document.getElementById("errorUserName")
@@ -12,7 +12,7 @@ const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
 const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
 const BTN_RESET_FORM = document.getElementById("clear-all-user")
 
-/* Address Form */
+//TODO Address Form
 const ADDR_FORM = document.getElementById('addressPage')
 const FORM_FIRST_NAME =  document.getElementById('firstName')
 const ERROR_FIRST_NAME = document.getElementById("errorFirstName")
@@ -34,48 +34,39 @@ const BTN_ADD_ADDR_FORM =  document.getElementById('regularAddress')
 const BTN_RESET_FORM2 = document.getElementById("clear-all-address")
 const ADDR_PAGE = document.getElementById('addr-form')
 
-
-
-// All elements here
-// dom div sections
+//TODO Dom div sections
 const HOME_SECTION = document.getElementById('home-page')
 const USER_SECTION = document.getElementById('user-page')
 const ADDRESS_SECTION =  document.getElementById('address-page')
 const SHIP_SECTION = document.getElementById('shipping-page')
 const DETAIL_SECTION = document.getElementById('details-page')
 
-//dom section buttons
+//todo Dom section buttons
 const MAIN_ADD_BUTTON = document.getElementsByClassName('add-button')
 const USER_NEXT_DIV_PAGE= document.getElementById('btn-next-user')
 const ADDRESS_NEXT_DIV_PAGE= document.getElementById('btn-next-address')
 const SHIP_NEXT_DIV_PAGE= document.getElementById('btn-next-shippiment')
 const DETAIL_SUBMIT_ORDER= document.getElementById('submitButton')
 
-// Dom Shippment
+//TODO Dom Shippment
 const RADIO_SHIP_BUTTON= document.getElementsByName('shipping')
 const CHECK_FUNCTION = document.getElementById('checkFunction')
 const orderMsgInfo= document.getElementById('orderInfo')
 const shippingMethod= document.getElementById('shipping-method')
-
 const RADIO_MSG_BUTTON= document.getElementsByName('gift')
+const standartShipping= document.getElementById('standart-shipping')
 const isGift= document.getElementById('isGift')
 const giftOn= document.getElementById('onGift')
 var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
 
-//var submitLastButton=document.getElementById("submitButton")
 
-
-//Dom Modal window
+//TODO Dom Modal window
 const MODAL_CONTENT= document.getElementsByClassName('modal-content')
 const MODAL = document.getElementById("myModal");
 const SPAN = document.getElementsByClassName("close")[0];
 
-// checkFunction.addEventListener('click', changeDiv(3) )
-
-
-
-// const pruebadessa=document.querySelector("#carruselShopping")
+//TODO Main Page Detail Product
 const detailsImgProduct=document.getElementById("detail-img-product")
 const detailsNameProduct=document.querySelector("#detail-title-product")
 const detailsColorProduct=document.querySelector("#detail-color-product")
@@ -84,6 +75,7 @@ const detailsPriceShipping=document.querySelectorAll(".detail-price-shipping")
 const detailsOrderShipping=document.querySelector("#detail-order-shipping")
 const detailsPriceTotal=document.querySelector("#detail-priceTotal-product")
 
+//TODO main carruselShopping Nav Area
 const carruselShopping=document.querySelectorAll("#carruselShopping li")
 const carruselShoppingId=document.getElementById("carruselShopping")
 //carrusel
@@ -93,6 +85,4 @@ const productName=document.querySelector("#productName")
 const priceProduct=document.querySelector("#priceProduct")
 //newnconst
 const productNameSelected=document.querySelector("#productNameselected")
-
-// solo para probar
 const navArea = document.getElementById('nav-bar-menu');

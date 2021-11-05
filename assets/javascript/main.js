@@ -252,7 +252,7 @@ function deliveryDate() {
         }
 }
 
-//TODO display div gift 
+//TODO display div gift
 function displayDivGift() {
     if (isGift.checked) {
         giftOn.style.display = 'block'
@@ -271,14 +271,12 @@ function deliveryDateMsg(d1, d2, month, year) {
     divMsg.innerHTML = deliveryMsg;
     orderMsgInfo.appendChild(divMsg)
     Cart.deliveryDate = `${d1} ${monthArray[month]} ${year} to ${d2} ${monthArray[month]} ${year}`
-    //console.log(Cart.deliveryDate)
 }
 
 //TODO  save the gift message
 function giftMsg() {
     if (RADIO_MSG_BUTTON[0].checked) {
         Cart.giftMessage = textValue.value
-        //console.log(Cart.giftMessage)
     }
 }
 
@@ -289,10 +287,9 @@ wrapperFile.onchange = function () {
     addText = 'Thank You your upload was successfull';
     modalText(addText)
     Cart.wrapperImg = wrapperimg;
-    //console.log(Cart.wrapperImg)
 }
 
-//! mudar este button
+//TODO Submit order 
 DETAIL_SUBMIT_ORDER.onclick = function () {
     addText = 'Thank you for your purchase'
     modalText(addText)
@@ -347,7 +344,10 @@ window.onload = function () {
 function clearAllSection() {
     clearform(USER_FORM)
     clearform(ADDR_PAGE)
-
+    isGift.checked= false
+    textValue.value =''
+    standartShipping.checked= true
+    displayDivGift()
 }
 
 //TODO when time finish clear forms and go to main page
@@ -367,7 +367,7 @@ function timeSection() {
 }
 
 /*--------------------------------------------------------------------------*/
-//TODO
+//TODO choose Product to save 
 function chooseProduct(e) {
     const targetCart = e.target.parentNode.parentNode;
     imgProduct.setAttribute('src', targetCart.querySelector('img').src)
@@ -385,7 +385,7 @@ function addCart(collect) {
     Cart.priceProduct = priceProduct.textContent
 }
 
-//TODO
+//TODO save the options on Object
 function showPaintball(){
         detailsImgProduct.setAttribute('src', Cart.img);
         detailsNameProduct.innerHTML=Cart.nameProduct;
@@ -398,11 +398,8 @@ function showPaintball(){
         detailsPriceTotal.innerHTML=parseFloat(Cart.priceProduct) + parseFloat(Cart.priceShipping);
 }
 
-testButton= document.getElementById('testButton')
-//testButton.addEventListener('click', console)
-
+//TODO select img and change
 function buildListImgsProduct(product) {
-    console.log(product);
     let listImgHTML = document.querySelectorAll('#carruselShopping img');
     let listColorsHTML = document.querySelectorAll('#carruselShopping h4');
     let listPriceHTML = document.querySelectorAll('#carruselShopping .precio');
