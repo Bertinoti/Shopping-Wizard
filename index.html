@@ -47,19 +47,21 @@
     </head>
 
     <body>
+        <!-- -----------------------------------CS2    -->
         <section id="home-page">
             <header>
                 <nav id="nav-bar">
                     <img src="/assets/img/logo.png" id="logo-img" alt="logo">
                     <ul class="navArea">
-                        <li><a href="">CS2</a></li>
-                        <li><a href="">LV1.6</a></li>
-                        <li><a href="">Geo 4</a></li>
-                        <li><a href="">Emek</a></li>
+                        <li><a href="" id="cs2" onclick="changePage(1)" >CS2</a></li>
+                        <li><a href="" id="lv1" onclick="changePage(2)" >LV1.6</a></li>
+                        <li><a href="" id="geo4">Geo 4</a></li>
+                        <li><a href="" id="emek">Emek</a></li>
                     </ul>
                 </nav>
-            </header>
 
+            </header>
+            <div id="page-cs2">
             <main>
                 <div class="carrusel">
                     <ul class="carrusel-photos">
@@ -108,7 +110,77 @@
                     <li><i class="fa-brands fa-youtube-square fa-2x"></i></li>
                 </ul>
             </footer>
-        </section>
+            </div>
+
+
+
+            <div id="page-lv1">
+                <main>
+                    <div class="carrusel">
+                        <ul class="carrusel-photos">
+                            <li id="photo"><img src="assets/img/LV1.6/lvfotonumero.jpg" alt="LV1.6 black">
+                                <div class="textocarrusel">
+                                    <h4 id="colorProduct">BLACK</h4>
+                                    <p id="productName">LV1.6 PAINTBALL MARKER</p>
+                                    <p><span id="priceProduct">1349</span>€</p>
+                                    <h2>Developed with Pro players to create a marker that is designed to do one thing. Win.</h2>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="carrusel-menu" id="carruselShopping">
+                            <li><a><img src="assets/img/LV1.6/lvfotonumero.jpg" alt="LV1.6 Black"></a>
+                                <div style="display: none">
+                                    <h4>BLACK</h4>
+                                    <p>LV1.6 PAINTBALL MARKER</p>
+                                    <p class="precio">1349</p>
+                                </div>
+                            </li>
+                            <li><a><img src="assets/img/LV1.6/lvfotonumero2.jpg" alt=""></a>
+                                <div style="display: none">
+                                    <h4>BLACK/GREY</h4>
+                                    <p>LV1.6 PAINTBALL MARKER</p>
+                                    <p class="precio">1349</p></div></li>
+                            <li><a><img src="assets/img/LV1.6/lvfotonumero3.jpg" alt=""></a>
+                                <div style="display: none">
+                                    <h4>RED/GOLD</h4>
+                                    <p>LV1.6 PAINTBALL MARKER</p>
+                                    <p class="precio">1349</p></div></li>
+                            <li><a><img src="assets/img/LV1.6/lvfotonumero4.jpg" alt=""></a>
+                                <div style="display: none">
+                                    <h4>SILVER</h4>
+                                    <p>LV1.6 PAINTBALL MARKER</p>
+                                    <p class="precio">1349</p></div></li>
+                        </ul>
+                        <button id='add-button' class="buttonMainPage hide add-button"><span>Add Cart</span></button>
+                    </div>
+                </main>
+                <div class="botonprimero">
+                    <button id='add-button' class="buttonMainPage add-button"><span>Add Cart</span></button></div>
+                <footer>
+                    <ul class="socialmedia">
+                        <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                        <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+                        <li><i class="fa-brands fa-youtube-square fa-2x"></i></li>
+                    </ul>
+                </footer>
+            </div>
+        </section> -->
+<!-- --------------------------------------------LV1.6 -->
+        <!-- <section id="home-page-lv1">
+            <header>
+                <nav id="nav-bar">
+                    <img src="/assets/img/logo.png" id="logo-img" alt="logo">
+                    <ul class="navArea">
+                        <li><a href="">CS2</a></li>
+                        <li><a href="">LV1.6</a></li>
+                        <li><a href="">Geo 4</a></li>
+                        <li><a href="">Emek</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            
+        </section> -->
 
         <!-- User page ---------------- -->
         <section id="user-page">
@@ -129,20 +201,17 @@
                         <p id="errorUserName"></p>
                     </div>
                     <div class="form-tooltip">
-                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter
-                                and max 20</span></i>
+                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Input a valid email</span></i>
                         <input type="email" id="email" required placeholder="youremail@mail.com">
                         <p id="errorEmail"></p>
                     </div>
                     <div class="form-tooltip">
-                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter
-                                and max 20</span></i>
+                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Password must contain Upper and Lower case + a special character</span></i>
                         <input type="password" id="password" required placeholder="P@ssw0rd">
                         <p id="errorPassword"></p>
                     </div>
                     <div class="form-tooltip">
-                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">User name with min 5 letter
-                                and max 20</span></i>
+                        <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Password must be the same</span></i>
                         <input type="password" id="confirm-password" required placeholder="P@ssw0rd">
                         <p id="errorPasswordCheck"></p>
                     </div>
@@ -165,7 +234,7 @@
                 </ol>
             </section>
             <div class="user-container">
-                <form>
+                <form id="addr-form">
                     <div class="form-tooltip">
                     <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">First name with min 5 letter and max 20</span></i>
                     <input type='text' id="firstName" placeholder="first name" required>
@@ -184,19 +253,19 @@
                     <p id="errorBirthday"></p>
                     </div>
                     <div class="form-tooltip">
-                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address1</span></i>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address max 50 characters</span></i>
                     <input type='text' id="address1" placeholder="Address" required>
                     <p id="errorAddress"></p>
                     </div>
 
                     <div class="form-tooltip">
-                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address2</span></i>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Address max 50 characters</span></i>
                     <input type='text' id="address2" placeholder="Address2" required>
                     <p id="errorAddress"></p>
                     </div>
 
                     <div class="form-tooltip">
-                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Postal Code</span></i>
+                    <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Postal Code must contain 5 numbers</span></i>
                     <input type='text' id="postalCode" placeholder="postalCode" required>
                     <p id="errorPostCode"></p>
                     </div>
@@ -215,7 +284,7 @@
                             <option value="+49">+49</option>
                             <option value="+30">+30</option>
                         </select>
-                        <input type="number" id="phone" max="9" required>
+                        <input type="number" id="phone" max="9" placeholder="Phone must contain 9 num" required>
                     </div>
                     <p id="errorPhone"></p>
                     <div>
@@ -268,7 +337,7 @@
                 <div id="onGift">
                     <div id="text-div">
                         <div class="form-tooltip">
-                            <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Menssage with max 200 letters</span></i>
+                            <i class="fa-solid fa-circle-info tooltip"><span class="tooltiptext">Message with max 200 letters</span></i>
                         </div>
                         <textarea id="gift-text-id" name="gift-text" rows="5" cols="30" placeholder="write here your gift message " maxlength="200"></textarea>
                     </div>
