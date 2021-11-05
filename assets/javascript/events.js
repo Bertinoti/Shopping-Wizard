@@ -109,7 +109,7 @@ isGift.addEventListener('change', displayDivGift)
 
 
 carruselShopping.forEach(Element => {
-        Element.addEventListener("click", (e) => {
+        Element.addEventListener("mouseover", (e) => {
                 chooseProduct(e)
         })
 })
