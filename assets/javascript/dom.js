@@ -1,3 +1,11 @@
+//!apagar todo esto 
+//todo nav DOM
+// const cs2Button= document.getElementById('cs2')
+// const lv1Button= document.getElementById('lv1')
+// const cs2 = document.getElementById('page-cs2')
+// const lv1 = document.getElementById('page-lv1')
+// const geo4 = document.getElementById('geo4')
+// const emek = document.getElementById('emek')
 
 /* User Form */
 const USER_FORM = document.getElementById("user-form")
@@ -10,6 +18,7 @@ const ERROR_PASSWORD = document.getElementById("errorPassword")
 const FORM_PASSWORD_CHECK = document.getElementById ("confirm-password")
 const ERROR_PASSWORD_CHECK = document.getElementById("errorPasswordCheck")
 const BTN_ADD_USER_FORM = document.getElementById("btn-next-user")
+const BTN_RESET_FORM = document.getElementById("clear-all-user")
 
 /* Address Form */
 const ADDR_FORM = document.getElementById('addressPage')
@@ -63,7 +72,6 @@ var textValue= document.getElementById("gift-text-id")
 var wrapperFile= document.getElementById('wrapper-img-id')
 
 //var submitLastButton=document.getElementById("submitButton")
-
 
 
 //Dom Modal window

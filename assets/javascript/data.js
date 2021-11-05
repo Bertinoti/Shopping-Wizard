@@ -1,5 +1,11 @@
 // All data variables here //
 const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DETAIL_SECTION]
+
+const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+//!apagar todo esto 
+divPage=[cs2, lv1]
+
 // Shopping char object //
 const Cart= {
     img:null,
@@ -28,7 +34,6 @@ const addrDatas = {
     phone: null
 }
 
-const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 var wrapperimg={}
 const PREFIXES_PHONES = {
