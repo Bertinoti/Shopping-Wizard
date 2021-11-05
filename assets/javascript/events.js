@@ -62,10 +62,10 @@ FORM_PHONE.addEventListener('blur', (e) => {
                 : setErrorFor(FORM_PHONE, ERROR_PHONE, 'Invalid postal code max length: 9 and only numbers');
 });
 
+//TODO Reset Form user and Address
 BTN_RESET_FORM.addEventListener('click', ()=>{
         clearform(USER_FORM)
 })
-
 
 BTN_RESET_FORM2.addEventListener('click', ()=>{
         clearform(ADDR_PAGE)
@@ -76,46 +76,45 @@ for(const iterator of MAIN_ADD_BUTTON) {
         iterator.addEventListener('click', function () { changeDiv(0); addCart()})
 }
 
+//TODO change div user
 USER_NEXT_DIV_PAGE.addEventListener('click', (e) => {
         if (validateFormUser(e)) {
                 saveFormUser();
                 changeDiv(1);
         }
-        //changeDiv(1);
 });
 
+//TODO change div Address
 ADDRESS_NEXT_DIV_PAGE.addEventListener('click', (e) => {
         if (isValidateFormAddr(e)) {
                 saveFormAddr();
                 changeDiv(2);
                 deliveryDate();
         }
-        //deliveryDate();
-        //changeDiv(2);
 })
 
+//TODO change div shippiment
 SHIP_NEXT_DIV_PAGE.addEventListener('click', function () {
         changeDiv(3)
         giftMsg()
         showPaintball()
 })
 
-// DETAIL_SUBMIT_ORDER.addEventListener('click', function () {
-//         addText = 'Thank you for your purchase'
-//         modalText(addText)
-//         clearAllSection()
-//         changeDiv(4)
-// })
-
-//shippiment events
+//todo shippiment events
 shippingMethod.addEventListener('change', deliveryDate)
 isGift.addEventListener('change', displayDivGift)
 
-
+//TODO carrusel Shopping
 carruselShopping.forEach(Element => {
-        Element.addEventListener("click", (e) => {
+        Element.addEventListener("mouseover", (e) => {
                 chooseProduct(e)
         })
 })
 
-//BUTTON_MAIN.addEventListener("click", addCart);
+//TODO change Products nav
+for(let item of navArea.children) {
+        item.addEventListener("click", (e) => {
+                const productSelected = products.find(product => product.name === e.target.textContent);
+                buildListImgsProduct(productSelected);
+        })
+}

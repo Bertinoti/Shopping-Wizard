@@ -86,34 +86,3 @@
         font-size: 1em;
     }
 }
-
-/*
-@media screen and (min-width: 500px) {
-    nav {
-        margin: auto 10%;
-    }
-    nav ul {
-        justify-content: flex-end;
-        align-content: center;
-    }
-    nav ul li a {
-        font-size: 1.5em;
-    }
-    #add-button {
-        font-size: 1.2em;
-    }
-    #user-page, #addres-page, #shipping-page, #details-page {
-        font-size: 1.2em;
-    }
-    #shipping-page h3 {
-        text-align: center;
-        margin: auto 10%;
-    }
-    #submitButton {
-        margin: auto 20%;
-    }
-    footer {
-        min-height: 50px;
-        padding: 10px 50px;
-    }
-}*/

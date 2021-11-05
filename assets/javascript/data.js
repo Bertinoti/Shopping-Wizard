@@ -1,12 +1,11 @@
-// All data variables here //
+//! All data variables here //
+//TODO div change Array
 const DIV_ARRAY= [HOME_SECTION, USER_SECTION, ADDRESS_SECTION, SHIP_SECTION, DETAIL_SECTION]
 
+//TODO Month name Array
 const monthArray=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-//!apagar todo esto 
-divPage=[cs2, lv1]
-
-// Shopping char object //
+//TODO Shopping char object
 const Cart= {
     img:null,
     color:null,
@@ -18,12 +17,14 @@ const Cart= {
     wrapperImg:null
 }
 
+//TODO User data
 const userDatas = {
     username: null,
     email: null,
     password: null
 };
-// User object address //
+
+//TODO User object address //
 const addrDatas = {
     firstName: null,
     lastName: null,
@@ -34,8 +35,9 @@ const addrDatas = {
     phone: null
 }
 
+//var wrapperimg={}
 
-var wrapperimg={}
+//TODO Prefix Number and Country 
 const PREFIXES_PHONES = {
     andorra: '+376',
     spain: '+34',
@@ -44,19 +46,22 @@ const PREFIXES_PHONES = {
     greece: '+30'
 };
 
+//TODO Products Objects  
 const products = [
     {
-        name: 'CS2 Pro',
+        name: 'CS2',
         color: ['BLACK/GOLD', 'BLACK/WHITE', 'RED/GOLD', 'BLUE/GOLD'],
-        price: '1699€',
+        price: 1699,
         imgs: ['assets/img/cs2pro/fotos numero.jpg', 'assets/img/cs2pro/fotonumero2.jpg', 'assets/img/cs2pro/fotonumero3.jpg', 'assets/img/cs2pro/fotonumero4.jpg'],
-        imgSelected:'assets/img/cs2pro/fotos numero.jpg'
+        colorSelected: 'BLACK/GOLD',
+        imgSelected: 'assets/img/cs2pro/fotos numero.jpg'
     },
     {
-        name: 'L1.6',
+        name: 'LV1.6',
         color: ['BLACK', 'BLACK/GREY', 'FIRE/OPAL', 'SILVER/RED'],
-        price: '1369.95€',
+        price: 1369.95,
         imgs: ['assets/img/LV1.6/black.jpg', 'assets/img/LV1.6/blackgrey.jpg', 'assets/img/LV1.6/fireopal.jpg', 'assets/img/LV1.6/silvered.jpg'],
-        imgSelected:'assets/img/LV1.6/black.jpg'
+        colorSelected: 'BLACK',
+        imgSelected: 'assets/img/LV1.6/black.jpg'
     }
 ]
