@@ -425,3 +425,14 @@ input {
 	transition: .1s ease all;
 }
 
+#nav-bar-menu{
+    font-weight: bold;
+}
+#nav-bar-menu :hover{
+    cursor: pointer;
+}
+
+.hover :hover{
+cursor: default;
+}
+
